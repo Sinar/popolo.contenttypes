@@ -1,0 +1,4 @@
+graft src/popolo
+graft docs
+include *.rst
+global-exclude *.pyc

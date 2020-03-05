@@ -1,0 +1,6 @@
+[report]
+include =
+    src/popolo/*
+omit =
+    */test*
+    */upgrades/*
