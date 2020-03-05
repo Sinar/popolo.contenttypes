@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddOrganization"
+        title="popolo.contenttypes: Add Organization"
+    />
+
+
+    <permission
         id="popolo.contenttypes.AddPerson"
         title="popolo.contenttypes: Add Person"
     />
