@@ -1,38 +1,30 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="Person"
+    name="Contact Detail"
     meta_type="Dexterity FTI"
     i18n:domain="popolo.contenttypes">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">Person</property>
+      name="title">Contact Detail</property>
   <property
       i18n:translate=""
-      name="description">A Person</property>
+      name="description">Contact details</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">Person</property>
+  <property name="factory">Contact Detail</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
   <!-- Hierarchy control -->
-  <property name="global_allow">True</property>
-  <property name="filter_content_types">True</property>
-  <property name="allowed_content_types">
-    <element value="Contact Detail" />
-      <!--
-    <element value="Document" />
-    <element value="File" />
-  -->
-  </property>
+  <property name="global_allow">False</property>
   <!-- Schema, class and security -->
-  <property name="add_permission">popolo.contenttypes.AddPerson</property>
-  <property name="klass">popolo.contenttypes.content.person.Person</property>
+  <property name="add_permission">popolo.contenttypes.AddContactDetail</property>
+  <property name="klass">popolo.contenttypes.content.contact_detail.ContactDetail</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">popolo.contenttypes.content.person.IPerson</property>
+  <property name="schema">popolo.contenttypes.content.contact_detail.IContactDetail</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors" purge="false">
@@ -55,14 +47,10 @@
     <!--<element value="plone.tableofcontents"/>-->
     <!--<element value="plone.versioning" />-->
     <!--<element value="plone.translatable" />-->
-    <!--<element value="plone.nextprevioustoggle" />-->
-    <!--<element value="plone.nextpreviousenabled" />-->
-    <!--<element value="plone.navigationroot" />-->
-    <!--<element value="plone.selectablecontrainstypes" />-->
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++Person</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Contact Detail</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
