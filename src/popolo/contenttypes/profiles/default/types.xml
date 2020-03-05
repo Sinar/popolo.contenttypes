@@ -5,4 +5,5 @@
   <object meta_type="Dexterity FTI" name="Person"/>
   <object meta_type="Dexterity FTI" name="Organization"/>
   <object meta_type="Dexterity FTI" name="Membership"/>
+  <object meta_type="Dexterity FTI" name="Post"/>
 </object>

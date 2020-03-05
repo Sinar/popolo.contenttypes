@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddPost"
+        title="popolo.contenttypes: Add Post"
+    />
+
+
+    <permission
         id="popolo.contenttypes.AddMembership"
         title="popolo.contenttypes: Add Membership"
     />

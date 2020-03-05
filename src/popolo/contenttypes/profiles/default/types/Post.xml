@@ -1,38 +1,37 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="Organization"
+    name="Post"
     meta_type="Dexterity FTI"
     i18n:domain="popolo.contenttypes">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">Organization</property>
+      name="title">Post</property>
   <property
       i18n:translate=""
-      name="description">An Organization</property>
+      name="description">A Post in an Organization</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">Organization</property>
+  <property name="factory">Post</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
   <!-- Hierarchy control -->
-  <property name="global_allow">True</property>
+  <property name="global_allow">False</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
-    <element value="Post" />
-      <!--
+  <!--
     <element value="Document" />
     <element value="File" />
   -->
   </property>
   <!-- Schema, class and security -->
-  <property name="add_permission">popolo.contenttypes.AddOrganization</property>
-  <property name="klass">popolo.contenttypes.content.organization.Organization</property>
+  <property name="add_permission">popolo.contenttypes.AddPost</property>
+  <property name="klass">popolo.contenttypes.content.post.Post</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">popolo.contenttypes.content.organization.IOrganization</property>
+  <property name="schema">popolo.contenttypes.content.post.IPost</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors" purge="false">
@@ -62,7 +61,7 @@
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++Organization</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Post</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
