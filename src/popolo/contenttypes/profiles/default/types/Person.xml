@@ -22,6 +22,7 @@
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
     <element value="Contact Detail" />
+    <element value="Link" />
       <!--
     <element value="Document" />
     <element value="File" />

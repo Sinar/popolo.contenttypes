@@ -39,13 +39,11 @@ class IPerson(model.Schema):
         description=_(u'A person\'s preferred full name'),
         )
 
-
     dexteritytextindexer.searchable('description')
     description = schema.Text(
         title=_(u'Description'),
         description=_(u'One line description of this person'),
         )
-
 
     gender = schema.Choice(
         title=_(u'Gender'),
@@ -54,7 +52,7 @@ class IPerson(model.Schema):
             SimpleTerm(value=u'female', title=_(u'Female')),
             SimpleTerm(value=u'other', title=_(u'Other'))]
             ),
-        required = False,
+        required=False,
         )
 
     birth_date = schema.Date(
@@ -73,34 +71,18 @@ class IPerson(model.Schema):
         required=False,
         )
 
+    dexteritytextindexer.searchable('biography')
+    notes = RichText(
+         title=_(u'Biography'),
+         description=_(u'Detailed biography of this person'),
+         required=False,
+     )
+
     dexteritytextindexer.searchable('notes')
     notes = RichText(
          title=_(u'Notes'),
          required=False
      )
-
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
-
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
-
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
-
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
 
 
 @implementer(IPerson)
