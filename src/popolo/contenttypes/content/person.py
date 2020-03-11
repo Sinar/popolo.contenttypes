@@ -33,11 +33,14 @@ class IPerson(model.Schema):
     #     required=True
     # )
 
+    dexteritytextindexer.searchable('title')
     title = schema.TextLine(
         title=_(u'Name'),
         description=_(u'A person\'s preferred full name'),
         )
 
+
+    dexteritytextindexer.searchable('description')
     description = schema.Text(
         title=_(u'Description'),
         description=_(u'One line description of this person'),
