@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddSource"
+        title="popolo.contenttypes: Add Source"
+    />
+
+
+    <permission
         id="popolo.contenttypes.AddContactDetail"
         title="popolo.contenttypes: Add ContactDetail"
     />

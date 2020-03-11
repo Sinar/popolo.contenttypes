@@ -7,4 +7,5 @@
   <object meta_type="Dexterity FTI" name="Membership"/>
   <object meta_type="Dexterity FTI" name="Post"/>
   <object meta_type="Dexterity FTI" name="Contact Detail"/>
+  <object meta_type="Dexterity FTI" name="Source"/>
 </object>
