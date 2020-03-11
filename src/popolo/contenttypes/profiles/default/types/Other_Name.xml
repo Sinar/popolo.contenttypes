@@ -38,8 +38,8 @@
     <element value="plone.ownership"/>
     <element value="plone.publication"/>
     <element value="plone.categorization"/>
-    <element value="plone.basic"/>
     <element value="plone.locking" />
+    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
     <!--<element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />-->
     <!--<element value="plone.leadimage"/>-->
     <!--<element value="plone.relateditems"/>-->

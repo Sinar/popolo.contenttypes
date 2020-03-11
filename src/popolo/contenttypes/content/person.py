@@ -33,15 +33,15 @@ class IPerson(model.Schema):
     #     required=True
     # )
 
-    dexteritytextindexer.searchable('title')
-    title = schema.TextLine(
+    dexteritytextindexer.searchable('name')
+    name = schema.TextLine(
         title=_(u'Name'),
         description=_(u'A person\'s preferred full name'),
         )
 
-    dexteritytextindexer.searchable('description')
-    description = schema.Text(
-        title=_(u'Description'),
+    dexteritytextindexer.searchable('summary')
+    summary = schema.Text(
+        title=_(u'Summary'),
         description=_(u'One line description of this person'),
         )
 
@@ -72,7 +72,7 @@ class IPerson(model.Schema):
         )
 
     dexteritytextindexer.searchable('biography')
-    notes = RichText(
+    biography = RichText(
          title=_(u'Biography'),
          description=_(u'Detailed biography of this person'),
          required=False,
@@ -89,3 +89,17 @@ class IPerson(model.Schema):
 class Person(Container):
     """
     """
+
+    def Title(self):
+        return self.name
+
+    @property
+    def title(self):
+        return self.name
+
+    def Description(self):
+        return self.summary
+
+    @property
+    def description(self):
+        return self.summary
