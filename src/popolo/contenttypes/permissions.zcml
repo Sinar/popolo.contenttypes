@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddIdentifier"
+        title="popolo.contenttypes: Add Identifier"
+    />
+
+
+    <permission
         id="popolo.contenttypes.AddOtherName"
         title="popolo.contenttypes: Add OtherName"
     />
