@@ -93,7 +93,7 @@ class IOrganization(model.Schema):
         description=_(u'One line to tell what is the organization about'),
         required=False,)
 
-    description = schema.Text(
+    summary = schema.Text(
         title=_(u'Description'),
         required=False,)
 
@@ -136,7 +136,7 @@ class Organization(Container):
     @property
     def description(self):
         ''' return description'''
-        return self.description
+        return self.summary
 
     @description.setter
     def description(self, value):
