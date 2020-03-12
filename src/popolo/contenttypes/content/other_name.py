@@ -51,9 +51,11 @@ class OtherName(Item):
     """
     """
 
-    def Title(self):
-        return self.name
-
     @property
     def title(self):
         return self.name
+
+    @title.setter
+    def title(self, value):
+        ''' we wont set a title here'''
+        pass

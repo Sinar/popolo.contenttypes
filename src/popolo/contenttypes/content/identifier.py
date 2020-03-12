@@ -42,9 +42,11 @@ class Identifier(Item):
     """
     """
 
-    def Title(self):
-        return self.scheme
-
     @property
     def title(self):
         return self.scheme
+
+    @title.setter
+    def title(self, value):
+        ''' we wont set a title here'''
+        pass

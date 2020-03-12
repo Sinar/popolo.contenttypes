@@ -17,9 +17,6 @@ from collective import dexteritytextindexer
 
 from popolo.contenttypes import _
 
-from plone.app.content.interfaces import INameFromTitle
-
-
 class IPerson(model.Schema):
     """ Marker interface and Dexterity Python Schema for Person
     """
@@ -93,9 +90,22 @@ class Person(Container):
     """
 
     @property
-    def Title(self):
+    def title(self):
+        ''' return name'''
         return self.name
 
+    @title.setter
+    def title(self, value):
+        ''' we wont set a title here'''
+        pass
+
     @property
-    def Description(self):
+    def description(self):
+        ''' return summary'''
         return self.summary
+
+    @description.setter
+    def description(self, value):
+        ''' we wont set a title here'''
+        pass
+

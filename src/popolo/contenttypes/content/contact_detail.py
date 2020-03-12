@@ -72,9 +72,12 @@ class ContactDetail(Item):
     """
     """
 
-    def Title(self):
-        return self.label
-
     @property
     def title(self):
+        ''' return label'''
         return self.label
+
+    @title.setter
+    def title(self, value):
+        ''' we wont set a title here'''
+        pass
