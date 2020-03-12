@@ -17,6 +17,8 @@ from collective import dexteritytextindexer
 
 from popolo.contenttypes import _
 
+from plone.app.content.interfaces import INameFromTitle
+
 
 class IPerson(model.Schema):
     """ Marker interface and Dexterity Python Schema for Person
@@ -32,7 +34,7 @@ class IPerson(model.Schema):
     #     vocabulary=LevelVocabulary,
     #     required=True
     # )
-
+  
     dexteritytextindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Name'),
@@ -90,16 +92,10 @@ class Person(Container):
     """
     """
 
+    @property
     def Title(self):
         return self.name
 
     @property
-    def title(self):
-        return self.name
-
     def Description(self):
-        return self.summary
-
-    @property
-    def description(self):
         return self.summary
