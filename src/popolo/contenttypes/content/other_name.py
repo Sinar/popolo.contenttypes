@@ -16,6 +16,8 @@ from popolo.contenttypes import _
 
 class IOtherName(model.Schema):
     """ Marker interface and Dexterity Python Schema for OtherName
+
+        Used for Persons
     """
     # If you want, you can load a xml model created TTW here
     # and customize it in Python:
