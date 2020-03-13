@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from plone.dexterity.content import Container
 from plone.supermodel import model
+from plone.namedfile import field
 from zope import schema
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
@@ -53,34 +54,19 @@ organization_categories = SimpleVocabulary(
 
 class IOrganization(model.Schema):
     """ Marker interface and Dexterity Python Schema for Organization
+        Reference Schema Popolo-spec Organization JSON Schema
+        https://www.popoloproject.com/specs/organization.html
     """
 
-    # TODO check with K. to see if any property could have more efficient field
-    title = schema.TextLine(
+    name = schema.TextLine(
         title=_(u'Organization Name'),
+        description=_(u"A primary name, e.g. a legally recognized " +
+                      "name"),
         required=True,)
 
-    alternate_names = schema.List(
-        title=_(u'Alternate Names'),
-        description=_(u'Any other names or name contractions ' +
-                      'the organization is currently known under'),
-        required=False,
-        value_type=schema.TextLine(
-            title=_(u'Alternate Name'),),)
+    # other_names implemented as content type
 
-    former_names = schema.List(
-        title=_(u'Former Names'),
-        description=_(u'All other names or name contractions ' +
-                      'the organization used to be known under'),
-        required=False,
-        value_type=schema.TextLine(
-            title=_(u'Former Name & Years of Usage'),),)
-
-    # TODO look at standard reuse for use of correct fields in some properties
-    identifiers = schema.Object(
-        title=u'Identifiers',
-        required=False,
-        schema=identifier.IIdentifier,)
+    # identifiers applied as content type
 
     classification = schema.Choice(
         title=_('Organization Classification'),
@@ -94,28 +80,53 @@ class IOrganization(model.Schema):
         source=ObjPathSourceBinder(
             object_provides=organization.IOrganization.__identifier__),)"""
 
-    # TODO find geographic area as popolo contenttype?? Or use a voc???
-    """geographic_area = schema.Object(
-    title=u'Geographic Area',
-    required=False,
-    schema=area.IArea,)"""
+    # TODO area field use popolo Area class (content type)
+    # https://github.com/Sinar/popolo.contenttypes/issues/12
 
-    one_line_description = schema.TextLine(
+    # We will not use abstract (one liner) field from popolo-spec for
+    # now
+    '''
+    abstract = schema.Text(
         title=_(u'One-line Description'),
         description=_(u'One line to tell what is the organization about'),
         required=False,)
-
-    summary = schema.Text(
-        title=_(u'Description'),
-        required=False,)
-
-    date_of_founding = schema.Date(
+    '''
+    founding_date = schema.Date(
         title=_('Date of Founding'),
         required=False,)
 
-    date_of_dissolution = schema.Date(
+    dissolution_date = schema.Date(
         title=_('Date of Dissolution'),
         required=False,)
+
+    description = schema.Text(
+        title=_(u'Description'),
+        required=True,)
+
+    image = field.NamedImage(
+        title=_(u"Logo"),
+        description=_(u'Official logo or emblem of organization'),
+        required=False,
+        )
+
+    # contact_details implemented as content type in container
+
+    # links implemented as content type in container
+
+    # TODO memberships to be implemented as content type
+
+    # TODO posts to be implemeted as content type
+
+    # motions not implemented for now
+    # votes not implemented for now
+
+    # children to be implemented as view of back references to parent_id
+
+    # created, updated using Plone/Dublin Core effective 
+    # and expiry date fields
+
+    # sources to use content type
+
 
 @implementer(IOrganization)
 class Organization(Container):
@@ -135,7 +146,7 @@ class Organization(Container):
     @property
     def description(self):
         ''' return description'''
-        return self.summary
+        return self.description
 
     @description.setter
     def description(self, value):
