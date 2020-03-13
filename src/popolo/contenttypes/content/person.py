@@ -19,6 +19,8 @@ from popolo.contenttypes import _
 
 class IPerson(model.Schema):
     """ Marker interface and Dexterity Python Schema for Person
+        Reference Schema Popolo-spec Person JSON Schema
+        https://www.popoloproject.com/specs/person.html
     """
     # If you want, you can load a xml model created TTW here
     # and customize it in Python:
@@ -31,7 +33,7 @@ class IPerson(model.Schema):
     #     vocabulary=LevelVocabulary,
     #     required=True
     # )
-  
+
     dexteritytextindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Name'),
