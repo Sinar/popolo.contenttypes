@@ -117,20 +117,6 @@ class IOrganization(model.Schema):
         title=_('Date of Dissolution'),
         required=False,)
 
-    contact = schema.Object(
-        title=u'Contact',
-        required=False,
-        schema=contact_detail.IContactDetail,)
-
-    external_links = schema.List(
-        title=_(u'External Links'),
-        description=_(u'Links to website of organization ' +
-                      'or any relevant web page'),
-        required=False,
-        value_type=schema.URI(
-            title=_(u'Link'),),)
-
-
 @implementer(IOrganization)
 class Organization(Container):
     """
