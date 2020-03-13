@@ -25,10 +25,10 @@
     <element value="Other Name" />
     <element value="Contact Detail" />
     <element value="Link" />
+    <element value="File" />
       <!--
     <element value="Document" />
-    <element value="File" />
-  -->
+    -->
   </property>
   <!-- Schema, class and security -->
   <property name="add_permission">popolo.contenttypes.AddPerson</property>

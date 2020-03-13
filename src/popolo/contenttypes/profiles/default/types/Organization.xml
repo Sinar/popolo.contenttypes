@@ -24,10 +24,10 @@
     <element value="Post" />
     <element value="Identifier" />
     <element value="Contact Detail" />
+    <element value="Link" />
+    <element value="File" />
       <!--
     <element value="Document" />
-    <element value="File" />
-
       -->
   </property>
   <!-- Schema, class and security -->
