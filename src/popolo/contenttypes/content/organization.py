@@ -142,13 +142,3 @@ class Organization(Container):
     def title(self, value):
         ''' we wont set a title here'''
         pass
-
-    @property
-    def description(self):
-        ''' return description'''
-        return self.description
-
-    @description.setter
-    def description(self, value):
-        ''' we wont set a description here'''
-        pass
