@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 from plone.dexterity.content import Container
+from plone.app.textfield import RichText
 from plone.supermodel import model
 from plone.namedfile import field
+from z3c.relationfield.schema import RelationChoice
 from zope import schema
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.interface import implementer
+from collective import dexteritytextindexer
 
 from popolo.contenttypes import _
-from popolo.contenttypes.content import contact_detail
-from popolo.contenttypes.content import identifier
 
 # TODO importing itself?? How to reference IOrganization?
 # from plone.formwidget.contenttree import ObjPathSourceBinder
@@ -51,13 +52,13 @@ organization_categories = SimpleVocabulary(
     ]
 )
 
-
 class IOrganization(model.Schema):
     """ Marker interface and Dexterity Python Schema for Organization
         Reference Schema Popolo-spec Organization JSON Schema
         https://www.popoloproject.com/specs/organization.html
     """
 
+    dexteritytextindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Organization Name'),
         description=_(u"A primary name, e.g. a legally recognized " +
@@ -68,17 +69,7 @@ class IOrganization(model.Schema):
 
     # identifiers applied as content type
 
-    classification = schema.Choice(
-        title=_('Organization Classification'),
-        required=False,
-        vocabulary=organization_categories,)
-
     # TODO make this work with relations to IOrganization
-    """parent_organization = RelationChoice(
-        title=_(u'Parent Organization'),
-        required=False,
-        source=ObjPathSourceBinder(
-            object_provides=organization.IOrganization.__identifier__),)"""
 
     # TODO area field use popolo Area class (content type)
     # https://github.com/Sinar/popolo.contenttypes/issues/12
@@ -91,6 +82,24 @@ class IOrganization(model.Schema):
         description=_(u'One line to tell what is the organization about'),
         required=False,)
     '''
+
+    # TODO vocabulary to limit by Organizations only
+    parent_organization = RelationChoice(
+            title=u'Parent Org',
+            vocabulary="plone.app.vocabularies.Catalog",
+            required=False,
+            )
+
+    dexteritytextindexer.searchable('description')
+    description = schema.Text(
+        title=_(u'Description'),
+        required=False,)
+
+    classification = schema.Choice(
+        title=_('Organization Classification'),
+        required=False,
+        vocabulary=organization_categories,)
+
     founding_date = schema.Date(
         title=_('Date of Founding'),
         required=False,)
@@ -98,10 +107,6 @@ class IOrganization(model.Schema):
     dissolution_date = schema.Date(
         title=_('Date of Dissolution'),
         required=False,)
-
-    description = schema.Text(
-        title=_(u'Description'),
-        required=True,)
 
     image = field.NamedImage(
         title=_(u"Logo"),
@@ -126,6 +131,12 @@ class IOrganization(model.Schema):
     # and expiry date fields
 
     # sources to use content type
+
+    dexteritytextindexer.searchable('notes')
+    notes = RichText(
+         title=_(u'Notes'),
+         required=False
+     )
 
 
 @implementer(IOrganization)
