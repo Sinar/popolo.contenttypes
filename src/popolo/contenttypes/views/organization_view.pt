@@ -19,19 +19,6 @@
         <div tal:replace="structure provider:plone.abovecontentbody" />
 
             <div class="row">
-              <div class="col-md-3">
-                    <dl>
-                        <dt>Parent Organization</dt>
-                        <dd>
-                            <a href=""
-                               tal:attributes="href
-                               context/parent_organization/to_object/absolute_url"
-                               tal:content="context/parent_organization/to_object/title">
-                                Parent Company
-                            </a>
-                        </dd>
-                    </dl>
-             </div>
              <div class="col-md-3">
                     <dl>
                         <dt>Classification</dt>
@@ -45,8 +32,33 @@
                         view/w/dissolution_date/render"></dd>
                     </dl> 
               </div>
+              <div class="col-md-3">
+                    <dl tal:condition="context/parent_organization">
+                        <dt>Parent Organization</dt>
+                        <dd>
+                            <a href=""
+                               tal:attributes="href
+                               context/parent_organization/to_object/absolute_url"
+                               tal:content="context/parent_organization/to_object/title">
+                                Parent Organization
+                            </a>
+                        </dd>
+				     </dl>
+					 <dl tal:condition="python:len(view.child_orgs())">
+                        <dt>Child Organization</dt>
+						<dd tal:define="children python:view.child_orgs()"
+                            tal:repeat="item children">
+						    <a href=""
+								tal:attributes="href item/absolute_url"
+								tal:content="item/title">
+								Child Organization
+							</a>
+				        </dd>	
+                    </dl>
+             </div>
+
               <div class="col-md-5">
-                      <img tal:attributes="src string: ${context/absolute_url}/@@images/image/thumb"
+                      <img tal:condition="context/image" tal:attributes="src string: ${context/absolute_url}/@@images/image/thumb"
              class="img-thumbnail">
               </div>
             </div>

@@ -4,8 +4,14 @@ from plone import api
 from popolo.contenttypes import _
 from Products.Five.browser import BrowserView
 from plone.dexterity.browser.view import DefaultView
+import popolo.contenttypes.utils as utils
 
-# from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Acquisition import aq_inner
+from zope.component import getUtility
+from zope.intid.interfaces import IIntIds
+from zope.security import checkPermission
+from zc.relation.interfaces import ICatalog
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 
 class OrganizationView(DefaultView,BrowserView):
@@ -13,6 +19,27 @@ class OrganizationView(DefaultView,BrowserView):
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('organization_view.pt')
 
-    def boo(self):
-        text = u'Boo'
-        return text
+    def child_orgs(self):
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+        attribute_name = 'parent_organization'
+
+        result = []
+
+        # TODO getId without aq_inner
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                                    from_attribute=attribute_name)
+              ):
+           
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                result.append(obj)
+
+        return result
