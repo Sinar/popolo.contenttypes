@@ -10,49 +10,13 @@ from zope.schema.vocabulary import SimpleVocabulary
 from zope.interface import implementer
 from collective import dexteritytextindexer
 
+from plone.app.vocabularies.catalog import CatalogSource
+
+from plone.app.z3cform.widget import RelatedItemsFieldWidget
+from plone.autoform import directives
+
 from popolo.contenttypes import _
 
-# TODO importing itself?? How to reference IOrganization?
-# from plone.formwidget.contenttree import ObjPathSourceBinder
-# from z3c.relationfield.schema import RelationChoice
-# from popolo.contenttypes.content import organization
-
-# TODO ask K. if there is an area popolo content type.
-# from popolo.contenttypes.content import area
-
-# TODO : determine if better place to put this.
-organization_categories = SimpleVocabulary(
-    [
-        SimpleTerm(value=_(u'orgCatParliament'), title=_(u'Parliament')),
-        SimpleTerm(value=_(u'orgCatSenate'), title=_(u'Senate')),
-        SimpleTerm(value=_(u'orgCatCabinet'), title=_(u'Cabinet')),
-        SimpleTerm(value=_(u'orgCatStateExecCouncil'),
-                   title=_(u'State executive council')),
-        SimpleTerm(value=_(u'orgCatStateAssembly'),
-                   title=_(u'State assembly')),
-        SimpleTerm(value=_(u'orgCatStateGov'), title=_(u'State government')),
-        SimpleTerm(value=_(u'orgCatDepartment'), title=_(u'Department')),
-        SimpleTerm(value=_(u'orgCatStateCorp'),
-                   title=_(u'State Corporation')),
-        SimpleTerm(value=_(u'orgCatPrivateLimitedCo'),
-                   title=_(u'Private limited company')),
-        SimpleTerm(value=_(u'orgCatPublicCo'), title=_(u'Public company')),
-        SimpleTerm(value=_(u'orgCatCommittee'), title=_(u'Committee')),
-        SimpleTerm(value=_(u'orgCatBoDirectors'),
-                   title=_(u'Board of directors')),
-        SimpleTerm(value=_(u'orgCatManagement'), title=_(u'Management')),
-        SimpleTerm(value=_(u'orgCatPP'), title=_(u'Political party')),
-        SimpleTerm(value=_(u'orgCatPPExecutive'),
-                   title=_(u'Political party executive')),
-        SimpleTerm(value=_(u'orgCatPPBranch'),
-                   title=_(u'Political party branch')),
-        SimpleTerm(value=_(u'orgCatTradeAssociation'),
-                   title=_(u'Trade association')),
-        SimpleTerm(value=_(u'orgCatLabourUnion'),
-                   title=_(u'Labour union')),
-        SimpleTerm(value=_(u'orgCatCivilSociety'), title=_(u'Civil society'))
-    ]
-)
 
 class IOrganization(model.Schema):
     """ Marker interface and Dexterity Python Schema for Organization
@@ -71,8 +35,6 @@ class IOrganization(model.Schema):
 
     # identifiers applied as content type
 
-    # TODO make this work with relations to IOrganization
-
     # TODO area field use popolo Area class (content type)
     # https://github.com/Sinar/popolo.contenttypes/issues/12
 
@@ -85,10 +47,18 @@ class IOrganization(model.Schema):
         required=False,)
     '''
 
-    # TODO vocabulary to limit by Organizations only
+    directives.widget('parent_organization',
+                      RelatedItemsFieldWidget,
+                      pattern_options={
+                        'basePath': '/',
+                        'mode': 'auto',
+                        'favourites': [],
+                        }
+                      )
+
     parent_organization = RelationChoice(
             title=u'Parent Org',
-            vocabulary="plone.app.vocabularies.Catalog",
+            source=CatalogSource(portal_type='Organization'),
             required=False,
             )
 
@@ -100,7 +70,8 @@ class IOrganization(model.Schema):
     classification = schema.Choice(
         title=_('Organization Classification'),
         required=False,
-        vocabulary=organization_categories,)
+        vocabulary='popolo.contenttypes.organizationcategories',
+        )
 
     founding_date = schema.Date(
         title=_('Date of Founding'),
