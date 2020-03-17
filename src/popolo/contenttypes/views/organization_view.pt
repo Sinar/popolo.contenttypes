@@ -66,6 +66,18 @@
         <h3>Notes</h3>
         <div tal:replace="structure view/w/notes/render" />
 
+        <hr />
+
+        <h5>Other Details</h5>
+
+        <ul tal:repeat="item context/listFolderContents">
+            <li>
+                <a href="tal:attributes href=item/absolute_url">
+                <span tal:replace="item/title"/></a> (<span
+                    tal:replace="item/portal_type" />)
+            </li>
+        </ul>
+
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
     </tal:main-macro>
