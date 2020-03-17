@@ -32,6 +32,8 @@ organization_categories = SimpleVocabulary(
                    title=_(u'State assembly')),
         SimpleTerm(value=_(u'orgCatStateGov'), title=_(u'State government')),
         SimpleTerm(value=_(u'orgCatDepartment'), title=_(u'Department')),
+        SimpleTerm(value=_(u'orgCatStateCorp'),
+                   title=_(u'State Corporation')),
         SimpleTerm(value=_(u'orgCatPrivateLimitedCo'),
                    title=_(u'Private limited company')),
         SimpleTerm(value=_(u'orgCatPublicCo'), title=_(u'Public company')),
