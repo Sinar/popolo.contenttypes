@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="popolo.contenttypes">
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <utility
+        component=".organizations_vocab.OrganizationsVocabFactory"
+        name="popolo.contenttypes.OrganizationsVocab"
+    />
+
+
+</configure>
