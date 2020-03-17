@@ -72,7 +72,8 @@
 
         <ul tal:repeat="item context/listFolderContents">
             <li>
-                <a href="tal:attributes href=item/absolute_url">
+                <a href=""
+                 tal:attributes="href item/getURL|item/absolute_url">
                 <span tal:replace="item/title"/></a> (<span
                     tal:replace="item/portal_type" />)
             </li>
