@@ -6,11 +6,15 @@ from plone.dexterity.content import Container
 from plone.supermodel import model
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
-# from zope import schema
+from zope import schema
 from zope.interface import implementer
+from collective import dexteritytextindexer
+from z3c.relationfield.schema import RelationChoice
+from plone.app.vocabularies.catalog import CatalogSource
+from plone.app.z3cform.widget import RelatedItemsFieldWidget
+from plone.autoform import directives
 
-
-# from popolo.contenttypes import _
+from popolo.contenttypes import _
 
 
 class IPost(model.Schema):
@@ -21,43 +25,72 @@ class IPost(model.Schema):
 
     # model.load('post.xml')
 
-    # directives.widget(level=RadioFieldWidget)
-    # level = schema.Choice(
-    #     title=_(u'Sponsoring Level'),
-    #     vocabulary=LevelVocabulary,
-    #     required=True
-    # )
+    dexteritytextindexer.searchable('label')
+    label = schema.TextLine(
+        title=_(u'Label'),
+        description=_(u"A describing the Post"),
+        required=True,
+        )
 
-    # text = RichText(
-    #     title=_(u'Text'),
-    #     required=False
-    # )
+    dexteritytextindexer.searchable('role')
+    role = schema.TextLine(
+        title=_(u'Role'),
+        description=_(u"THe function that the holder of the " +
+                      "post fulfills"),
+        required=True,)
 
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
+    # Organization
+    directives.widget('organization',
+                      RelatedItemsFieldWidget,
+                      pattern_options={
+                        'basePath': '/',
+                        'mode': 'auto',
+                        'favourites': [],
+                        }
+                      )
+    organization = RelationChoice(
+            title=u'Organization',
+            source=CatalogSource(portal_type='Organization'),
+            required=False,
+            )
 
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
+    start_date = schema.Date(
+        title=_(u'Start Date'),
+        description=_(u'Date this post was created'),
+        required=False,)
 
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
+    end_date = schema.Date(
+        title=_('End Date'),
+        description=_(u'Date which this post was eliminated'),
+        required=False,)
 
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
+    # Memberships implemented as view
+    # Links implemmented as content items
+    # Area implemented as content item
+    # Contact Details as content item
 
 
 @implementer(IPost)
 class Post(Container):
     """
     """
+
+    @property
+    def title(self):
+        ''' return label'''
+        return self.label
+
+    @title.setter
+    def title(self, value):
+        ''' we wont set a title here'''
+        pass
+
+    @property
+    def description(self):
+        ''' return role'''
+        return self.role
+
+    @description.setter
+    def description(self, value):
+        ''' we wont set a title here'''
+        pass
