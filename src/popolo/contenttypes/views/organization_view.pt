@@ -63,6 +63,57 @@
               </div>
             </div>
 
+
+        <h4>Posts</h4>
+        <dl tal:condition="view/posts"
+            tal:repeat="post view/posts">
+            <dt><a tal:content="post/title"
+                   tal:attributes="href post/absolute_url"></a></dt>
+            <dd tal:repeat="member post/members">
+                <a tal:content="member/person/to_object/title"
+                   tal:attributes="href
+                   member/person/to_object/absolute_url"></a> &mdash;
+               Start Date: <span tal:replace="member/start_date" />
+               <span tal:condition="not:member/start_date"
+                     class="discreet">Unknown</span>,&nbsp;
+               End Date:
+               <span tal:condition="not:member/end_date"
+                     class="discreet">Still holding position/Unknown</span>
+                    <span tal:replace="member/end_date" />
+           </dd>
+        </dl>
+
+        <h4>Memberships</h4>
+
+        <table class="table-striped" tal:condition="view/members">
+            <thead>
+            <tr>
+                <th>Role</th>
+                <th>Person</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr tal:repeat="member view/members">
+                <td ><a tal:content="member/role"
+                        tal:attributes="href member/absolute_url"></a></td>
+                <td>
+                    <a tal:content="member/person/to_object/name"
+                       tal:attributes="href
+                       member/person/to_object/absolute_url"></a>
+                </td>
+                <td tal:content="member/start_date"></td>
+                <td tal:content="member/end_date"></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+
+
+        
+
         <h3>Notes</h3>
         <div tal:replace="structure view/w/notes/render" />
 

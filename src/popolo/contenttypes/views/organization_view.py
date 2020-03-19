@@ -19,6 +19,8 @@ class OrganizationView(DefaultView,BrowserView):
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('organization_view.pt')
 
+    # TODO These are old functions, and could be rewritten better.
+
     def child_orgs(self):
         """
         Return back references from source object on specified attribute_name
@@ -31,7 +33,6 @@ class OrganizationView(DefaultView,BrowserView):
 
         result = []
 
-        # TODO getId without aq_inner
         for rel in catalog.findRelations(
             dict(to_id=intids.getId(aq_inner(source_object)),
                                     from_attribute=attribute_name)
@@ -41,5 +42,69 @@ class OrganizationView(DefaultView,BrowserView):
 
             if obj is not None and checkPermission('zope2.View', obj):
                 result.append(obj)
+
+        return result
+
+    def members(self):
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+        attribute_name = 'organization'
+
+        result = []
+
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                                    from_attribute=attribute_name)
+              ):
+           
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                if obj.portal_type == 'Membership' and obj.post is None:
+                    result.append(obj)
+
+        return result
+
+
+    def posts(self):
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+        attribute_name = 'organization'
+
+        result = []
+
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                                    from_attribute=attribute_name)
+              ):
+           
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                if obj.portal_type == 'Post':
+
+                    obj.members = []
+
+                    for membership in catalog.findRelations(
+                        dict(to_id=intids.getId(aq_inner(obj)),)
+                          ):
+                       
+                        member = intids.queryObject(membership.from_id)
+                        
+
+                        obj.members.append(member)
+                        
+                        
+                    result.append(obj)
 
         return result
