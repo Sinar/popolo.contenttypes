@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="post-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".post_view.PostView"
+    template="post_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="membership-view"
     for="popolo.contenttypes.content.membership.IMembership"
     class=".membership_view.MembershipView"
