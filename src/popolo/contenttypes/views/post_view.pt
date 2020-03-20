@@ -5,9 +5,109 @@
       i18n:domain="popolo.contenttypes"
       metal:use-macro="context/main_template/macros/master">
 <body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+
+            <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+                <h2 class="documentFirstHeading">
+                Post
+                </h2>
+            
+            <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+            <h3 tal:content="context/label"></h3>
+
+            <p class="documentDescription" tal:content="context/role"></p>
+
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+
+
+            <dl tal:condition="context/organization">
+                <dt>
+                Organization:
+                <a href="" tal:attributes="href
+                   context/organization/to_object/absolute_url"
+                   tal:content="context/organization/to_object/title">
+                </a>
+                <dd tal:content="context/organization/to_object/description"
+                    />
+                </dt>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt>
+                Start Date
+                </dt>
+                <dd tal:content="structure view/w/start_date/render"
+                    />
+                <dt>
+                End Date
+                </dt>
+                <dd tal:content="structure view/w/end_date/render"
+                    />
+            </dl>
+
+            <h3>Memberships</h3>
+            <p>Persons who are known to hold or have held this
+                Post</p>
+
+            <div tal:repeat="member view/memberships">
+                <h4>
+                <a tal:condition="member/person" 
+                 tal:content="member/person/to_object/title"
+               tal:attributes="href
+               member/person/to_object/absolute_url" />
+                </h4>
+                <div class="row">
+                    <div class="col-md-2">
+                      <img tal:condition="member/person/to_object/image"
+                           tal:attributes="src string:
+                           ${member/person/to_object/absolute_url}/@@images/image/tile"
+                           />
+                    </div>
+                    <div class="col-md-8">
+                        <small class="discreet">
+                        Start Date: <span
+                                        tal:replace="member/start_date"
+                                        />
+                       &mdash; End Date: <span
+                                                 tal:replace="member/end_date"
+                                                 />
+                        </small>
+
+                        <br />
+
+                        <small
+                            tal:content="member/person/to_object/description"
+                            />
+                        <br /> 
+                        <small class="discreet">
+                           <a tal:attributes="href member/absolute_url">
+                           Membership details ...
+                           </a>
+                       </small>
+
+                   </div>
+                </div>
+
+
+            </div>
+
+            <h3>Other Details</h3>
+
+            <ul tal:repeat="item context/listFolderContents">
+                <li>
+                    <a href=""
+                     tal:attributes="href item/getURL|item/absolute_url">
+                    <span tal:replace="item/title"/></a> (<span
+                        tal:replace="item/portal_type" />)
+                </li>
+            </ul>
+
+            <div tal:replace="structure provider:plone.belowcontentbody" />
+
+        </tal:main-macro>
+    </metal:main>
 </body>
 </html>

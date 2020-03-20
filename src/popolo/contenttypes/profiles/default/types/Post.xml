@@ -66,10 +66,11 @@
 
   <!-- View information -->
   <property name="add_view_expr">string:${folder_url}/++add++Post</property>
-  <property name="default_view">view</property>
+  <property name="default_view">post-view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
   <property name="view_methods">
+    <element value="post-view"/>
     <element value="view"/>
   </property>
 
