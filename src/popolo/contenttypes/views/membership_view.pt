@@ -5,9 +5,88 @@
       i18n:domain="popolo.contenttypes"
       metal:use-macro="context/main_template/macros/master">
 <body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+
+            <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+                <h2 class="documentFirstHeading">
+                    Membership
+                </h2>
+            
+            <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+            <h3 tal:content="context/label"></h3>
+
+            <p class="documentDescription" tal:content="context/role"></p>
+
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+
+
+            <dl tal:condition="context/person">
+                <dt>
+                Person: 
+                <a href="" tal:attributes="href
+                   context/person/to_object/absolute_url"
+                   tal:content="context/person/to_object/title">
+                </a>
+                </dt>
+                <dd tal:content="context/person/to_object/description"
+                    />
+            </dl>
+
+            <dl tal:condition="context/organization">
+                <dt>
+                Organization:
+                <a href="" tal:attributes="href
+                   context/organization/to_object/absolute_url"
+                   tal:content="context/organization/to_object/title">
+                </a>
+                <dd tal:content="context/organization/to_object/description"
+                    />
+                </dt>
+            </dl>
+
+            <dl tal:condition="context/post">
+                <dt>
+                Post:
+                <a href="" tal:attributes="href
+                   context/post/to_object/absolute_url"
+                   tal:content="context/post/to_object/title">
+                </a>
+                <dd tal:content="context/post/to_object/description"
+                    />
+                </dt>
+            </dl>
+
+
+            <dl class="dl-horizontal">
+                <dt>
+                Start Date
+                </dt>
+                <dd tal:content="structure view/w/start_date/render"
+                    />
+                <dt>
+                End Date
+                </dt>
+                <dd tal:content="structure view/w/end_date/render"
+                    />
+            </dl>
+
+            <h3>Other Details</h3>
+
+            <ul tal:repeat="item context/listFolderContents">
+                <li>
+                    <a href=""
+                     tal:attributes="href item/getURL|item/absolute_url">
+                    <span tal:replace="item/title"/></a> (<span
+                        tal:replace="item/portal_type" />)
+                </li>
+            </ul>
+
+            <div tal:replace="structure provider:plone.belowcontentbody" />
+
+        </tal:main-macro>
+    </metal:main>
 </body>
 </html>

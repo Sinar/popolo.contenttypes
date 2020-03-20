@@ -8,7 +8,7 @@
 
   <browser:page
     name="membership-view"
-    for="Products.CMFCore.interfaces.IFolderish"
+    for="popolo.contenttypes.content.membership.IMembership"
     class=".membership_view.MembershipView"
     template="membership_view.pt"
     permission="zope2.View"
