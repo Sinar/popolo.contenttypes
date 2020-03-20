@@ -66,7 +66,9 @@ class OrganizationView(DefaultView,BrowserView):
 
             if obj is not None and checkPermission('zope2.View', obj):
                 if obj.portal_type == 'Membership' and obj.post is None:
-                    result.append(obj)
+                    # check if person has membership
+                    if obj.person:
+                        result.append(obj)
 
         return result
 
@@ -98,13 +100,11 @@ class OrganizationView(DefaultView,BrowserView):
                     for membership in catalog.findRelations(
                         dict(to_id=intids.getId(aq_inner(obj)),)
                           ):
-                       
                         member = intids.queryObject(membership.from_id)
-                        
+                        # check for person
+                        if member.person:
+                            obj.members.append(member)
 
-                        obj.members.append(member)
-                        
-                        
                     result.append(obj)
 
         return result
