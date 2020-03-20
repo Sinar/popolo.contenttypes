@@ -5,9 +5,104 @@
       i18n:domain="popolo.contenttypes"
       metal:use-macro="context/main_template/macros/master">
 <body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
+
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+
+            <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+            <h1 class="documentFirstHeading" tal:content="context/title" />
+
+            <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+
+            <div class="row">
+                <div class="col-md-3">
+                      <img tal:condition="context/image" tal:attributes="src string: ${context/absolute_url}/@@images/image/thumb"
+                       class="img-thumbnail">
+               </div>
+                <div class="col-md-7">
+                       <p tal:content="context/description" />
+
+                       <dl class="dl-horizontal">
+                          <dt>Gender</dt>
+                          <dd tal:content="structure view/w/gender/render"></dd>
+                          <dt>Birthdate</dt>
+                          <dd tal:content="structure view/w/birth_date/render"></dd>
+                          <dd class="discreet" tal:condition="not: context/birth_date">Unkown</dd>
+                          <dt tal:condition="context/death_date">Birthdate</dt>
+                          <dd tal:condition="context/death_date" tal:content="structure view/w/birth_date/render"></dd>
+                      </dl>
+ 
+                </div>
+            </div>
+
+            <h3>Membership and Posts</h3>
+
+            <table class="table-striped" tal:condition="view/memberships">
+                <thead>
+                <tr>
+                    <th>Post</th>
+                    <th>Label</th>
+                    <th>Organization</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr tal:repeat="member view/memberships">
+                    <td>
+                        <a tal:condition="member/post"
+                           tal:attributes="href
+                           member/post/to_object/absolute_url"
+                           tal:content="member/post/to_object/title">
+                        </a>
+                           
+                    </td>
+                    <td>
+                        <a tal:content="member/title" tal:attributes="href
+                        member/absolute_url"></a>
+                    </td>
+                    <td>
+                        <a tal:condition="member/organization"
+                           tal:attributes="href
+                           member/organization/to_object/absolute_url"
+                           tal:content="member/organization/to_object/title">
+                        </a>
+                    </td>
+                    <td tal:content="member/start_date"></td>
+                    <td tal:content="member/end_date"></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+
+
+            <h3>Biography</h3>
+            <div tal:replace="structure view/w/biography/render" />
+
+            <h3>Notes</h3>
+            <div tal:replace="structure view/w/notes/render" />
+
+            <hr />
+
+            <h3>Other Details</h3>
+
+            <ul tal:repeat="item context/listFolderContents">
+                <li>
+                    <a href=""
+                     tal:attributes="href item/getURL|item/absolute_url">
+                    <span tal:replace="item/title"/></a> (<span
+                        tal:replace="item/portal_type" />)
+                </li>
+            </ul>
+
+            <div tal:replace="structure provider:plone.belowcontentbody" />
+
+        </tal:main-macro>
+    </metal:main>
 </body>
 </html>

@@ -8,7 +8,7 @@
 
   <browser:page
     name="person-view"
-    for="Products.CMFCore.interfaces.IFolderish"
+    for="popolo.contenttypes.content.person.IPerson"
     class=".person_view.PersonView"
     template="person_view.pt"
     permission="zope2.View"
