@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="person-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".person_view.PersonView"
+    template="person_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="organization-view"
     for="popolo.contenttypes.content.organization.IOrganization"
     class=".organization_view.OrganizationView"
