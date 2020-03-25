@@ -5,9 +5,37 @@
       i18n:domain="popolo.contenttypes"
       metal:use-macro="context/main_template/macros/master">
 <body>
-  <metal:block fill-slot="content-core">
-      <h2 i18n:translate="">Sample View</h2>
-      <p tal:content="view/msg">this gets replaced</p>
-  </metal:block>
+    <metal:main fill-slot="main">
+        <tal:main-macro metal:define-macro="main">
+
+            <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+                <h2 class="documentFirstHeading">
+                Source
+                </h2>
+            
+            <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+            <h3 tal:content="context/title"></h3>
+
+            <p class="documentDescription" tal:content="context/description"></p>
+
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+
+            <p>
+            <span tal:replace="context/author"/>,&nbsp;
+            (<span
+                 tal:replace="python:context.toLocalizedTime(context.effective())"
+                 />).&nbsp;
+            <span tal:replace="context/title"/>.&nbsp;
+                Retrieved <span
+                              tal:replace="python:context.toLocalizedTime(context.modified())"/>,&nbsp;
+                              from <span tal:replace="structure
+                              view/w/url/render" />
+
+            <div tal:replace="structure provider:plone.belowcontentbody" />
+
+        </tal:main-macro>
+    </metal:main>
 </body>
 </html>

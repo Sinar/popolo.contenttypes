@@ -2,9 +2,9 @@
 
 from popolo.contenttypes import _
 from plone.dexterity.browser.view import DefaultView
+from zope.component import getMultiAdapter
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
 
 class SourceView(DefaultView):
     # If you want to define a template here, please remove the template from

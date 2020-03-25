@@ -33,13 +33,13 @@
     -->
     <!-- <element value="plone.namefromtitle"/> -->
     <element value="plone.allowdiscussion"/>
-    <element value="plone.dublincore" />
+   <!-- <element value="plone.dublincore" / -->>
     <element value="plone.excludefromnavigation"/>
     <element value="plone.shortname"/>
     <element value="plone.namefromtitle"/>
     <!-- <element value="plone.ownership"/> -->
-    <!-- <element value="plone.publication"/> -->
-    <!-- <element value="plone.categorization"/> -->
+    <element value="plone.publication"/>
+    <element value="plone.categorization"/>
     <!-- element value="plone.basic"/> -->
     <!-- <element value="plone.locking" /> -->
     <!-- <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />-->
@@ -49,14 +49,16 @@
     <!--<element value="plone.tableofcontents"/>-->
     <element value="plone.versioning" />
     <!--<element value="plone.translatable" />-->
+    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
   </property>
 
   <!-- View information -->
   <property name="add_view_expr">string:${folder_url}/++add++Source</property>
-  <property name="default_view">view</property>
+  <property name="default_view">source-view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
   <property name="view_methods">
+    <element value="source-view"/>
     <element value="view"/>
   </property>
 
