@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="source-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".source_view.SourceView"
+    template="source_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="post-view"
     for="popolo.contenttypes.content.post.IPost"
     class=".post_view.PostView"
