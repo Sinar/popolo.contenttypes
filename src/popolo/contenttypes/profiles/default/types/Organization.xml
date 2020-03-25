@@ -76,6 +76,7 @@
     <element value="view"/>
   </property>
 
+
   <!-- Method aliases -->
   <alias
       from="(Default)"
