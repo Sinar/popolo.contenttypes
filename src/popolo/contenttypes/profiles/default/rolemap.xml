@@ -11,6 +11,14 @@
     </permission>
 
 
+    <permission name="popolo.contenttypes: Add Area" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Owner"/>
+      <role name="Contributor"/>
+    </permission>
+
+
     <permission name="popolo.contenttypes: Add Identifier" acquire="True">
       <role name="Manager"/>
       <role name="Site Administrator"/>
