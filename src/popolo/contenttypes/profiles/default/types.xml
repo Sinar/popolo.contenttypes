@@ -10,4 +10,5 @@
   <object meta_type="Dexterity FTI" name="Other Name"/>
   <object meta_type="Dexterity FTI" name="Identifier"/>
   <object meta_type="Dexterity FTI" name="Source"/>
+  <object meta_type="Dexterity FTI" name="Area"/>
 </object>

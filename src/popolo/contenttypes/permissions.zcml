@@ -7,6 +7,11 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddArea"
+        title="popolo.contenttypes: Add Area"
+    />
+
+    <permission
         id="popolo.contenttypes.AddSource"
         title="popolo.contenttypes: Add Source"
     />
