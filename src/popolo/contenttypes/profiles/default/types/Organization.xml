@@ -27,6 +27,7 @@
     <element value="Contact Detail" />
     <element value="Link" />
     <element value="File" />
+    <element value="Source" />
       <!--
     <element value="Document" />
       -->
