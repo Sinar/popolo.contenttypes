@@ -50,3 +50,27 @@ class PersonView(DefaultView):
                     result.append(obj)
 
         return result
+
+    def implicated(self):
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+        attribute_name = 'implicated'
+
+        result = []
+
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                                    from_attribute=attribute_name)
+              ):
+           
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                result.append(obj)
+
+        return result

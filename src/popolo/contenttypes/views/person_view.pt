@@ -79,6 +79,23 @@
                 <tfoot>
                 </tfoot>
             </table>
+            
+            <h3>Implicated in following issues</h3>
+
+            <ul>
+                <li tal:repeat="issue view/implicated">
+                    <dl>
+                        <dt><a tal:content="issue/title"
+                               tal:attributes="href issue/absolute_url"
+                               />
+                        </dt>
+                        <dd tal:content="issue/description">
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+
+
 
 
             <h3>Biography</h3>
