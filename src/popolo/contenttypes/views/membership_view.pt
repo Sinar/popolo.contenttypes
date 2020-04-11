@@ -91,9 +91,9 @@
                    tal:content="context/on_behalf_of/to_object/title">
                 </a>
                 <dd>
-						  <img tal:condition="context/organization/to_object/image"
+						  <img tal:condition="context/on_behalf_of/to_object/image"
 							   tal:attributes="src string:
-							   $context/organization/to_object/absolute_url}/@@images/image/thumb"
+                               ${context/on_behalf_of/to_object/absolute_url}/@@images/image/thumb"
 							   />
                             <span
                             tal:content="context/on_behalf_of/to_object/description"
