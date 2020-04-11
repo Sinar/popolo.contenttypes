@@ -90,16 +90,24 @@
                    context/on_behalf_of/to_object/absolute_url"
                    tal:content="context/on_behalf_of/to_object/title">
                 </a>
-                <dd>
+                </dt>
+                <dd> 
+					<div class="row">
+						<div class="col-md-3">
 						  <img tal:condition="context/on_behalf_of/to_object/image"
 							   tal:attributes="src string:
-                               ${context/on_behalf_of/to_object/absolute_url}/@@images/image/thumb"
+							   ${context/on_behalf_of/to_object/absolute_url}/@@images/image/thumb"
 							   />
-                            <span
-                            tal:content="context/on_behalf_of/to_object/description"
-                                />
-                </dt>
+    					</div>
+                        <div class="col-md-5">
+		    				<span tal:content="context/on_behalf_of/to_object/description"
+			    				/>
+                        </div>
+                    </div>
+                </dd>
             </dl>
+
+
 
             <dl class="dl-horizontal">
                 <dt>
