@@ -56,12 +56,18 @@
                 </a>
                 </dt>
                 <dd> 
-                  <img tal:condition="context/organization/to_object/image"
-                       tal:attributes="src string:
-                       ${member/organization/to_object/absolute_url}/@@images/image/icon"
-                       />
-                    <span tal:content="context/organization/to_object/description"
-                    />
+					<div class="row">
+						<div class="col-md-3">
+						  <img tal:condition="context/organization/to_object/image"
+							   tal:attributes="src string:
+							   ${member/organization/to_object/absolute_url}/@@images/image/icon"
+							   />
+    					</div>
+                        <div class="col-md-5">
+		    				<span tal:content="context/organization/to_object/description"
+			    				/>
+                        </div>
+                    </div>
                 </dd>
             </dl>
 
@@ -79,13 +85,19 @@
 
             <dl tal:condition="context/on_behalf_of">
                 <dt>
-                Post:
+                On Behalf Of:
                 <a href="" tal:attributes="href
                    context/on_behalf_of/to_object/absolute_url"
                    tal:content="context/on_behalf_of/to_object/title">
                 </a>
-                <dd tal:content="context/on_behalf_of/to_object/description"
-                    />
+                <dd>
+						  <img tal:condition="context/organization/to_object/image"
+							   tal:attributes="src string:
+							   ${member/organization/to_object/absolute_url}/@@images/image/icon"
+							   />
+                            <span
+                            tal:content="context/on_behalf_of/to_object/description"
+                                />
                 </dt>
             </dl>
 

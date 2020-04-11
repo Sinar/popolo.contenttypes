@@ -48,6 +48,7 @@
                     <th>Label</th>
                     <th>Role</th>
                     <th>Organization</th>
+                    <th>On Behalf Of</th>
                     <th>Start Date</th>
                     <th>End Date</th>
                 </tr>
@@ -75,6 +76,13 @@
                            tal:attributes="href
                            member/organization/to_object/absolute_url"
                            tal:content="member/organization/to_object/title">
+                        </a>
+                    </td>
+                    <td>
+                        <a tal:condition="member/on_behalf_of"
+                           tal:attributes="href
+                           member/on_behalf_of/to_object/absolute_url"
+                           tal:content="member/on_behalf_of/to_object/title">
                         </a>
                     </td>
                     <td tal:content="member/start_date"></td>
