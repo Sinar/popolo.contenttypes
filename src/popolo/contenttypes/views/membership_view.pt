@@ -93,7 +93,7 @@
                 <dd>
 						  <img tal:condition="context/organization/to_object/image"
 							   tal:attributes="src string:
-							   ${member/organization/to_object/absolute_url}/@@images/image/thumb"
+							   $context/organization/to_object/absolute_url}/@@images/image/thumb"
 							   />
                             <span
                             tal:content="context/on_behalf_of/to_object/description"
