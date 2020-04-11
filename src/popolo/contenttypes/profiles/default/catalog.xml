@@ -7,6 +7,14 @@
   <index name="end_date" meta_type="DateIndex">
       <indexed_attr value="end_date" />
   </index>
+  <index name="founding_date" meta_type="DateIndex">
+      <indexed_attr value="founding_date" />
+  </index>
+  <index name="dissolution_date" meta_type="DateIndex">
+      <indexed_attr value="dissolution_date" />
+  </index>
   <column value="start_date" />
   <column value="end_date" />
+  <column value="founding_date" />
+  <column value="dissolution_date" />
 </object>
