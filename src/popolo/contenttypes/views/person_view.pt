@@ -46,6 +46,7 @@
                 <tr>
                     <th>Post</th>
                     <th>Label</th>
+                    <th>Role</th>
                     <th>Organization</th>
                     <th>Start Date</th>
                     <th>End Date</th>
@@ -63,6 +64,10 @@
                     </td>
                     <td>
                         <a tal:content="member/title" tal:attributes="href
+                        member/absolute_url"></a>
+                    </td>
+                    <td>
+                        <a tal:content="member/role" tal:attributes="href
                         member/absolute_url"></a>
                     </td>
                     <td>
