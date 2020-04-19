@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="popolo.contenttypes.AddRelationship"
+        title="popolo.contenttypes: Add Relationship"
+    />
+
+
+    <permission
         id="popolo.contenttypes.AddArea"
         title="popolo.contenttypes: Add Area"
     />
