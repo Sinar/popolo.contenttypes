@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from plone.app.textfield import RichText
-from plone.autoform import directives
+# from plone.autoform import directives
 from plone.dexterity.content import Container
 # from plone.namedfile import field as namedimage
 from plone.namedfile import field
@@ -16,6 +16,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 from collective import dexteritytextindexer
 
 from popolo.contenttypes import _
+
 
 class IPerson(model.Schema):
     """ Marker interface and Dexterity Python Schema for Person
