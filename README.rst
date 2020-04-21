@@ -6,33 +6,35 @@
 popolo.contenttypes
 ===================
 
-Tell me what your product does
+Plone add-on implementation of Popolo-spec
 
 Features
 --------
 
-- Can be bullet points
+- Persons 
+- Organizations
+- Memberships
+- Posts
+- Contact Details
+- Source
+
+Extension:
+
+- Relationship
 
 
 Examples
 --------
 
 This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+- https://politikus.sinarproject.org
+- https://hivos.sinarproject.org
 
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+TODO
 
 
 Installation
@@ -62,11 +64,22 @@ Contribute
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, please let us know by filing an issue on
+Github.
 
 
 License
 -------
 
 The project is licensed under the GPLv2.
+
+
+Credits
+-------
+
+This project is supported by Hivos East Africa, Nation Media Group.
+Indirectly via IDRC, Alternatives, (Montreal) and the kind individual
+contributors to Sinar Project.
+
+Also this project would not be possible without the developers of
+Popolo-spec Open Legislative Open Data Standard.
