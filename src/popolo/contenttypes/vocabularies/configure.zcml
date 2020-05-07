@@ -5,6 +5,12 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <utility
+        component=".relationshiptypes.RelationshiptypesFactory"
+        name="popolo.contenttypes.Relationshiptypes"
+    />
+
+
+    <utility
         component=".geoname_featurecodes_vocab.GeonameFeaturecodesVocabFactory"
         name="popolo.contenttypes.geonamefeaturecodes"
     />
