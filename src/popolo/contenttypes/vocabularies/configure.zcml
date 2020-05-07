@@ -6,7 +6,7 @@
 
     <utility
         component=".relationshiptypes.RelationshiptypesFactory"
-        name="popolo.contenttypes.Relationshiptypes"
+        name="popolo.contenttypes.relationshiptypes"
     />
 
 

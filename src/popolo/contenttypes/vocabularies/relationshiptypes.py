@@ -17,36 +17,36 @@ class VocabItem(object):
 
 
 @implementer(IVocabularyFactory)
-class Relationshiptypes(object):
+class relationshiptypes(object):
     """
     """
 
     def __call__(self, context):
-        # Just an example list of content for our vocabulary,
-        # this can be any static or dynamic data, a catalog result for example.
-        items = [
-            VocabItem(u'sony-a7r-iii', _(u'Sony Aplha 7R III')),
-            VocabItem(u'canon-5d-iv', _(u'Canon 5D IV')),
-        ]
 
-        # Fix context if you are using the vocabulary in DataGridField.
-        # See https://github.com/collective/collective.z3cform.datagridfield/issues/31:  # NOQA: 501
-        if not IDexterityContent.providedBy(context):
-            req = getRequest()
-            context = req.PARENTS[0]
-
-        # create a list of SimpleTerm items:
-        terms = []
-        for item in items:
-            terms.append(
-                SimpleTerm(
-                    value=item.token,
-                    token=str(item.token),
-                    title=item.value,
-                )
+        relationship_types = SimpleVocabulary(
+            [
+                SimpleTerm(value=_(u'spouse'),
+                           title=_(u'Spouse')),
+                SimpleTerm(value=_(u'parent'),
+                           title=_(u'Parent')),
+                SimpleTerm(value=_(u'sibling'),
+                           title=_(u'Sibling')),
+                SimpleTerm(value=_(u'business_partner'),
+                           title=_(u'Business Partner')),
+                SimpleTerm(value=_(u'associate'),
+                           title=_(u'Associate')),
+                SimpleTerm(value=_(u'romantic'),
+                           title=_(u'Romantic Partner')),
+                SimpleTerm(value=_(u'employee'),
+                           title=_(u'Employee')),
+                SimpleTerm(value=_(u'freelancer'),
+                           title=_(u'Freelancer')),
+                SimpleTerm(value=_(u'subordinate'),
+                           title=_(u'Subordinate')),
+            ]
             )
-        # Create a SimpleVocabulary from the terms list and return it:
-        return SimpleVocabulary(terms)
+
+        return relationship_types
 
 
-RelationshiptypesFactory = Relationshiptypes()
+RelationshiptypesFactory = relationshiptypes()
