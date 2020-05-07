@@ -112,6 +112,7 @@
                            ${member/person/to_object/absolute_url}/@@images/image/icon"
                            />
                     <a tal:content="member/person/to_object/name"
+                       tal:on-error="nothing"
                        tal:attributes="href
                        member/person/to_object/absolute_url"></a>
                 </td>
