@@ -7,6 +7,14 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="relationship-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".relationship_view.RelationshipView"
+    template="relationship_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="source-view"
     for="popolo.contenttypes.content.source.ISource"
     class=".source_view.SourceView"
