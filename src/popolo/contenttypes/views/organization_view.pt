@@ -107,6 +107,7 @@
                 </td>
                 <td>
                       <img tal:condition="member/person/to_object/image"
+                           tal:on-error="nothing"
                            tal:attributes="src string:
                            ${member/person/to_object/absolute_url}/@@images/image/icon"
                            />
