@@ -26,8 +26,9 @@
             <dl tal:condition="context/person">
                 <dt>
                 Person: 
-                <a tal:on-error="nothing"
-                   href="" tal:attributes="href
+                <a href="" 
+                   tal:on-error="nothing"
+                   tal:attributes="href
                    context/person/to_object/absolute_url"
                    tal:content="context/person/to_object/title">
                 </a>
