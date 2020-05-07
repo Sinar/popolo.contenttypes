@@ -55,7 +55,7 @@ class IRelationship(model.Schema):
 
 
     # Subject
-    directives.widget('subject',
+    directives.widget('relationship_subject',
                       RelatedItemsFieldWidget,
                       pattern_options={
                         'basePath': '/',
@@ -63,8 +63,7 @@ class IRelationship(model.Schema):
                         'favourites': [],
                         }
                       )
-
-    subject = RelationChoice(
+    relationship_subject = RelationChoice(
             title=u'Subject',
             description=_(u'''
                 The subject of the relation.
@@ -74,7 +73,7 @@ class IRelationship(model.Schema):
             )
 
     # Object
-    directives.widget('object',
+    directives.widget('relationship_object',
                       RelatedItemsFieldWidget,
                       pattern_options={
                         'basePath': '/',
@@ -83,7 +82,7 @@ class IRelationship(model.Schema):
                         }
                       )
 
-    object = RelationChoice(
+    relationship_object = RelationChoice(
             title=u'Object',
             description=_(u'''
                 The object of the relation.
