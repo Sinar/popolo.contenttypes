@@ -44,7 +44,10 @@
                            />
                     </div>
                     <div class="col-md-5">
-                    <span tal:content="context/person/to_object/description"
+                    <span
+                         tal:on-error="nothing"
+                         tal:condition="context/person"
+                         tal:content="context/person/to_object/description"
                     />
                     </div>
                   </div>

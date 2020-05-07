@@ -45,6 +45,15 @@ class IRelationship(model.Schema):
         required=False,
         )
 
+    # Relationship Type
+
+    relationship_type = schema.Choice(
+        title=_('Relationship type'),
+        required=False,
+        vocabulary='popolo.contenttypes.relationshiptypes',
+        )
+
+
     # Subject
     directives.widget('subject',
                       RelatedItemsFieldWidget,
