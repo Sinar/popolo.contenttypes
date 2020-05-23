@@ -416,7 +416,7 @@
 
             <hr />
 
-            <h3>Other Details</h3>
+            <h4>Item listing</h4>
 
             <ul tal:repeat="item context/listFolderContents">
                 <li>
