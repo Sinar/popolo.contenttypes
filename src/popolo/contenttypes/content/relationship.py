@@ -53,7 +53,6 @@ class IRelationship(model.Schema):
         vocabulary='popolo.contenttypes.relationshiptypes',
         )
 
-
     # Subject
     directives.widget('relationship_subject',
                       RelatedItemsFieldWidget,

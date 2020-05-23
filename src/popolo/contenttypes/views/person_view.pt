@@ -39,7 +39,13 @@
                 </div>
             </div>
 
-            <h3>Membership and Posts</h3>
+            <hr />
+
+             <h4>Membership and Posts</h4>
+
+             <p tal:condition="not: view/memberships">
+             No known memberships
+             </p>
 
             <table class="table-striped" tal:condition="view/memberships">
                 <thead>
@@ -93,10 +99,319 @@
                 </tfoot>
             </table>
 
-            <h3>Biography</h3>
+            <div class="row">
+
+            <div class="col-md-5">
+
+                <h4>Family Relationships</h4>
+
+                <! -- Spouse -->
+
+                <ul tal:repeat="relationship view/relationships_subject">
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'spouse'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+
+                            Spouse
+                        </a>
+                        of
+                        <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_object/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_object/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                    </li>
+                </ul>
+
+                <ul tal:repeat="relationship view/relationships_object">
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'spouse'">
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                        <span tal:replace="python:
+                                           view.relationship_title('spouse')" />
+                        </a>
+                              of
+
+
+                        <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_subject/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_subject/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                    </li>
+                </ul>
+
+
+                <ul tal:repeat="relationship view/relationships_subject">
+                    <!-- Parent -->
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'parent'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                        <span tal:replace="python:
+                                           view.relationship_title('parent')" />
+                        </a>
+                              of
+
+
+                        <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_object/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_object/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                    </li>
+                </ul>
+
+                <ul tal:repeat="relationship view/relationships_object">
+
+                    <!-- Child  -->
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'parent'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Child
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_subject/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_subject/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                
+                <h4>Business and other Relationships</h4>
+
+                <!-- Business associate -->
+
+                <ul tal:repeat="relationship view/relationships_subject">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'associate'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Associate
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_object/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_object/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                        <p class="discreet"
+                           tal:content="relationship/description"></p>
+                    </li>
+                </ul>
+
+                <ul tal:repeat="relationship view/relationships_object">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'associate'">
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Associate
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_subject/to_object/title"
+                                            />
+                        </a>
+
+                       <img
+                           tal:condition="relationship/relationship_subject/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                       <p class="discreet"
+                           tal:content="relationship/description"></p>
+
+                    </li>
+                </ul>
+
+                <!-- Superior and Subordinate -->
+
+                <ul tal:repeat="relationship view/relationships_subject">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'subordinate'">
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Subordinate
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_object/to_object/title"
+                                            />
+                        </a>
+                       <img
+                           tal:condition="relationship/relationship_object/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                        <p class="discreet"
+                           tal:content="relationship/description"></p>
+
+
+                    </li>
+                </ul>
+
+
+                <ul tal:repeat="relationship view/relationships_object">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'subordinate'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Superior
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_subject/to_object/title"
+                                            />
+                        </a>
+                       <img
+                           tal:condition="relationship/relationship_subject/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                        <p class="discreet"
+                           tal:content="relationship/description"></p>
+
+
+                    </li>
+                </ul>
+
+                <!-- Employer and Employee -->
+
+                <ul tal:repeat="relationship view/relationships_subject">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'employer'">
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Employer
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_object/to_object/title"
+                                            />
+                        </a>
+                       <img
+                           tal:condition="relationship/relationship_object/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                        <p class="discreet"
+                           tal:content="relationship/description"></p>
+
+
+                    </li>
+                </ul>
+
+
+                <ul tal:repeat="relationship view/relationships_object">
+
+                    <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'employer'">
+
+                        <a tal:attributes="href
+                                            relationship/absolute_url">
+                            Employee
+                        </a>
+                              of
+
+                        <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                        <span
+                            tal:replace="relationship/relationship_subject/to_object/title"
+                                            />
+                        </a>
+                       <img
+                           tal:condition="relationship/relationship_subject/to_object/image" 
+                            tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon"
+                       class="img-thumbnail">
+                        <p class="discreet"
+                           tal:content="relationship/description"></p>
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+
+
+            <h4>Biography</h4>
             <div tal:replace="structure view/w/biography/render" />
 
-            <h3>Notes</h3>
+            <h4>Notes</h4>
             <div tal:replace="structure view/w/notes/render" />
 
             <hr />

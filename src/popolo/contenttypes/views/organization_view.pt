@@ -136,6 +136,41 @@
             </tfoot>
         </table>
 
+        <h4>Known employees</h4>
+
+
+        <!-- Employer and Employee -->
+
+        <ul tal:repeat="relationship view/relationships_subject">
+
+            <li tal:condition="python:
+                               relationship.relationship_type ==
+                               'employer'">
+                <a tal:attributes="href
+                                    relationship/absolute_url">
+                   Employer
+                </a>
+                      of
+
+                <a tal:attributes="href
+                                    relationship/relationship_object/to_object/absolute_url">
+                <span
+                    tal:replace="relationship/relationship_object/to_object/title"
+                                    />
+                </a>
+               <img
+                   tal:condition="relationship/relationship_object/to_object/image" 
+                    tal:attributes="src string:
+                    ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon"
+               class="img-thumbnail">
+                <p class="discreet"
+                   tal:content="relationship/description"></p>
+
+
+            </li>
+        </ul>
+
+
 
         
 

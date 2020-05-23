@@ -108,3 +108,65 @@ class OrganizationView(DefaultView,BrowserView):
                     result.append(obj)
 
         return result
+
+    def relationships_subject(self):
+        # Get relationships where person or organization is the subject
+
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+
+        result = []
+
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                 from_attribute='relationship_subject')
+              ):
+
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                result.append(obj)
+
+        return result
+
+    def relationships_object(self):
+        # Get relationships where person or organization is the object
+
+        """
+        Return back references from source object on specified attribute_name
+        """
+        catalog = getUtility(ICatalog)
+        intids = getUtility(IIntIds)
+
+        source_object = self.context
+
+        result = []
+
+        for rel in catalog.findRelations(
+            dict(to_id=intids.getId(aq_inner(source_object)),
+                 from_attribute='relationship_object')
+              ):
+
+            obj = intids.queryObject(rel.from_id)
+
+            if obj is not None and checkPermission('zope2.View', obj):
+                result.append(obj)
+
+        return result
+
+
+    def relationship_title(self, value):
+
+        factory = getUtility(IVocabularyFactory,
+                             'popolo.contenttypes.relationshiptypes')
+
+        vocabulary = factory(self)
+
+        term = vocabulary.getTerm(value)
+
+        return term.title

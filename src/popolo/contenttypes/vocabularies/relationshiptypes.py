@@ -37,10 +37,8 @@ class relationshiptypes(object):
                            title=_(u'Romantic Partner')),
                 SimpleTerm(value=_(u'employer'),
                            title=_(u'Employer')),
-                SimpleTerm(value=_(u'freelancer'),
-                           title=_(u'Freelancer')),
-                SimpleTerm(value=_(u'superior'),
-                           title=_(u'Superior')),
+                SimpleTerm(value=_(u'subordinate'),
+                           title=_(u'Subordinate')),
             ]
             )
 
