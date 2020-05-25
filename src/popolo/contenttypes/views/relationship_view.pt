@@ -96,7 +96,7 @@
             </dl>
 
             <h3>Notes</h3>
-            <p tal:content="context/notes" />
+            <div tal:replace="structure view/w/notes/render" />
 
             <h3>Other Details</h3>
 
