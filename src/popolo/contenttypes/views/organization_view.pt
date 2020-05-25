@@ -63,6 +63,7 @@
               </div>
             </div>
 
+        <hr />
 
         <h4>Posts</h4>
         <dl tal:condition="view/posts"
@@ -170,16 +171,14 @@
             </li>
         </ul>
 
+        <hr />
 
-
-        
-
-        <h3>Notes</h3>
+        <h4>Notes</h4>
         <div tal:replace="structure view/w/notes/render" />
 
         <hr />
 
-        <h5>Other Details</h5>
+        <h4>Subitems</h4>
 
         <ul tal:repeat="item context/listFolderContents">
             <li>

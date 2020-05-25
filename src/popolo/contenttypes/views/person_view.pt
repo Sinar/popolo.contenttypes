@@ -101,6 +101,8 @@
 
             <div class="row">
 
+            <hr />
+
             <div class="col-md-5">
 
                 <h4>Family Relationships</h4>
@@ -407,16 +409,20 @@
             </div>
             </div>
 
+            <hr />
+
 
             <h4>Biography</h4>
             <div tal:replace="structure view/w/biography/render" />
+
+            <hr />
 
             <h4>Notes</h4>
             <div tal:replace="structure view/w/notes/render" />
 
             <hr />
 
-            <h4>Item listing</h4>
+            <h4>Subitems</h4>
 
             <ul tal:repeat="item context/listFolderContents">
                 <li>

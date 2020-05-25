@@ -11,7 +11,6 @@ from zope.component import getUtility
 from zope.intid.interfaces import IIntIds
 from zope.security import checkPermission
 from zc.relation.interfaces import ICatalog
-from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
