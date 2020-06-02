@@ -31,8 +31,13 @@
                         <dd tal:content="structure
                         view/w/dissolution_date/render"></dd>
                         <dt>Incorporated in Jurisdiction</dt>
-                        <dd
+                        <dd><span
                             tal:content="python: view.incorporated(context.incorporatedInJurisdiction)">
+                            </span>
+                            <span class="warning"
+                                tal:condition=python:view.isOffshore(context.incorporatedInJurisdiction)">
+                                (Offshore Tax Haven)
+                            </span>
                         </dd>
                     </dl> 
               </div>

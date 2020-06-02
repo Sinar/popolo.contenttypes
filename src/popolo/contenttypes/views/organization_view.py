@@ -181,3 +181,23 @@ class OrganizationView(DefaultView,BrowserView):
         term = vocabulary.getTerm(value)
 
         return term.title
+
+    def isOffshore(self,value):
+
+        factory = getUtility(
+                        IVocabularyFactory,
+                        'collective.vocabularies.iso.countries')
+
+        vocabulary = factory(self)
+        term = vocabulary.getTerm(value)
+
+        for offshore in ['VG', 'KY', 'PA', 'BS']:
+            if term.value in offshore:
+                return True
+            else:
+                return False
+
+
+
+
+
