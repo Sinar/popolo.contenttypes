@@ -12,6 +12,7 @@ from zope.intid.interfaces import IIntIds
 from zope.security import checkPermission
 from zc.relation.interfaces import ICatalog
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from zope.schema.interfaces import IVocabularyFactory
 
 
 class OrganizationView(DefaultView,BrowserView):
@@ -167,6 +168,16 @@ class OrganizationView(DefaultView,BrowserView):
 
         vocabulary = factory(self)
 
+        term = vocabulary.getTerm(value)
+
+        return term.title
+
+    def incorporated(self,value):
+        factory = getUtility(
+                IVocabularyFactory,
+                'collective.vocabularies.iso.countries')
+
+        vocabulary = factory(self)
         term = vocabulary.getTerm(value)
 
         return term.title

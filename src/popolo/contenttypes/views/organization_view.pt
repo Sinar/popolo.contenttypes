@@ -30,6 +30,10 @@
                         <dt>Dissolution date</dt>
                         <dd tal:content="structure
                         view/w/dissolution_date/render"></dd>
+                        <dt>Incorporated in Jurisdiction</dt>
+                        <dd
+                            tal:content="python: view.incorporated(context.incorporatedInJurisdiction)">
+                        </dd>
                     </dl> 
               </div>
               <div class="col-md-3">
