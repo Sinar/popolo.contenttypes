@@ -29,6 +29,7 @@
     <element value="File" />
     <element value="Source" />
     <element value="Relationship" />
+    <element value="Ownership Control Statement" />
   </property>
   <!-- Schema, class and security -->
   <property name="add_permission">popolo.contenttypes.AddOrganization</property>

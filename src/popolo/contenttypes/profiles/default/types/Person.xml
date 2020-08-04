@@ -22,13 +22,12 @@
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
     <element value="Relationship" />
-        <element value="Source" />
-        <element value="Identifier" />
+    <element value="Source" />
+    <element value="Identifier" />
     <element value="Other Name" />
     <element value="Contact Detail" />
     <element value="Link" />
     <element value="File" />
-    <element value="Source" />
       <!--
     <element value="Document" />
     -->
