@@ -6,6 +6,7 @@ from plone.dexterity.content import Container
 from plone.supermodel import model
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
+from plone.app.z3cform.widget import SelectFieldWidget
 from zope import schema
 from collective import dexteritytextindexer
 from z3c.relationfield.schema import RelationChoice
@@ -47,6 +48,7 @@ class IRelationship(model.Schema):
 
     # Relationship Type
 
+    directives.widget(relationship_type=SelectFieldWidget)
     relationship_type = schema.Choice(
         title=_('Relationship type'),
         required=False,
