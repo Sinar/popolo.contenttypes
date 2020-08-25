@@ -34,6 +34,15 @@
                           <dd class="discreet" tal:condition="not: context/birth_date">Unkown</dd>
                           <dt tal:condition="context/death_date">Birthdate</dt>
                           <dd tal:condition="context/death_date" tal:content="structure view/w/birth_date/render"></dd>
+                          <dt
+                              tal:condition="context/nationalities">Nationalities</dt>
+                          <dd
+                            tal:on-error="nothing"
+                                  tal:condition="context/nationalities"
+                                  tal:repeat="nationality context/nationalities">
+                            <span tal:content="python:
+                                view.nationalities(nationality)"></span>
+                          </dd>
                       </dl>
  
                 </div>

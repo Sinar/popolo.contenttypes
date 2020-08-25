@@ -136,3 +136,14 @@ class PersonView(DefaultView):
         term = vocabulary.getTerm(value)
 
         return term.title
+
+
+    def nationalities(self, value):
+        factory = getUtility(
+                IVocabularyFactory,
+                'collective.vocabularies.iso.countries')
+
+        vocabulary = factory(self)
+        term = vocabulary.getTerm(value)
+
+        return term.title

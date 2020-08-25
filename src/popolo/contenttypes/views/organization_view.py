@@ -160,7 +160,6 @@ class OrganizationView(DefaultView,BrowserView):
 
         return result
 
-
     def relationship_title(self, value):
 
         factory = getUtility(IVocabularyFactory,
@@ -172,7 +171,7 @@ class OrganizationView(DefaultView,BrowserView):
 
         return term.title
 
-    def incorporated(self,value):
+    def incorporated(self, value):
         factory = getUtility(
                 IVocabularyFactory,
                 'collective.vocabularies.iso.countries')
@@ -182,7 +181,7 @@ class OrganizationView(DefaultView,BrowserView):
 
         return term.title
 
-    def isOffshore(self,value):
+    def isOffshore(self, value):
 
         factory = getUtility(
                         IVocabularyFactory,
