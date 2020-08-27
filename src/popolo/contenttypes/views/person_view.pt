@@ -23,7 +23,7 @@
                       <img tal:condition="context/image" tal:attributes="src string: ${context/absolute_url}/@@images/image/thumb"
                        class="img-thumbnail">
                </div>
-                <div class="col-md-7">
+                <div class="col-md-3">
                        <p tal:content="context/description" />
 
                        <dl class="dl-horizontal">
@@ -34,6 +34,13 @@
                           <dd class="discreet" tal:condition="not: context/birth_date">Unkown</dd>
                           <dt tal:condition="context/death_date">Birthdate</dt>
                           <dd tal:condition="context/death_date" tal:content="structure view/w/birth_date/render"></dd>
+                      </dl>
+ 
+                </div>
+                <div class="col-md-3" id="bods-person-details">
+                          <dt>Politically Exposed Person</dt>
+                          <dd tal:condition="context/hasPepStatus"
+                              tal:content="context/hasPepStatus"></dd>
                           <dt
                               tal:condition="context/nationalities">Nationalities</dt>
                           <dd
@@ -43,12 +50,22 @@
                             <span tal:content="python:
                                 view.nationalities(nationality)"></span>
                           </dd>
-                      </dl>
- 
+                          <dt
+                              tal:condition="context/taxResidencies">Tax Residencies</dt>
+                          <dd
+                            tal:on-error="nothing"
+                                  tal:condition="context/taxResidencies"
+                                  tal:repeat="nationality context/taxResidencies">
+                            <span tal:content="python:
+                                view.nationalities(nationality)"></span>
+                          </dd>
                 </div>
+
             </div>
 
             <hr />
+
+            <div id="memberhips">
 
              <h4>Membership and Posts</h4>
 
@@ -107,6 +124,8 @@
                 <tfoot>
                 </tfoot>
             </table>
+
+            </div>
 
             <div class="row">
 
@@ -170,7 +189,6 @@
                        class="img-thumbnail">
                     </li>
                 </ul>
-
 
                 <ul tal:repeat="relationship view/relationships_subject">
                     <!-- Parent -->
@@ -428,6 +446,15 @@
 
             <h4>Notes</h4>
             <div tal:replace="structure view/w/notes/render" />
+
+            <hr />
+
+            <div id="pepStatusDetails"
+                     tal:condition="context/pepStatusDetails">
+                <h4>PEP Status Details</h4>
+                <div tal:content="structure context/pepStatusDetails/output">
+                </div>
+            </div>
 
             <hr />
 

@@ -15,7 +15,7 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from zope.schema.interfaces import IVocabularyFactory
 
 
-class OrganizationView(DefaultView,BrowserView):
+class OrganizationView(DefaultView, BrowserView):
     # If you want to define a template here, please remove the template from
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('organization_view.pt')
@@ -36,9 +36,9 @@ class OrganizationView(DefaultView,BrowserView):
 
         for rel in catalog.findRelations(
             dict(to_id=intids.getId(aq_inner(source_object)),
-                                    from_attribute=attribute_name)
+                 from_attribute=attribute_name)
               ):
-           
+
             obj = intids.queryObject(rel.from_id)
 
             if obj is not None and checkPermission('zope2.View', obj):
@@ -60,9 +60,9 @@ class OrganizationView(DefaultView,BrowserView):
 
         for rel in catalog.findRelations(
             dict(to_id=intids.getId(aq_inner(source_object)),
-                                    from_attribute=attribute_name)
+                 from_attribute=attribute_name)
               ):
-           
+
             obj = intids.queryObject(rel.from_id)
 
             if obj is not None and checkPermission('zope2.View', obj):
@@ -72,7 +72,6 @@ class OrganizationView(DefaultView,BrowserView):
                         result.append(obj)
 
         return result
-
 
     def posts(self):
         """
@@ -88,9 +87,9 @@ class OrganizationView(DefaultView,BrowserView):
 
         for rel in catalog.findRelations(
             dict(to_id=intids.getId(aq_inner(source_object)),
-                                    from_attribute=attribute_name)
+                 from_attribute=attribute_name)
               ):
-           
+
             obj = intids.queryObject(rel.from_id)
 
             if obj is not None and checkPermission('zope2.View', obj):
@@ -195,8 +194,3 @@ class OrganizationView(DefaultView,BrowserView):
                 return True
             else:
                 return False
-
-
-
-
-

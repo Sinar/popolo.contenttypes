@@ -184,6 +184,43 @@
 
         <hr />
 
+        <div id="beneficial-ownership">
+
+            <table class="table table-striped">
+                <thead>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Subject
+                </th>
+                <th>
+                    Interested Party
+                </th>
+                <th>
+                    Beneficial Owner
+                </th>
+                <th>Interest Type</th>
+                <th>Level</th>
+                <th>Details</th>
+                </thead>
+                <tbody>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+        <hr />
+
         <h4>Notes</h4>
         <div tal:replace="structure view/w/notes/render" />
 
