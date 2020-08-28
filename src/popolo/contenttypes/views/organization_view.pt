@@ -18,7 +18,7 @@
 
         <div tal:replace="structure provider:plone.abovecontentbody" />
 
-            <div class="row">
+        <div class="row">
              <div class="col-md-3">
                     <dl>
                         <dt>Classification</dt>
@@ -67,12 +67,11 @@
 				        </dd>	
                     </dl>
              </div>
-
               <div class="col-md-5">
                       <img tal:condition="context/image" tal:attributes="src string: ${context/absolute_url}/@@images/image/thumb"
              class="img-thumbnail">
               </div>
-            </div>
+        </div>
 
         <hr />
 
@@ -182,42 +181,32 @@
             </li>
         </ul>
 
-        <hr />
+        <!-- Beneficial Ownership -->
+        <div tal:condition="python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
+           <h4>Ownership Statements</h4>
+           <div class="row">
+                   <div class="card"
+                    tal:repeat="card python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
+                      <img class="card-img-top"
+                           tal:on-error="nothing"
+                           tal:condition="card/interestedParty/to_object/image"
+                           tal:attributes="src string:
+                           ${card/interestedParty/to_object/absolute_url}/@@images/image/thumb"
+                           />
+                   </div>
+                   <div class="card-body">
+                       <h5 class="card-title"
+                           tal:content="card/interestedParty/to_object/title">Low Taek Jho</h5>
+                       <p class="card-text">Interest Type: <span tal:replace="structure card/interest_type" /></p>
+                       <p class="card-text">Interest Level: <span tal:replace="structure card/interest_level" /></p>
+                       <p class="card-text" tal:condition="card/beneficialOwnershipOrControl">
+                       <span class="alert alert-danger">Beneficial Owner</span></p>
 
-        <div id="beneficial-ownership">
-
-            <table class="table table-striped">
-                <thead>
-                <th>
-                    Title
-                </th>
-                <th>
-                    Subject
-                </th>
-                <th>
-                    Interested Party
-                </th>
-                <th>
-                    Beneficial Owner
-                </th>
-                <th>Interest Type</th>
-                <th>Level</th>
-                <th>Details</th>
-                </thead>
-                <tbody>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tbody>
-            </table>
-
-
-
+                       <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary">Details</a>
+                   </div>
+          </div>
         </div>
+
 
         <hr />
 
