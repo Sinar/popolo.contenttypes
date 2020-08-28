@@ -185,7 +185,7 @@
         <div tal:condition="python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
            <h4>Ownership Statements</h4>
            <div class="row">
-                   <div class="card"
+                  <div class="card"
                     tal:repeat="card python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
                       <img class="card-img-top"
                            tal:on-error="nothing"
@@ -193,21 +193,19 @@
                            tal:attributes="src string:
                            ${card/interestedParty/to_object/absolute_url}/@@images/image/thumb"
                            />
-                   </div>
-                   <div class="card-body">
-                       <h5 class="card-title"
-                           tal:content="card/interestedParty/to_object/title">Low Taek Jho</h5>
-                       <p class="card-text">Interest Type: <span tal:replace="structure card/interest_type" /></p>
-                       <p class="card-text">Interest Level: <span tal:replace="structure card/interest_level" /></p>
-                       <p class="card-text" tal:condition="card/beneficialOwnershipOrControl">
-                       <span class="alert alert-danger">Beneficial Owner</span></p>
+                       <div class="card-body">
+                           <h5 class="card-title"
+                               tal:content="card/interestedParty/to_object/title">Low Taek Jho</h5>
+                           <p class="card-text">Interest Type: <span tal:replace="structure card/interest_type" /></p>
+                           <p class="card-text">Interest Level: <span tal:replace="structure card/interest_level" /></p>
+                           <p class="card-text" tal:condition="card/beneficialOwnershipOrControl">
+                           <span class="alert alert-danger">Beneficial Owner</span></p>
 
-                       <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary">Details</a>
+                           <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary">Details</a>
+                       </div>
                    </div>
-          </div>
+
         </div>
-
-
         <hr />
 
         <h4>Notes</h4>
