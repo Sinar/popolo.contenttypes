@@ -24,8 +24,6 @@
                        class="img-thumbnail">
                </div>
                 <div class="col-md-3">
-                       <p tal:content="context/description" />
-
                        <dl class="dl-horizontal">
                           <dt>Gender</dt>
                           <dd tal:content="structure view/w/gender/render"></dd>
@@ -37,31 +35,39 @@
                       </dl>
  
                 </div>
-                <div class="col-md-3" id="bods-person-details">
-                          <dt>Politically Exposed Person</dt>
-                          <dd tal:condition="context/hasPepStatus"
-                              tal:content="context/hasPepStatus"></dd>
-                          <dt
-                              tal:condition="context/nationalities">Nationalities</dt>
-                          <dd
-                            tal:on-error="nothing"
-                                  tal:condition="context/nationalities"
-                                  tal:repeat="nationality context/nationalities">
-                            <span tal:content="python:
-                                view.nationalities(nationality)"></span>
-                          </dd>
-                          <dt
-                              tal:condition="context/taxResidencies">Tax Residencies</dt>
-                          <dd
-                            tal:on-error="nothing"
-                                  tal:condition="context/taxResidencies"
-                                  tal:repeat="nationality context/taxResidencies">
-                            <span tal:content="python:
-                                view.nationalities(nationality)"></span>
-                          </dd>
+                <div class="col-md-3" id="bods-person-details"
+                    tal:condition="context/hasPepStatus"
+                    tal:on-error="nothing">
+                              <dl>
+                              <dt class="alert alert-danger" >Politically Exposed Person</dt>
+                              <dd
+                                  tal:content="structure
+                                  context/pepStatusDetails/output"></dd>
+
+                              <dt
+                                  tal:condition="context/nationalities">Nationalities</dt>
+                              <dd
+                                tal:on-error="nothing"
+                                      tal:condition="context/nationalities"
+                                      tal:repeat="nationality context/nationalities">
+                                <span tal:content="python:
+                                    view.nationalities(nationality)"></span>
+                              </dd>
+                              <dt
+                                  tal:condition="context/taxResidencies">Tax Residencies</dt>
+                              <dd
+                                tal:on-error="nothing"
+                                      tal:condition="context/taxResidencies"
+                                      tal:repeat="nationality context/taxResidencies">
+                                <span tal:content="python:
+                                    view.nationalities(nationality)"></span>
+                              </dd>
+                          </dl>
                 </div>
 
             </div>
+
+            <p tal:content="context/description" />
 
             <hr />
 
