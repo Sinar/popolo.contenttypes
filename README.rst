@@ -59,7 +59,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/popolo.contenttypes/issues
 - Source Code: https://github.com/collective/popolo.contenttypes
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
