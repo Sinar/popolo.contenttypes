@@ -34,8 +34,6 @@ This add-on can be seen in action at the following sites:
 Documentation
 -------------
 
-TODO
-
 
 Installation
 ------------
@@ -51,6 +49,9 @@ Install popolo.contenttypes by adding it to your buildout::
 
 
 and then running ``bin/buildout``
+
+It is recommended that this be installed automatically as part of a
+politikus buildout at https://github.com/Sinar/politikus
 
 
 Contribute
@@ -77,9 +78,15 @@ The project is licensed under the GPLv2.
 Credits
 -------
 
-This project is supported by Hivos East Africa, Nation Media Group.
-Indirectly via IDRC, Alternatives, (Montreal) and the kind individual
-contributors to Sinar Project.
 
-Also this project would not be possible without the developers of
-Popolo-spec Open Legislative Open Data Standard.
+.. image:: https://sinarproject.org/media/hivos_logo-1.png/@@images/7485dd1c-7b0c-47a7-a940-d7966445764f.png
+    :alt: Hivos Logo
+.. image:: https://sinarproject.org/media/partner-logos/copy_of_od4d.png/@@images/a9c51168-cbba-4ee1-9978-bd7c43136657.png
+    :alt: Open Data for Development Logo
+
+This project is funded and supported by Hivos East Africa, and
+indirectly via International Development Research Centre (IDRC) Canada.
+
+Also this project would not be possible without  
+James McKinney and contributors to the Popolo international open
+government data specifications  https://www.popoloproject.com/
