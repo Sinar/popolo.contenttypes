@@ -33,8 +33,7 @@
                 <div class="col-md-3" id="bods-person-details" tal:condition="context/hasPepStatus" tal:on-error="nothing">
                     <dl>
                         <dt class="alert alert-danger">Politically Exposed Person</dt>
-                        <dd tal:content="structure
-                                  context/pepStatusDetails/output"></dd>
+                        <dd tal:content="context/pepStatusDetails"></dd>
 
                         <dt tal:condition="context/nationalities">Nationalities</dt>
                         <dd tal:on-error="nothing" tal:condition="context/nationalities" tal:repeat="nationality context/nationalities">
