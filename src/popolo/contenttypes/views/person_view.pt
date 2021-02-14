@@ -430,7 +430,7 @@
 
             <div id="pepStatusDetails" tal:condition="context/pepStatusDetails">
                 <h4>PEP Status Details</h4>
-                <div tal:content="structure context/pepStatusDetails/output">
+                <div tal:content="context/pepStatusDetails">
                 </div>
             </div>
 
