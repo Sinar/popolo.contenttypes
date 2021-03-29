@@ -12,16 +12,6 @@
     <plone:behavior
         name="popolo.contenttypes.image_rights"
         title="ImageRights"
-        description="Copyright statement or other rights information for image field"
-        provides=".image_rights.IImageRights"
-        factory=".image_rights.ImageRights"
-        marker=".image_rights.IImageRightsMarker"
-        />
-
-
-    <plone:behavior
-        name="popolo.contenttypes.image_rights"
-        title="ImageRights"
         description="Text for copyright and other rights information related to Popolo image for Person and Organization"
         provides=".image_rights.IImageRights"
         factory=".image_rights.ImageRights"
