@@ -13,8 +13,12 @@
   <index name="dissolution_date" meta_type="DateIndex">
       <indexed_attr value="dissolution_date" />
   </index>
+  <index name="classification" meta_type="FieldIndex">
+      <indexed_attr value="classification" />
+  </index>
   <column value="start_date" />
   <column value="end_date" />
   <column value="founding_date" />
   <column value="dissolution_date" />
+  <column value="classification" />
 </object>

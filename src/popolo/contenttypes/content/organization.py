@@ -5,8 +5,6 @@ from plone.supermodel import model
 from plone.namedfile import field
 from z3c.relationfield.schema import RelationChoice
 from zope import schema
-from zope.schema.vocabulary import SimpleTerm
-from zope.schema.vocabulary import SimpleVocabulary
 from zope.interface import implementer
 from collective import dexteritytextindexer
 
@@ -100,7 +98,7 @@ class IOrganization(model.Schema):
 
     # children to be implemented as view of back references to parent_id
 
-    # created, updated using Plone/Dublin Core effective 
+    # created, updated using Plone/Dublin Core effective
     # and expiry date fields
 
     # sources to use content type
