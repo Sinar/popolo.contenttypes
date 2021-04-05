@@ -77,8 +77,9 @@
                     <tbody>
                         <tr tal:repeat="member view/memberships">
                             <td>
-                                <a tal:condition="member/post" tal:attributes="href
-                           member/post/to_object/absolute_url" tal:content="member/post/to_object/title">
+                                <a tal:condition="member/post" 
+                                   tal:on-error="nothing"
+                                   tal:attributes="href member/post/to_object/absolute_url" tal:content="member/post/to_object/title">
                                 </a>
 
                             </td>
