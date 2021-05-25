@@ -16,9 +16,13 @@
   <index name="classification" meta_type="FieldIndex">
       <indexed_attr value="classification" />
   </index>
+  <index name="gender" meta_type="FieldIndex">
+      <indexed_attr value="gender" />
+  </index>
   <column value="start_date" />
   <column value="end_date" />
   <column value="founding_date" />
   <column value="dissolution_date" />
   <column value="classification" />
+  <column value="gender" />
 </object>
