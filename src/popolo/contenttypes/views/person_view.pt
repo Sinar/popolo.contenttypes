@@ -23,18 +23,10 @@
                         <dd tal:content="structure view/w/gender/render"></dd>
                         <dt>Birthdate</dt>
                         <dd tal:content="structure view/w/birth_date/render"></dd>
-                        <dd class="discreet" tal:condition="not: context/birth_date">Unkown</dd>
+                        <dd class="discreet" tal:condition="not: context/birth_date">Unknown</dd>
                         <dt tal:condition="context/death_date">Birthdate</dt>
                         <dd tal:condition="context/death_date" 
                             tal:content="structure view/w/birth_date/render"></dd>
-                    </dl>
-
-                </div>
-                <div class="col-md-3" id="bods-person-details" tal:condition="context/hasPepStatus" tal:on-error="nothing">
-                    <dl>
-                        <dt class="alert alert-danger">Politically Exposed Person</dt>
-                        <dd tal:content="context/pepStatusDetails"></dd>
-
                         <dt tal:condition="context/nationalities">Nationalities</dt>
                         <dd tal:on-error="nothing" tal:condition="context/nationalities" tal:repeat="nationality context/nationalities">
                             <span tal:content="python:
@@ -45,6 +37,14 @@
                             <span tal:content="python:
                                                     view.nationalities(nationality)"></span>
                         </dd>
+                    </dl>
+
+                </div>
+                <div class="col-md-3" id="bods-person-details" tal:condition="context/hasPepStatus" tal:on-error="nothing">
+                    <dl>
+                        <dt class="alert alert-danger">Politically Exposed Person</dt>
+                        <dd tal:content="context/pepStatusDetails"></dd>
+                      
                     </dl>
                 </div>
 
