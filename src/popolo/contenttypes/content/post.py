@@ -35,7 +35,7 @@ class IPost(model.Schema):
     dexteritytextindexer.searchable('role')
     role = schema.TextLine(
         title=_(u'Role'),
-        description=_(u"THe function that the holder of the " +
+        description=_(u"The function that the holder of the " +
                       "post fulfills"),
         required=True,)
 
