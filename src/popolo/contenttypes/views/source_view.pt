@@ -25,7 +25,7 @@
             <p>
             <span tal:replace="context/author"/>,&nbsp;
             (<span
-                 tal:replace="python:context.toLocalizedTime(context.effective())"
+                 tal:replace="python:context.toLocalizedTime(context.EffectiveDate())"
                  />).&nbsp;
             <span tal:replace="context/title"/>.&nbsp;
                 Retrieved <span
