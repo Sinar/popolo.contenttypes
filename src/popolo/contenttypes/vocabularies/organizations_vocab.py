@@ -65,6 +65,8 @@ class OrganizationCategoriesVocab(object):
                            title=_(u'Labour Union')),
                 SimpleTerm(value=_(u'orgCatCivilSociety'),
                            title=_(u'Civil society')),
+                SimpleTerm(value=_(u'orgCatFinancialInstitution'),
+                           title=_(u'Financial Institution')),
             ]
         )
 
