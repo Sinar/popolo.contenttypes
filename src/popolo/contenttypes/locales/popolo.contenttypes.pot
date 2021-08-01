@@ -1,0 +1,6100 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-01 03:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: popolo.contenttypes\n"
+
+#: ../content/relationship.py:88
+msgid "
+                The object of the relation.
+                            "
+msgstr ""
+
+#: ../content/relationship.py:69
+msgid "
+                The subject of the relation.
+                            "
+msgstr ""
+
+#: ../content/relationship.py:35
+msgid "
+        The name of this relationship, eg. Son of Person,
+        Known business associate of Person, Major client of Business.
+                       "
+msgstr ""
+
+#: ../profiles/default/types/Person.xml
+msgid "A Person"
+msgstr ""
+
+#: ../content/contact_detail.py:23
+msgid "A Phone number for text messages"
+msgstr ""
+
+#: ../profiles/default/types/Post.xml
+msgid "A Post in an Organization"
+msgstr ""
+
+#: ../content/contact_detail.py:26
+msgid "A URL to a contact form"
+msgstr ""
+
+#: ../content/post.py:31
+msgid "A describing the Post"
+msgstr ""
+
+#: ../content/area.py:64
+msgid "A geometry"
+msgstr ""
+
+#: ../content/contact_detail.py:43
+msgid "A human-readable label for the contact detail"
+msgstr ""
+
+#: ../content/membership.py:34
+msgid "A label describing the membership, eg. Member of Parliament of Kericho County"
+msgstr ""
+
+#: ../content/contact_detail.py:61
+msgid "A note, e.g. for grouping contact details by physical location"
+msgstr ""
+
+#: ../content/person.py:41
+msgid "A person's preferred full name"
+msgstr ""
+
+#: ../content/contact_detail.py:25
+msgid "A postal address"
+msgstr ""
+
+#: ../content/area.py:29
+#: ../content/organization.py:28
+msgid "A primary name, e.g. a legally recognized name"
+msgstr ""
+
+#: ../content/membership.py:41
+msgid "A role that the member fulfills in, in the organization. eg. Member of Parliament"
+msgstr ""
+
+#: ../content/contact_detail.py:48
+msgid "A type of medium, eg. mobile phone or email"
+msgstr ""
+
+#: ../content/contact_detail.py:55
+msgid "A value, e.g. a phone number or email address"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:29
+msgid "A.ADM1"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:30
+msgid "A.ADM1H"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:31
+msgid "A.ADM2"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:32
+msgid "A.ADM2H"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:33
+msgid "A.ADM3"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:34
+msgid "A.ADM3H"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:35
+msgid "A.ADM4"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:36
+msgid "A.ADM4H"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:37
+msgid "A.ADM5"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:38
+msgid "A.ADM5H"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:39
+msgid "A.ADMD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:40
+msgid "A.ADMDH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:41
+msgid "A.LTER"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:42
+msgid "A.PCL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:43
+msgid "A.PCLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:44
+msgid "A.PCLF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:45
+msgid "A.PCLH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:46
+msgid "A.PCLI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:47
+msgid "A.PCLIX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:48
+msgid "A.PCLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:49
+msgid "A.PRSH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:50
+msgid "A.TERR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:51
+msgid "A.ZN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:52
+msgid "A.ZNB"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:29
+msgid "Accounting Firm"
+msgstr ""
+
+#: ../profiles/default/types/Organization.xml
+msgid "An Organization"
+msgstr ""
+
+#: ../content/area.py:35
+msgid "An area category, e.g. city"
+msgstr ""
+
+#: ../profiles/default/types/Area.xml
+msgid "An area is a geographic area whose geometry may change over time."
+msgstr ""
+
+#: ../content/contact_detail.py:24
+msgid "An email address"
+msgstr ""
+
+#: ../profiles/default/types/Identifier.xml
+msgid "An identifier code for a Person"
+msgstr ""
+
+#: ../content/area.py:59
+msgid "An issued identifier, e.g. an Open Civic Data Division Identifier"
+msgstr ""
+
+#: ../profiles/default/types/Area.xml
+msgid "Area"
+msgstr ""
+
+#: ../content/area.py:34
+msgid "Area Classification"
+msgstr ""
+
+#: ../content/area.py:28
+msgid "Area Name"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:39
+msgid "Associate"
+msgstr ""
+
+#: ../content/source.py:44
+msgid "Author or Website Name"
+msgstr ""
+
+#: ../content/person.py:78
+msgid "Biography"
+msgstr ""
+
+#: ../content/other_name.py:36
+msgid "Birth name"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:53
+msgid "Board of Directors"
+msgstr ""
+
+#: ../content/relationship.py:45
+msgid "Brief description of this relationship"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:37
+msgid "Business Partner"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:33
+msgid "Cabinet"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:67
+msgid "Civil society"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:51
+msgid "Committee"
+msgstr ""
+
+#: ../profiles/default/types/Contact_Detail.xml
+msgid "Contact Detail"
+msgstr ""
+
+#: ../profiles/default/types/Contact_Detail.xml
+msgid "Contact details"
+msgstr ""
+
+#: ../behaviors/image_rights.py:29
+msgid "Copyright statement or other rights information on this item."
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:35
+msgid "Cousin"
+msgstr ""
+
+#: ../content/person.py:61
+msgid "Date of Birth"
+msgstr ""
+
+#: ../content/person.py:66
+msgid "Date of Death"
+msgstr ""
+
+#: ../content/organization.py:79
+msgid "Date of Dissolution"
+msgstr ""
+
+#: ../content/organization.py:75
+msgid "Date of Founding"
+msgstr ""
+
+#: ../content/post.py:59
+msgid "Date this post was created"
+msgstr ""
+
+#: ../content/post.py:64
+msgid "Date which this post was eliminated"
+msgstr ""
+
+#: ../content/membership.py:118
+#: ../content/relationship.py:97
+msgid "Date which this relationship began"
+msgstr ""
+
+#: ../content/membership.py:123
+#: ../content/relationship.py:102
+msgid "Date which this relationship ended"
+msgstr ""
+
+#: ../content/organization.py:65
+#: ../content/relationship.py:44
+#: ../content/source.py:37
+msgid "Description"
+msgstr ""
+
+#: ../content/person.py:79
+msgid "Detailed biography of this person"
+msgstr ""
+
+#: ../profiles/default/types/Area.xml
+#: ../profiles/default/types/Contact_Detail.xml
+#: ../profiles/default/types/Identifier.xml
+msgid "Edit"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:43
+msgid "Employer"
+msgstr ""
+
+#: ../content/membership.py:122
+#: ../content/other_name.py:46
+#: ../content/post.py:63
+msgid "End Date"
+msgstr ""
+
+#: ../content/person.py:54
+msgid "Female"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:69
+msgid "Financial Institution"
+msgstr ""
+
+#: ../content/person.py:51
+msgid "Gender"
+msgstr ""
+
+#: ../content/area.py:63
+msgid "Geometry"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:41
+msgid "Government Agency"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:43
+msgid "Government Commission"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:45
+msgid "Government Department"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:53
+msgid "H.AIRS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:54
+msgid "H.ANCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:55
+msgid "H.BAY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:56
+msgid "H.BAYS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:57
+msgid "H.BGHT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:58
+msgid "H.BNK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:59
+msgid "H.BNKR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:60
+msgid "H.BNKX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:61
+msgid "H.BOG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:62
+msgid "H.CAPG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:63
+msgid "H.CHN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:64
+msgid "H.CHNL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:65
+msgid "H.CHNM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:66
+msgid "H.CHNN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:67
+msgid "H.CNFL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:68
+msgid "H.CNL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:69
+msgid "H.CNLA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:70
+msgid "H.CNLB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:71
+msgid "H.CNLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:72
+msgid "H.CNLI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:73
+msgid "H.CNLN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:74
+msgid "H.CNLQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:75
+msgid "H.CNLSB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:76
+msgid "H.CNLX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:77
+msgid "H.COVE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:78
+msgid "H.CRKT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:79
+msgid "H.CRNT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:80
+msgid "H.CUTF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:81
+msgid "H.DCK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:82
+msgid "H.DCKB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:83
+msgid "H.DOMG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:84
+msgid "H.DPRG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:85
+msgid "H.DTCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:86
+msgid "H.DTCHD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:87
+msgid "H.DTCHI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:88
+msgid "H.DTCHM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:89
+msgid "H.ESTY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:90
+msgid "H.FISH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:91
+msgid "H.FJD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:92
+msgid "H.FJDS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:93
+msgid "H.FLLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:94
+msgid "H.FLLSX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:95
+msgid "H.FLTM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:96
+msgid "H.FLTT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:97
+msgid "H.GLCR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:98
+msgid "H.GULF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:99
+msgid "H.GYSR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:100
+msgid "H.HBR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:101
+msgid "H.HBRX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:102
+msgid "H.INLT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:103
+msgid "H.INLTQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:104
+msgid "H.LBED"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:105
+msgid "H.LGN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:106
+msgid "H.LGNS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:107
+msgid "H.LGNX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:108
+msgid "H.LK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:109
+msgid "H.LKC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:110
+msgid "H.LKI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:111
+msgid "H.LKN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:112
+msgid "H.LKNI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:113
+msgid "H.LKO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:114
+msgid "H.LKOI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:115
+msgid "H.LKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:116
+msgid "H.LKSB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:117
+msgid "H.LKSC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:118
+msgid "H.LKSI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:119
+msgid "H.LKSN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:120
+msgid "H.LKSNI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:121
+msgid "H.LKX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:122
+msgid "H.MFGN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:123
+msgid "H.MGV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:124
+msgid "H.MOOR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:125
+msgid "H.MRSH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:126
+msgid "H.MRSHN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:127
+msgid "H.NRWS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:128
+msgid "H.OCN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:129
+msgid "H.OVF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:130
+msgid "H.PND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:131
+msgid "H.PNDI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:132
+msgid "H.PNDN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:133
+msgid "H.PNDNI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:134
+msgid "H.PNDS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:135
+msgid "H.PNDSF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:136
+msgid "H.PNDSI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:137
+msgid "H.PNDSN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:138
+msgid "H.POOL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:139
+msgid "H.POOLI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:140
+msgid "H.RCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:141
+msgid "H.RDGG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:142
+msgid "H.RDST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:143
+msgid "H.RF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:144
+msgid "H.RFC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:145
+msgid "H.RFX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:146
+msgid "H.RPDS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:147
+msgid "H.RSV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:148
+msgid "H.RSVI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:149
+msgid "H.RSVT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:150
+msgid "H.RVN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:151
+msgid "H.SBKH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:152
+msgid "H.SD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:153
+msgid "H.SEA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:154
+msgid "H.SHOL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:155
+msgid "H.SILL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:156
+msgid "H.SPNG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:157
+msgid "H.SPNS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:158
+msgid "H.SPNT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:159
+msgid "H.STM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:160
+msgid "H.STMA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:161
+msgid "H.STMB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:162
+msgid "H.STMC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:163
+msgid "H.STMD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:164
+msgid "H.STMH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:165
+msgid "H.STMI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:166
+msgid "H.STMIX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:167
+msgid "H.STMM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:168
+msgid "H.STMQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:169
+msgid "H.STMS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:170
+msgid "H.STMSB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:171
+msgid "H.STMX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:172
+msgid "H.STRT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:173
+msgid "H.SWMP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:174
+msgid "H.SYSI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:175
+msgid "H.TNLC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:176
+msgid "H.WAD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:177
+msgid "H.WADB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:178
+msgid "H.WADJ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:179
+msgid "H.WADM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:180
+msgid "H.WADS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:181
+msgid "H.WADX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:182
+msgid "H.WHRL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:183
+msgid "H.WLL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:184
+msgid "H.WLLQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:185
+msgid "H.WLLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:186
+msgid "H.WTLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:187
+msgid "H.WTLDI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:188
+msgid "H.WTRC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:189
+msgid "H.WTRH"
+msgstr ""
+
+#: ../content/person.py:71
+msgid "Headshot"
+msgstr ""
+
+#: ../content/area.py:58
+#: ../content/identifier.py:34
+#: ../profiles/default/types/Identifier.xml
+msgid "Identifier"
+msgstr ""
+
+#: ../behaviors/image_rights.py:28
+msgid "Image Rights"
+msgstr ""
+
+#: ../content/person.py:72
+msgid "Image file of a headshot person"
+msgstr ""
+
+#: ../configure.zcml:27
+msgid "Installs the popolo.contenttypes add-on."
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:190
+msgid "L.AGRC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:191
+msgid "L.AMUS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:192
+msgid "L.AREA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:193
+msgid "L.BSND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:194
+msgid "L.BSNP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:195
+msgid "L.BTL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:196
+msgid "L.CLG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:197
+msgid "L.CMN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:198
+msgid "L.CNS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:199
+msgid "L.COLF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:200
+msgid "L.CONT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:201
+msgid "L.CST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:202
+msgid "L.CTRB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:203
+msgid "L.DEVH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:204
+msgid "L.FLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:205
+msgid "L.FLDI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:206
+msgid "L.GASF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:207
+msgid "L.GRAZ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:208
+msgid "L.GVL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:209
+msgid "L.INDS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:210
+msgid "L.LAND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:211
+msgid "L.LCTY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:212
+msgid "L.MILB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:213
+msgid "L.MNA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:214
+msgid "L.MVA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:215
+msgid "L.NVB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:216
+msgid "L.OAS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:217
+msgid "L.OILF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:218
+msgid "L.PEAT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:219
+msgid "L.PRK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:220
+msgid "L.PRT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:221
+msgid "L.QCKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:222
+msgid "L.RES"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:223
+msgid "L.RESA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:224
+msgid "L.RESF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:225
+msgid "L.RESH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:226
+msgid "L.RESN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:227
+msgid "L.RESP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:228
+msgid "L.RESV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:229
+msgid "L.RESW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:230
+msgid "L.RGN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:231
+msgid "L.RGNE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:232
+msgid "L.RGNH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:233
+msgid "L.RGNL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:234
+msgid "L.RNGA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:235
+msgid "L.SALT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:236
+msgid "L.SNOW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:237
+msgid "L.TRB"
+msgstr ""
+
+#: ../content/contact_detail.py:42
+#: ../content/membership.py:33
+#: ../content/post.py:30
+msgid "Label"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:65
+msgid "Labour Union"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:63
+msgid "Law Firm"
+msgstr ""
+
+#: ../content/organization.py:83
+msgid "Logo"
+msgstr ""
+
+#: ../content/person.py:53
+msgid "Male"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:54
+msgid "Management"
+msgstr ""
+
+#: ../profiles/default/types/Membership.xml
+msgid "Membership"
+msgstr ""
+
+#: ../profiles/default/types/Membership.xml
+msgid "Membership representing relationships between people and organizations"
+msgstr ""
+
+#: ../content/contact_detail.py:20
+msgid "Mobile Phone Number"
+msgstr ""
+
+#: ../content/other_name.py:29
+#: ../content/person.py:40
+msgid "Name"
+msgstr ""
+
+#: ../content/contact_detail.py:60
+#: ../content/other_name.py:35
+msgid "Note"
+msgstr ""
+
+#: ../content/organization.py:108
+#: ../content/person.py:85
+#: ../content/relationship.py:108
+msgid "Notes"
+msgstr ""
+
+#: ../content/organization.py:84
+msgid "Official logo or emblem of organization"
+msgstr ""
+
+#: ../content/membership.py:109
+msgid "On Behalf Of"
+msgstr ""
+
+#: ../content/person.py:47
+msgid "One line description of this person"
+msgstr ""
+
+#: ../content/source.py:38
+msgid "One line description of this source"
+msgstr ""
+
+#: ../profiles/default/types/Organization.xml
+msgid "Organization"
+msgstr ""
+
+#: ../content/organization.py:69
+msgid "Organization Classification"
+msgstr ""
+
+#: ../content/organization.py:27
+msgid "Organization Name"
+msgstr ""
+
+#: ../content/person.py:55
+msgid "Other"
+msgstr ""
+
+#: ../profiles/default/types/Other_Name.xml
+msgid "Other Name"
+msgstr ""
+
+#: ../profiles/default/types/Other_Name.xml
+msgid "Other Names for a Person"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:238
+msgid "P.PPL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:239
+msgid "P.PPLA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:240
+msgid "P.PPLA2"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:241
+msgid "P.PPLA3"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:242
+msgid "P.PPLA4"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:243
+msgid "P.PPLA5"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:244
+msgid "P.PPLC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:245
+msgid "P.PPLCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:246
+msgid "P.PPLF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:247
+msgid "P.PPLG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:248
+msgid "P.PPLH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:249
+msgid "P.PPLL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:250
+msgid "P.PPLQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:251
+msgid "P.PPLR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:252
+msgid "P.PPLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:253
+msgid "P.PPLW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:254
+msgid "P.PPLX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:255
+msgid "P.STLMT"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:31
+msgid "Parent"
+msgstr ""
+
+#: ../content/area.py:50
+msgid "Parent Area"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:31
+msgid "Parliament"
+msgstr ""
+
+#: ../profiles/default/types/Person.xml
+msgid "Person"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:55
+msgid "Political Party"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:59
+msgid "Political Party Branch"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:57
+msgid "Political Party Executive"
+msgstr ""
+
+#: ../profiles/default/types/Post.xml
+msgid "Post"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:49
+msgid "Private Limited Company"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:50
+msgid "Public Company"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:256
+msgid "R.CSWY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:257
+msgid "R.OILP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:258
+msgid "R.PRMN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:259
+msgid "R.PTGE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:260
+msgid "R.RD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:261
+msgid "R.RDA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:262
+msgid "R.RDB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:263
+msgid "R.RDCUT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:264
+msgid "R.RDJCT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:265
+msgid "R.RJCT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:266
+msgid "R.RR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:267
+msgid "R.RRQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:268
+msgid "R.RTE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:269
+msgid "R.RYD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:270
+msgid "R.ST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:271
+msgid "R.STKR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:272
+msgid "R.TNL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:273
+msgid "R.TNLN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:274
+msgid "R.TNLRD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:275
+msgid "R.TNLRR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:276
+msgid "R.TNLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:277
+msgid "R.TRL"
+msgstr ""
+
+#: ../profiles/default/types/Relationship.xml
+msgid "Relationship"
+msgstr ""
+
+#: ../content/relationship.py:34
+msgid "Relationship Name"
+msgstr ""
+
+#: ../content/relationship.py:53
+#: ../profiles/default/types/Relationship.xml
+msgid "Relationship type"
+msgstr ""
+
+#: ../content/membership.py:40
+#: ../content/post.py:37
+msgid "Role"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:41
+msgid "Romantic Partner"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:278
+msgid "S.ADMF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:279
+msgid "S.AGRF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:280
+msgid "S.AIRB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:281
+msgid "S.AIRF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:282
+msgid "S.AIRH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:283
+msgid "S.AIRP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:284
+msgid "S.AIRQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:285
+msgid "S.AIRT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:286
+msgid "S.AMTH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:287
+msgid "S.ANS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:288
+msgid "S.AQC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:289
+msgid "S.ARCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:290
+msgid "S.ARCHV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:291
+msgid "S.ART"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:292
+msgid "S.ASTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:293
+msgid "S.ASYL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:294
+msgid "S.ATHF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:295
+msgid "S.ATM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:296
+msgid "S.BANK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:297
+msgid "S.BCN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:298
+msgid "S.BDG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:299
+msgid "S.BDGQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:300
+msgid "S.BLDA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:301
+msgid "S.BLDG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:302
+msgid "S.BLDO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:303
+msgid "S.BP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:304
+msgid "S.BRKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:305
+msgid "S.BRKW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:306
+msgid "S.BSTN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:307
+msgid "S.BTYD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:308
+msgid "S.BUR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:309
+msgid "S.BUSTN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:310
+msgid "S.BUSTP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:311
+msgid "S.CARN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:312
+msgid "S.CAVE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:313
+msgid "S.CH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:314
+msgid "S.CMP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:315
+msgid "S.CMPL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:316
+msgid "S.CMPLA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:317
+msgid "S.CMPMN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:318
+msgid "S.CMPO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:319
+msgid "S.CMPQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:320
+msgid "S.CMPRF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:321
+msgid "S.CMTY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:322
+msgid "S.COMC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:323
+msgid "S.CRRL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:324
+msgid "S.CSNO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:325
+msgid "S.CSTL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:326
+msgid "S.CSTM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:327
+msgid "S.CTHSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:328
+msgid "S.CTRA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:329
+msgid "S.CTRCM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:330
+msgid "S.CTRF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:331
+msgid "S.CTRM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:332
+msgid "S.CTRR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:333
+msgid "S.CTRS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:334
+msgid "S.CVNT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:335
+msgid "S.DAM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:336
+msgid "S.DAMQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:337
+msgid "S.DAMSB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:338
+msgid "S.DARY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:339
+msgid "S.DCKD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:340
+msgid "S.DCKY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:341
+msgid "S.DIKE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:342
+msgid "S.DIP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:343
+msgid "S.DPOF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:344
+msgid "S.EST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:345
+msgid "S.ESTO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:346
+msgid "S.ESTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:347
+msgid "S.ESTSG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:348
+msgid "S.ESTT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:349
+msgid "S.ESTX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:350
+msgid "S.FCL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:351
+msgid "S.FNDY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:352
+msgid "S.FRM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:353
+msgid "S.FRMQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:354
+msgid "S.FRMS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:355
+msgid "S.FRMT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:356
+msgid "S.FT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:357
+msgid "S.FY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:358
+msgid "S.FYT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:359
+msgid "S.GATE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:360
+msgid "S.GDN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:361
+msgid "S.GHAT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:362
+msgid "S.GHSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:363
+msgid "S.GOSP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:364
+msgid "S.GOVL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:365
+msgid "S.GRVE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:366
+msgid "S.HERM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:367
+msgid "S.HLT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:368
+msgid "S.HMSD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:369
+msgid "S.HSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:370
+msgid "S.HSEC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:371
+msgid "S.HSP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:372
+msgid "S.HSPC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:373
+msgid "S.HSPD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:374
+msgid "S.HSPL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:375
+msgid "S.HSTS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:376
+msgid "S.HTL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:377
+msgid "S.HUT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:378
+msgid "S.HUTS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:379
+msgid "S.INSM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:380
+msgid "S.ITTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:381
+msgid "S.JTY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:382
+msgid "S.LDNG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:383
+msgid "S.LEPC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:384
+msgid "S.LIBR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:385
+msgid "S.LNDF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:386
+msgid "S.LOCK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:387
+msgid "S.LTHSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:388
+msgid "S.MALL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:389
+msgid "S.MAR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:390
+msgid "S.MFG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:391
+msgid "S.MFGB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:392
+msgid "S.MFGC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:393
+msgid "S.MFGCU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:394
+msgid "S.MFGLM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:395
+msgid "S.MFGM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:396
+msgid "S.MFGPH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:397
+msgid "S.MFGQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:398
+msgid "S.MFGSG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:399
+msgid "S.MKT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:400
+msgid "S.ML"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:401
+msgid "S.MLM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:402
+msgid "S.MLO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:403
+msgid "S.MLSG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:404
+msgid "S.MLSGQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:405
+msgid "S.MLSW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:406
+msgid "S.MLWND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:407
+msgid "S.MLWTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:408
+msgid "S.MN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:409
+msgid "S.MNAU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:410
+msgid "S.MNC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:411
+msgid "S.MNCR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:412
+msgid "S.MNCU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:413
+msgid "S.MNFE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:414
+msgid "S.MNMT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:415
+msgid "S.MNN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:416
+msgid "S.MNQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:417
+msgid "S.MNQR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:418
+msgid "S.MOLE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:419
+msgid "S.MSQE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:420
+msgid "S.MSSN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:421
+msgid "S.MSSNQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:422
+msgid "S.MSTY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:423
+msgid "S.MTRO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:424
+msgid "S.MUS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:425
+msgid "S.NOV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:426
+msgid "S.NSY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:427
+msgid "S.OBPT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:428
+msgid "S.OBS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:429
+msgid "S.OBSR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:430
+msgid "S.OILJ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:431
+msgid "S.OILQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:432
+msgid "S.OILR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:433
+msgid "S.OILT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:434
+msgid "S.OILW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:435
+msgid "S.OPRA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:436
+msgid "S.PAL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:437
+msgid "S.PGDA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:438
+msgid "S.PIER"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:439
+msgid "S.PKLT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:440
+msgid "S.PMPO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:441
+msgid "S.PMPW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:442
+msgid "S.PO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:443
+msgid "S.PP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:444
+msgid "S.PPQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:445
+msgid "S.PRKGT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:446
+msgid "S.PRKHQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:447
+msgid "S.PRN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:448
+msgid "S.PRNJ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:449
+msgid "S.PRNQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:450
+msgid "S.PS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:451
+msgid "S.PSH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:452
+msgid "S.PSN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:453
+msgid "S.PSTB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:454
+msgid "S.PSTC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:455
+msgid "S.PSTP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:456
+msgid "S.PYR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:457
+msgid "S.PYRS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:458
+msgid "S.QUAY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:459
+msgid "S.RDCR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:460
+msgid "S.RDIN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:461
+msgid "S.RECG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:462
+msgid "S.RECR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:463
+msgid "S.REST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:464
+msgid "S.RET"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:465
+msgid "S.RHSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:466
+msgid "S.RKRY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:467
+msgid "S.RLG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:468
+msgid "S.RLGR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:469
+msgid "S.RNCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:470
+msgid "S.RSD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:471
+msgid "S.RSGNL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:472
+msgid "S.RSRT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:473
+msgid "S.RSTN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:474
+msgid "S.RSTNQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:475
+msgid "S.RSTP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:476
+msgid "S.RSTPQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:477
+msgid "S.RUIN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:478
+msgid "S.SCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:479
+msgid "S.SCHA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:480
+msgid "S.SCHC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:481
+msgid "S.SCHL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:482
+msgid "S.SCHM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:483
+msgid "S.SCHN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:484
+msgid "S.SCHT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:485
+msgid "S.SECP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:486
+msgid "S.SHPF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:487
+msgid "S.SHRN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:488
+msgid "S.SHSE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:489
+msgid "S.SLCE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:490
+msgid "S.SNTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:491
+msgid "S.SPA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:492
+msgid "S.SPLY"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:493
+msgid "S.SQR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:494
+msgid "S.STBL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:495
+msgid "S.STDM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:496
+msgid "S.STNB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:497
+msgid "S.STNC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:498
+msgid "S.STNE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:499
+msgid "S.STNF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:500
+msgid "S.STNI"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:501
+msgid "S.STNM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:502
+msgid "S.STNR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:503
+msgid "S.STNS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:504
+msgid "S.STNW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:505
+msgid "S.STPS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:506
+msgid "S.SWT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:507
+msgid "S.SYG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:508
+msgid "S.THTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:509
+msgid "S.TMB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:510
+msgid "S.TMPL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:511
+msgid "S.TNKD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:512
+msgid "S.TOLL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:513
+msgid "S.TOWR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:514
+msgid "S.TRAM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:515
+msgid "S.TRANT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:516
+msgid "S.TRIG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:517
+msgid "S.TRMO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:518
+msgid "S.TWO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:519
+msgid "S.UNIP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:520
+msgid "S.UNIV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:521
+msgid "S.USGE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:522
+msgid "S.VETF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:523
+msgid "S.WALL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:524
+msgid "S.WALLA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:525
+msgid "S.WEIR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:526
+msgid "S.WHRF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:527
+msgid "S.WRCK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:528
+msgid "S.WTRW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:529
+msgid "S.ZNF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:530
+msgid "S.ZOO"
+msgstr ""
+
+#: ../content/identifier.py:26
+msgid "Scheme"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:32
+msgid "Senate"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:33
+msgid "Sibling"
+msgstr ""
+
+#: ../profiles/default/types/Source.xml
+msgid "Source"
+msgstr ""
+
+#: ../content/source.py:48
+msgid "Source Link"
+msgstr ""
+
+#: ../profiles/default/types/Source.xml
+msgid "Source or link for information added to content"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:29
+msgid "Spouse"
+msgstr ""
+
+#: ../content/membership.py:117
+#: ../content/other_name.py:41
+#: ../content/post.py:58
+msgid "Start Date"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:37
+msgid "State Assembly or Legislature"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:47
+msgid "State Corporation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:485
+msgid "State Exam Prep Centre"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:35
+msgid "State Executive Council"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:39
+msgid "State Government"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:45
+msgid "Subordinate"
+msgstr ""
+
+#: ../content/person.py:46
+msgid "Summary"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:531
+msgid "T.ASPH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:532
+msgid "T.ATOL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:533
+msgid "T.BAR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:534
+msgid "T.BCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:535
+msgid "T.BCHS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:536
+msgid "T.BDLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:537
+msgid "T.BLDR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:538
+msgid "T.BLHL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:539
+msgid "T.BLOW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:540
+msgid "T.BNCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:541
+msgid "T.BUTE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:542
+msgid "T.CAPE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:543
+msgid "T.CFT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:544
+msgid "T.CLDA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:545
+msgid "T.CLF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:546
+msgid "T.CNYN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:547
+msgid "T.CONE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:548
+msgid "T.CRDR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:549
+msgid "T.CRQ"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:550
+msgid "T.CRQS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:551
+msgid "T.CRTR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:552
+msgid "T.CUET"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:553
+msgid "T.DLTA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:554
+msgid "T.DPR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:555
+msgid "T.DSRT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:556
+msgid "T.DUNE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:557
+msgid "T.DVD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:558
+msgid "T.ERG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:559
+msgid "T.FAN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:560
+msgid "T.FORD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:561
+msgid "T.FSR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:562
+msgid "T.GAP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:563
+msgid "T.GRGE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:564
+msgid "T.HDLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:565
+msgid "T.HLL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:566
+msgid "T.HLLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:567
+msgid "T.HMCK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:568
+msgid "T.HMDA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:569
+msgid "T.INTF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:570
+msgid "T.ISL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:571
+msgid "T.ISLET"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:572
+msgid "T.ISLF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:573
+msgid "T.ISLM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:574
+msgid "T.ISLS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:575
+msgid "T.ISLT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:576
+msgid "T.ISLX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:577
+msgid "T.ISTH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:578
+msgid "T.KRST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:579
+msgid "T.LAVA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:580
+msgid "T.LEV"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:581
+msgid "T.MESA"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:582
+msgid "T.MND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:583
+msgid "T.MRN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:584
+msgid "T.MT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:585
+msgid "T.MTS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:586
+msgid "T.NKM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:587
+msgid "T.NTK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:588
+msgid "T.NTKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:589
+msgid "T.PAN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:590
+msgid "T.PANS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:591
+msgid "T.PASS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:592
+msgid "T.PEN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:593
+msgid "T.PENX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:594
+msgid "T.PK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:595
+msgid "T.PKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:596
+msgid "T.PLAT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:597
+msgid "T.PLATX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:598
+msgid "T.PLDR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:599
+msgid "T.PLN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:600
+msgid "T.PLNX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:601
+msgid "T.PROM"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:602
+msgid "T.PT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:603
+msgid "T.PTS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:604
+msgid "T.RDGB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:605
+msgid "T.RDGE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:606
+msgid "T.REG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:607
+msgid "T.RK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:608
+msgid "T.RKFL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:609
+msgid "T.RKS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:610
+msgid "T.SAND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:611
+msgid "T.SBED"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:612
+msgid "T.SCRP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:613
+msgid "T.SDL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:614
+msgid "T.SHOR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:615
+msgid "T.SINK"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:616
+msgid "T.SLID"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:617
+msgid "T.SLP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:618
+msgid "T.SPIT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:619
+msgid "T.SPUR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:620
+msgid "T.TAL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:621
+msgid "T.TRGD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:622
+msgid "T.TRR"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:623
+msgid "T.UPLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:624
+msgid "T.VAL"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:625
+msgid "T.VALG"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:626
+msgid "T.VALS"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:627
+msgid "T.VALX"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:628
+msgid "T.VLC"
+msgstr ""
+
+#: ../content/area.py:51
+msgid "The area that contains this area"
+msgstr ""
+
+#: ../content/post.py:38
+msgid "The function that the holder of the post fulfills"
+msgstr ""
+
+#: ../content/membership.py:110
+msgid "The organization on whose behalf the person is a member of the organization"
+msgstr ""
+
+#: ../content/source.py:31
+msgid "Title"
+msgstr ""
+
+#: ../content/source.py:32
+msgid "Title of publication, article .."
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:61
+msgid "Trade Association"
+msgstr ""
+
+#: ../content/contact_detail.py:27
+msgid "Twitter Handle"
+msgstr ""
+
+#: ../content/contact_detail.py:47
+msgid "Type"
+msgstr ""
+
+#: ../content/identifier.py:27
+msgid "Type eg. IC Number, Passport, Company Registration Number"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:629
+msgid "U.APNU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:630
+msgid "U.ARCU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:631
+msgid "U.ARRU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:632
+msgid "U.BDLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:633
+msgid "U.BKSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:634
+msgid "U.BNKU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:635
+msgid "U.BSNU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:636
+msgid "U.CDAU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:637
+msgid "U.CNSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:638
+msgid "U.CNYU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:639
+msgid "U.CRSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:640
+msgid "U.DEPU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:641
+msgid "U.EDGU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:642
+msgid "U.ESCU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:643
+msgid "U.FANU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:644
+msgid "U.FLTU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:645
+msgid "U.FRZU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:646
+msgid "U.FURU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:647
+msgid "U.GAPU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:648
+msgid "U.GLYU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:649
+msgid "U.HLLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:650
+msgid "U.HLSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:651
+msgid "U.HOLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:652
+msgid "U.KNLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:653
+msgid "U.KNSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:654
+msgid "U.LDGU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:655
+msgid "U.LEVU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:656
+msgid "U.MESU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:657
+msgid "U.MNDU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:658
+msgid "U.MOTU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:659
+msgid "U.MTU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:660
+msgid "U.PKSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:661
+msgid "U.PKU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:662
+msgid "U.PLNU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:663
+msgid "U.PLTU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:664
+msgid "U.PNLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:665
+msgid "U.PRVU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:666
+msgid "U.RDGU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:667
+msgid "U.RDSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:668
+msgid "U.RFSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:669
+msgid "U.RFU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:670
+msgid "U.RISU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:671
+msgid "U.SCNU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:672
+msgid "U.SCSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:673
+msgid "U.SDLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:674
+msgid "U.SHFU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:675
+msgid "U.SHLU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:676
+msgid "U.SHSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:677
+msgid "U.SHVU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:678
+msgid "U.SILU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:679
+msgid "U.SLPU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:680
+msgid "U.SMSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:681
+msgid "U.SMU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:682
+msgid "U.SPRU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:683
+msgid "U.TERU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:684
+msgid "U.TMSU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:685
+msgid "U.TMTU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:686
+msgid "U.TNGU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:687
+msgid "U.TRGU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:688
+msgid "U.TRNU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:689
+msgid "U.VALU"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:690
+msgid "U.VLSU"
+msgstr ""
+
+#: ../configure.zcml:36
+msgid "Uninstalls the popolo.contenttypes add-on."
+msgstr ""
+
+#: ../content/identifier.py:35
+msgid "Unique value as code or number"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:691
+msgid "V.BUSH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:692
+msgid "V.CULT"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:693
+msgid "V.FRST"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:694
+msgid "V.FRSTF"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:695
+msgid "V.GROVE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:696
+msgid "V.GRSLD"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:697
+msgid "V.GRVC"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:698
+msgid "V.GRVO"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:699
+msgid "V.GRVP"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:700
+msgid "V.GRVPN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:701
+msgid "V.HTH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:702
+msgid "V.MDW"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:703
+msgid "V.OCH"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:704
+msgid "V.SCRB"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:705
+msgid "V.TREE"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:706
+msgid "V.TUND"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:707
+msgid "V.VIN"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:708
+msgid "V.VINS"
+msgstr ""
+
+#: ../content/contact_detail.py:54
+msgid "Value"
+msgstr ""
+
+#: ../profiles/default/types/Area.xml
+#: ../profiles/default/types/Contact_Detail.xml
+#: ../profiles/default/types/Identifier.xml
+msgid "View"
+msgstr ""
+
+#: ../content/contact_detail.py:21
+msgid "Voice Phone Number"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:284
+msgid "abandoned airfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:319
+msgid "abandoned camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:74
+msgid "abandoned canal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:397
+msgid "abandoned factory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:353
+msgid "abandoned farm"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:416
+msgid "abandoned mine"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:421
+msgid "abandoned mission"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:431
+msgid "abandoned oil well"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:444
+msgid "abandoned police post"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:250
+msgid "abandoned populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:449
+msgid "abandoned prison"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:267
+msgid "abandoned railroad"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:474
+msgid "abandoned railroad station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:476
+msgid "abandoned railroad stop"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:168
+msgid "abandoned watercourse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:184
+msgid "abandoned well"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:39
+msgid "administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:278
+msgid "administrative facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:190
+msgid "agricultural colony"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:279
+msgid "agricultural facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:223
+msgid "agricultural reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:479
+msgid "agricultural school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:280
+msgid "airbase"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:281
+msgid "airfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:283
+msgid "airport"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:286
+msgid "amphitheater"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:191
+msgid "amusement park"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:160
+msgid "anabranch"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:54
+msgid "anchorage"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:261
+msgid "ancient road"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:524
+msgid "ancient wall"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:300
+msgid "apartment building"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:629
+msgid "apron"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:288
+msgid "aquaculture facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:69
+msgid "aqueduct"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:289
+msgid "arch"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:287
+msgid "archaeological/prehistoric site"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:290
+msgid "archive"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:210
+msgid "arctic land"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:192
+msgid "area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:631
+msgid "arrugado"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:572
+msgid "artificial island"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:234
+msgid "artillery range"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:531
+msgid "asphalt lake"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:38
+msgid "associate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:292
+msgid "astronomical station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:293
+msgid "asylum"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:294
+msgid "athletic field"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:532
+msgid "atoll(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:328
+msgid "atomic center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:295
+msgid "automatic teller machine"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:536
+msgid "badlands"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:306
+msgid "baling station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:296
+msgid "bank"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:58
+msgid "bank(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:633
+msgid "banks"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:533
+msgid "bar"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:304
+msgid "barracks"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:635
+msgid "basin"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:195
+msgid "battlefield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:55
+msgid "bay"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:56
+msgid "bays"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:534
+msgid "beach"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:604
+msgid "beach ridge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:535
+msgid "beaches"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:297
+msgid "beacon"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:540
+msgid "bench"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:57
+msgid "bight(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:538
+msgid "blowhole(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:539
+msgid "blowout(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:307
+msgid "boatyard"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:61
+msgid "bog(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:453
+msgid "border post"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:632
+msgid "borderland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:537
+msgid "boulder field"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:303
+msgid "boundary marker"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:305
+msgid "breakwater"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:391
+msgid "brewery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:298
+msgid "bridge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:52
+msgid "buffer zone"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:301
+msgid "building(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:308
+msgid "burial cave(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:309
+msgid "bus station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:310
+msgid "bus stop"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:691
+msgid "bush(es)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:202
+msgid "business center"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:36
+msgid "business_partner"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:541
+msgid "butte(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:311
+msgid "cairn"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:544
+msgid "caldera"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:314
+msgid "camp(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:68
+msgid "canal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:70
+msgid "canal bend"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:175
+msgid "canal tunnel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:162
+msgid "canalized stream"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:392
+msgid "cannery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:546
+msgid "canyon"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:637
+msgid "canyons"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:542
+msgid "cape"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:244
+msgid "capital of a political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:268
+msgid "caravan route"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:324
+msgid "casino"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:325
+msgid "castle"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:511
+msgid "cattle dipping tank"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:256
+msgid "causeway"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:312
+msgid "cave(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:321
+msgid "cemetery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:63
+msgid "channel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:411
+msgid "chrome mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:313
+msgid "church"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:549
+msgid "cirque"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:550
+msgid "cirques"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:196
+msgid "clearing"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:543
+msgid "cleft(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:545
+msgid "cliff(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:372
+msgid "clinic"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:410
+msgid "coal mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:199
+msgid "coalfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:201
+msgid "coast"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:497
+msgid "coast guard station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:697
+msgid "coconut grove"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:480
+msgid "college"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:197
+msgid "common"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:322
+msgid "communication center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:329
+msgid "community center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:198
+msgid "concession area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:547
+msgid "cone(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:67
+msgid "confluence"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:200
+msgid "continent"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:639
+msgid "continental rise"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:334
+msgid "convent"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:412
+msgid "copper mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:393
+msgid "copper works"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:144
+msgid "coral reef(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:636
+msgid "cordillera"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:323
+msgid "corral(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:548
+msgid "corridor"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:370
+msgid "country house"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:327
+msgid "courthouse"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:34
+msgid "cousin"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:77
+msgid "cove(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:109
+msgid "crater lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:117
+msgid "crater lakes"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:551
+msgid "crater(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:552
+msgid "cuesta(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:692
+msgid "cultivated area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:79
+msgid "current"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:326
+msgid "customs house"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:454
+msgid "customs post"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:80
+msgid "cutoff"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:338
+msgid "dairy"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:335
+msgid "dam"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:640
+msgid "deep"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:553
+msgid "delta"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:43
+msgid "dependent political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:554
+msgid "depression(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:555
+msgid "desert"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:253
+msgid "destroyed populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:341
+msgid "dike"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:342
+msgid "diplomatic facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:373
+msgid "dispensary"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:163
+msgid "distributary(-ies)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:85
+msgid "ditch"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:88
+msgid "ditch mouth(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:557
+msgid "divide"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:81
+msgid "dock(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:82
+msgid "docking basin"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:340
+msgid "dockyard"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:193
+msgid "drainage basin"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:71
+msgid "drainage canal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:86
+msgid "drainage ditch"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:339
+msgid "dry dock"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:611
+msgid "dry stream bed"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:556
+msgid "dune(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:231
+msgid "economic region"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:42
+msgid "employer"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:612
+msgid "escarpment"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:642
+msgid "escarpment (or scarp)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:344
+msgid "estate(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:89
+msgid "estuary"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:498
+msgid "experiment station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:350
+msgid "facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:330
+msgid "facility center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:390
+msgid "factory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:643
+msgid "fan"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:559
+msgid "fan(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:352
+msgid "farm"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:246
+msgid "farm village"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:354
+msgid "farms"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:355
+msgid "farmstead"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:357
+msgid "ferry"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:358
+msgid "ferry terminal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:204
+msgid "field(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:37
+msgid "fifth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:29
+msgid "first-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:90
+msgid "fishing area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:135
+msgid "fishponds"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:561
+msgid "fissure"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:91
+msgid "fjord"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:92
+msgid "fjords"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:644
+msgid "flat"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:560
+msgid "ford"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:224
+msgid "forest reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:499
+msgid "forest station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:693
+msgid "forest(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:103
+msgid "former inlet"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:404
+msgid "former sugar mill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:356
+msgid "fort"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:694
+msgid "fossilized forest"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:351
+msgid "foundry"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:35
+msgid "fourth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:645
+msgid "fracture zone"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:529
+msgid "free trade zone"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:44
+msgid "freely associated state"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:343
+msgid "fuel depot"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:646
+msgid "furrow"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:562
+msgid "gap"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:360
+msgid "garden(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:363
+msgid "gas-oil separator plant"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:206
+msgid "gasfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:359
+msgid "gate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:99
+msgid "geyser"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:361
+msgid "ghat"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:97
+msgid "glacier(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:409
+msgid "gold mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:461
+msgid "golf course"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:563
+msgid "gorge(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:696
+msgid "grassland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:365
+msgid "grave"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:208
+msgid "gravel area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:207
+msgid "grazing area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:695
+msgid "grove"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:362
+msgid "guest house"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:98
+msgid "gulf"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:648
+msgid "gully"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:367
+msgid "halting place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:567
+msgid "hammock(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:625
+msgid "hanging valley"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:100
+msgid "harbor(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:564
+msgid "headland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:164
+msgid "headwaters"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:701
+msgid "heath"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:282
+msgid "heliport"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:366
+msgid "hermitage"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:565
+msgid "hill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:566
+msgid "hills"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:40
+msgid "historical administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:245
+msgid "historical capital of a political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:38
+msgid "historical fifth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:30
+msgid "historical first-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:36
+msgid "historical fourth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:45
+msgid "historical political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:248
+msgid "historical populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:232
+msgid "historical region"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:32
+msgid "historical second-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:375
+msgid "historical site"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:34
+msgid "historical third-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:651
+msgid "hole"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:368
+msgid "homestead"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:371
+msgid "hospital"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:158
+msgid "hot spring(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:376
+msgid "hotel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:369
+msgid "house(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:203
+msgid "housing development"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:225
+msgid "hunting reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:377
+msgid "hut"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:378
+msgid "huts"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:451
+msgid "hydroelectric power station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:62
+msgid "icecap"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:84
+msgid "icecap depression"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:83
+msgid "icecap dome"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:141
+msgid "icecap ridge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:46
+msgid "independent political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:209
+msgid "industrial area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:102
+msgid "inlet"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:500
+msgid "inspection station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:621
+msgid "interdune trough(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:569
+msgid "interfluve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:110
+msgid "intermittent lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:118
+msgid "intermittent lakes"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:114
+msgid "intermittent oxbow lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:131
+msgid "intermittent pond"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:136
+msgid "intermittent ponds"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:139
+msgid "intermittent pool"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:148
+msgid "intermittent reservoir"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:112
+msgid "intermittent salt lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:120
+msgid "intermittent salt lakes"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:133
+msgid "intermittent salt pond(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:165
+msgid "intermittent stream"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:187
+msgid "intermittent wetland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:460
+msgid "intersection"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:413
+msgid "iron mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:205
+msgid "irrigated field(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:72
+msgid "irrigation canal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:87
+msgid "irrigation ditch"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:174
+msgid "irrigation system"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:570
+msgid "island"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:574
+msgid "islands"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:571
+msgid "islet"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:255
+msgid "israeli settlement"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:577
+msgid "isthmus"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:381
+msgid "jetty"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:578
+msgid "karst area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:652
+msgid "knoll"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:653
+msgid "knolls"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:316
+msgid "labor camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:105
+msgid "lagoon"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:106
+msgid "lagoons"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:108
+msgid "lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:104
+msgid "lake bed(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:64
+msgid "lake channel(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:233
+msgid "lake region"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:115
+msgid "lakes"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:575
+msgid "land-tied island"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:385
+msgid "landfill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:382
+msgid "landing"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:481
+msgid "language school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:579
+msgid "lava area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:41
+msgid "leased area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:654
+msgid "ledge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:383
+msgid "leper colony"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:374
+msgid "leprosarium"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:580
+msgid "levee"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:384
+msgid "library"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:387
+msgid "lighthouse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:394
+msgid "limekiln"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:364
+msgid "local government office"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:211
+msgid "locality"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:386
+msgid "lock(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:315
+msgid "logging camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:170
+msgid "lost river"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:388
+msgid "mall"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:214
+msgid "maneuver area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:573
+msgid "mangrove island"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:123
+msgid "mangrove swamp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:389
+msgid "marina"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:65
+msgid "marine channel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:483
+msgid "maritime school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:399
+msgid "market"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:125
+msgid "marsh(es)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:702
+msgid "meadow"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:586
+msgid "meander neck"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:331
+msgid "medical center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:656
+msgid "mesa"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:581
+msgid "mesa(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:501
+msgid "meteorological station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:423
+msgid "metro station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:212
+msgid "military base"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:379
+msgid "military installation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:482
+msgid "military school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:400
+msgid "mill(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:408
+msgid "mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:213
+msgid "mining area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:317
+msgid "mining camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:420
+msgid "mission"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:658
+msgid "moat"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:418
+msgid "mole"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:422
+msgid "monastery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:414
+msgid "monument"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:124
+msgid "moor(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:583
+msgid "moraine"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:419
+msgid "mosque"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:657
+msgid "mound"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:582
+msgid "mound(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:584
+msgid "mountain"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:585
+msgid "mountains"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:95
+msgid "mud flat(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:395
+msgid "munitions plant"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:424
+msgid "museum"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:127
+msgid "narrows"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:273
+msgid "natural tunnel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:226
+msgid "nature reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:215
+msgid "naval base"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:73
+msgid "navigation canal(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:66
+msgid "navigation channel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:709
+msgid "not available"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:425
+msgid "novitiate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:452
+msgid "nuclear power station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:709
+msgid "null"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:587
+msgid "nunatak"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:588
+msgid "nunataks"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:426
+msgid "nursery(-ies)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:216
+msgid "oasis(-es)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:427
+msgid "observation point"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:428
+msgid "observatory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:128
+msgid "ocean"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:302
+msgid "office building"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:318
+msgid "oil camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:345
+msgid "oil palm plantation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:257
+msgid "oil pipeline"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:430
+msgid "oil pipeline junction"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:517
+msgid "oil pipeline terminal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:440
+msgid "oil pumping station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:432
+msgid "oil refinery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:434
+msgid "oil well"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:217
+msgid "oilfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:698
+msgid "olive grove"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:402
+msgid "olive oil mill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:435
+msgid "opera house"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:703
+msgid "orchard(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:401
+msgid "ore treatment plant"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:28
+msgid "orgCatAccountingFirm"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:40
+msgid "orgCatAgency"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:52
+msgid "orgCatBoDirectors"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:33
+msgid "orgCatCabinet"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:66
+msgid "orgCatCivilSociety"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:42
+msgid "orgCatCommission"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:51
+msgid "orgCatCommittee"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:44
+msgid "orgCatDepartment"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:68
+msgid "orgCatFinancialInstitution"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:64
+msgid "orgCatLabourUnion"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:62
+msgid "orgCatLawFirm"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:54
+msgid "orgCatManagement"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:55
+msgid "orgCatPP"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:58
+msgid "orgCatPPBranch"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:56
+msgid "orgCatPPExecutive"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:30
+msgid "orgCatParliament"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:48
+msgid "orgCatPrivateLimitedCo"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:50
+msgid "orgCatPublicCo"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:32
+msgid "orgCatSenate"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:36
+msgid "orgCatStateAssembly"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:46
+msgid "orgCatStateCorp"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:34
+msgid "orgCatStateExecCouncil"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:38
+msgid "orgCatStateGov"
+msgstr ""
+
+#: ../vocabularies/organizations_vocab.py:60
+msgid "orgCatTradeAssociation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:129
+msgid "overfalls"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:113
+msgid "oxbow lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:437
+msgid "pagoda"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:436
+msgid "palace"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:699
+msgid "palm grove"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:227
+msgid "palm tree reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:589
+msgid "pan"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:590
+msgid "pans"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:30
+msgid "parent"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:49
+msgid "parish"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:219
+msgid "park"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:445
+msgid "park gate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:446
+msgid "park headquarters"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:439
+msgid "parking lot"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:591
+msgid "pass"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:455
+msgid "patrol post"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:594
+msgid "peak"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:595
+msgid "peaks"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:218
+msgid "peat cutting area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:592
+msgid "peninsula"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:194
+msgid "petroleum basin"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:396
+msgid "phosphate works"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:291
+msgid "piece of art"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:438
+msgid "pier"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:700
+msgid "pine grove"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:664
+msgid "pinnacle"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:662
+msgid "plain"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:599
+msgid "plain(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:596
+msgid "plateau"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:602
+msgid "point"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:603
+msgid "points"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:598
+msgid "polder"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:443
+msgid "police post"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:42
+msgid "political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:130
+msgid "pond"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:134
+msgid "ponds"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:138
+msgid "pool(s)"
+msgstr ""
+
+#: ../configure.zcml:27
+msgid "popolo.contenttypes"
+msgstr ""
+
+#: ../configure.zcml:36
+msgid "popolo.contenttypes (uninstall)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:249
+msgid "populated locality"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:238
+msgid "populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:252
+msgid "populated places"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:220
+msgid "port"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:259
+msgid "portage"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:442
+msgid "post office"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:450
+msgid "power station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:447
+msgid "prison"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:258
+msgid "promenade"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:601
+msgid "promontory(-ies)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:665
+msgid "province"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:456
+msgid "pyramid"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:457
+msgid "pyramids"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:417
+msgid "quarry(-ies)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:458
+msgid "quay"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:221
+msgid "quicksand"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:462
+msgid "racetrack"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:429
+msgid "radio observatory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:502
+msgid "radio station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:266
+msgid "railroad"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:265
+msgid "railroad junction"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:470
+msgid "railroad siding"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:471
+msgid "railroad signal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:473
+msgid "railroad station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:475
+msgid "railroad stop"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:275
+msgid "railroad tunnel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:269
+msgid "railroad yard"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:469
+msgid "ranch(es)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:146
+msgid "rapids"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:150
+msgid "ravine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:140
+msgid "reach"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:669
+msgid "reef"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:143
+msgid "reef(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:668
+msgid "reefs"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:448
+msgid "reformatory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:320
+msgid "refugee camp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:230
+msgid "region"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:332
+msgid "religious center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:251
+msgid "religious populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:467
+msgid "religious site"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:380
+msgid "research institute"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:228
+msgid "reservation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:222
+msgid "reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:147
+msgid "reservoir(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:472
+msgid "resort"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:463
+msgid "restaurant"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:465
+msgid "resthouse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:468
+msgid "retreat"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:666
+msgid "ridge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:605
+msgid "ridge(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:667
+msgid "ridges"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:670
+msgid "rise"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:260
+msgid "road"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:262
+msgid "road bend"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:263
+msgid "road cut"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:264
+msgid "road junction"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:274
+msgid "road tunnel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:142
+msgid "roadstead"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:607
+msgid "rock"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:568
+msgid "rock desert"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:608
+msgid "rockfall"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:609
+msgid "rocks"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:40
+msgid "romantic"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:466
+msgid "rookery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:346
+msgid "rubber plantation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:477
+msgid "ruin(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:299
+msgid "ruined bridge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:336
+msgid "ruined dam"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:151
+msgid "sabkha(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:613
+msgid "saddle"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:235
+msgid "salt area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:122
+msgid "salt evaporation ponds"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:111
+msgid "salt lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:119
+msgid "salt lakes"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:126
+msgid "salt marsh"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:415
+msgid "salt mine(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:132
+msgid "salt pond"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:137
+msgid "salt ponds"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:490
+msgid "sanatorium"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:610
+msgid "sand area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:558
+msgid "sandy desert"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:503
+msgid "satellite station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:405
+msgid "sawmill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:478
+msgid "school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:496
+msgid "scientific research base"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:704
+msgid "scrubland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:153
+msgid "sea"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:671
+msgid "seachannel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:672
+msgid "seachannels"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:681
+msgid "seamount"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:680
+msgid "seamounts"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:53
+msgid "seaplane landing area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:243
+msgid "seat of a fifth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:239
+msgid "seat of a first-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:242
+msgid "seat of a fourth-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:240
+msgid "seat of a second-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:241
+msgid "seat of a third-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:247
+msgid "seat of government of a political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:31
+msgid "second-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:60
+msgid "section of bank"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:76
+msgid "section of canal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:349
+msgid "section of estate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:101
+msgid "section of harbor"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:47
+msgid "section of independent political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:166
+msgid "section of intermittent stream"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:576
+msgid "section of island"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:107
+msgid "section of lagoon"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:121
+msgid "section of lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:593
+msgid "section of peninsula"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:600
+msgid "section of plain"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:597
+msgid "section of plateau"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:254
+msgid "section of populated place"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:145
+msgid "section of reef"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:171
+msgid "section of stream"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:627
+msgid "section of valley"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:181
+msgid "section of wadi"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:94
+msgid "section of waterfall(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:48
+msgid "semi-independent political entity"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:506
+msgid "sewage treatment plant"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:486
+msgid "sheepfold"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:674
+msgid "shelf"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:641
+msgid "shelf edge"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:677
+msgid "shelf valley"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:675
+msgid "shoal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:154
+msgid "shoal(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:676
+msgid "shoals"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:614
+msgid "shore"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:487
+msgid "shrine"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:32
+msgid "sibling"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:155
+msgid "sill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:615
+msgid "sinkhole"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:616
+msgid "slide"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:679
+msgid "slope"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:617
+msgid "slope(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:489
+msgid "sluice"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:236
+msgid "snowfield"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:152
+msgid "sound"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:491
+msgid "spa"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:333
+msgid "space center"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:492
+msgid "spillway"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:618
+msgid "spit"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:28
+msgid "spouse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:156
+msgid "spring(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:682
+msgid "spur"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:619
+msgid "spur(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:493
+msgid "square"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:494
+msgid "stable"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:495
+msgid "stadium"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:505
+msgid "steps"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:271
+msgid "stock route"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:606
+msgid "stony desert"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:464
+msgid "store"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:488
+msgid "storehouse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:172
+msgid "strait"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:159
+msgid "stream"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:59
+msgid "stream bank"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:161
+msgid "stream bend"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:167
+msgid "stream mouth(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:169
+msgid "streams"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:270
+msgid "street"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:337
+msgid "sub-surface dam"
+msgstr ""
+
+#: ../vocabularies/relationshiptypes.py:44
+msgid "subordinate"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:403
+msgid "sugar mill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:347
+msgid "sugar plantation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:398
+msgid "sugar refinery"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:157
+msgid "sulphur spring(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:173
+msgid "swamp"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:507
+msgid "synagogue"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:685
+msgid "tablemount (or guyot)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:684
+msgid "tablemounts (or guyots)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:620
+msgid "talus slope"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:433
+msgid "tank farm"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:348
+msgid "tea plantation"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:484
+msgid "technical school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:518
+msgid "temp work office"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:510
+msgid "temple(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:285
+msgid "terminal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:622
+msgid "terrace"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:50
+msgid "territory"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:508
+msgid "theater"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:33
+msgid "third-order administrative division"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:78
+msgid "tidal creek(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:96
+msgid "tidal flat(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:512
+msgid "toll gate/barrier"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:509
+msgid "tomb(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:686
+msgid "tongue"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:513
+msgid "tower"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:459
+msgid "traffic circle"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:277
+msgid "trail"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:514
+msgid "tram"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:515
+msgid "transit terminal"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:705
+msgid "tree(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:688
+msgid "trench"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:516
+msgid "triangulation station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:237
+msgid "tribal area"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:687
+msgid "trough"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:706
+msgid "tundra"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:272
+msgid "tunnel"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:276
+msgid "tunnels"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:75
+msgid "underground irrigation canal(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:116
+msgid "underground lake"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:521
+msgid "united states government establishment"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:520
+msgid "university"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:519
+msgid "university prep school"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:623
+msgid "upland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:624
+msgid "valley"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:626
+msgid "valleys"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:522
+msgid "veterinary facility"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:707
+msgid "vineyard"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:708
+msgid "vineyards"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:628
+msgid "volcano"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:176
+msgid "wadi"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:177
+msgid "wadi bend"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:178
+msgid "wadi junction"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:179
+msgid "wadi mouth"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:180
+msgid "wadies"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:523
+msgid "wall"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:407
+msgid "water mill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:441
+msgid "water pumping station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:149
+msgid "water tank"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:188
+msgid "watercourse"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:93
+msgid "waterfall(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:189
+msgid "waterhole(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:528
+msgid "waterworks"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:525
+msgid "weir(s)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:183
+msgid "well"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:185
+msgid "wells"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:186
+msgid "wetland"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:504
+msgid "whaling station"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:526
+msgid "wharf(-ves)"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:182
+msgid "whirlpool"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:229
+msgid "wildlife reserve"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:406
+msgid "windmill"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:527
+msgid "wreck"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:51
+msgid "zone"
+msgstr ""
+
+#: ../vocabularies/geoname_featurecodes_vocab.py:530
+msgid "zoo"
+msgstr ""
