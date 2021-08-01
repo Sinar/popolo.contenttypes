@@ -85,9 +85,9 @@
                    context/post/to_object/absolute_url"
                    tal:content="context/post/to_object/title">
                 </a>
+                </dt>
                 <dd tal:content="context/post/to_object/description"
                     />
-                </dt>
             </dl>
 
             <dl tal:condition="context/on_behalf_of">
