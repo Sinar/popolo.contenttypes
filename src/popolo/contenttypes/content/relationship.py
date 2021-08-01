@@ -32,10 +32,8 @@ class IRelationship(model.Schema):
     dexteritytextindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Relationship Name'),
-        description=_(u'''
-        The name of this relationship, eg. Son of Person,
-        Known business associate of Person, Major client of Business.
-                       '''),
+        description=_(u'''The name of this relationship, eg. Son of Person,
+        Known business associate of Person, Major client of Business.'''),
         required=True,
         )
 
@@ -66,9 +64,7 @@ class IRelationship(model.Schema):
                       )
     relationship_subject = RelationChoice(
             title=u'Subject',
-            description=_(u'''
-                The subject of the relation.
-                            '''),
+            description=_(u'The subject of the relation.'),
             source=CatalogSource(portal_type=['Person', 'Organization']),
             required=False,
             )
@@ -85,9 +81,7 @@ class IRelationship(model.Schema):
 
     relationship_object = RelationChoice(
             title=u'Object',
-            description=_(u'''
-                The object of the relation.
-                            '''),
+            description=_(u'The object of the relation.'),
             source=CatalogSource(portal_type=['Person', 'Organization']),
             required=False,
             )
