@@ -195,6 +195,7 @@
                            />
                        <div class="card-body">
                            <h5 class="card-title"
+                               tal:on-error="nothing"                  
                                tal:content="card/interestedParty/to_object/title">Low Taek Jho</h5>
                            <p class="card-text">Interest Type: <span tal:replace="structure card/interest_type" /></p>
                            <p class="card-text">Interest Level: <span tal:replace="structure card/interest_level" /></p>
