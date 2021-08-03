@@ -30,9 +30,9 @@
                    context/organization/to_object/absolute_url"
                    tal:content="context/organization/to_object/title">
                 </a>
-                <dd tal:content="context/organization/to_object/description"
-                    />
                 </dt>
+                <dd tal:content="context/organization/to_object/description"/>
+                
             </dl>
 
             <dl class="dl-horizontal">
@@ -87,11 +87,9 @@
                            Membership details ...
                            </a>
                        </small>
+                    </div>
 
-                   </div>
                 </div>
-
-
             </div>
 
             <h3>Other Details</h3>

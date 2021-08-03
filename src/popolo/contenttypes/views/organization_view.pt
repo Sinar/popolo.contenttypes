@@ -37,7 +37,7 @@
                             </span>
                             <span class="warning"
                                 tal:on-error="nothing"
-                                tal:condition=python:view.isOffshore(context.incorporatedInJurisdiction)">
+                                tal:condition="python:view.isOffshore(context.incorporatedInJurisdiction)">
                                 (Offshore Tax Haven)
                             </span>
                         </dd>
@@ -204,6 +204,7 @@
                            <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary">Details</a>
                        </div>
                    </div>
+            </div>
 
         </div>
         <hr />
