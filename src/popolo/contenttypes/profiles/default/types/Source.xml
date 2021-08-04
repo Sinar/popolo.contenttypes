@@ -48,7 +48,7 @@
     <!--<element value="plone.richtext"/>-->
     <!--<element value="plone.tableofcontents"/>-->
     <element value="plone.versioning" />
-    <!--<element value="plone.translatable" />-->
+    <element value="plone.translatable" />
     <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
   </property>
 
