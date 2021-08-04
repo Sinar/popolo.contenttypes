@@ -10,7 +10,7 @@
 
             <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-                <h2 class="documentFirstHeading">
+                <h2 class="documentFirstHeading" i18n:translate="">
                 Post
                 </h2>
             
@@ -24,7 +24,7 @@
 
 
             <dl tal:condition="context/organization">
-                <dt>
+                <dt i18n:translate="">
                 Organization:
                 <a href="" tal:attributes="href
                    context/organization/to_object/absolute_url"
@@ -36,20 +36,20 @@
             </dl>
 
             <dl class="dl-horizontal">
-                <dt>
+                <dt i18n:translate="">
                 Start Date
                 </dt>
                 <dd tal:content="structure view/w/start_date/render"
                     />
-                <dt>
+                <dt i18n:translate="">
                 End Date
                 </dt>
                 <dd tal:content="structure view/w/end_date/render"
                     />
             </dl>
 
-            <h3>Memberships</h3>
-            <p>Persons who are known to hold or have held this
+            <h3 i18n:translate="">Memberships</h3>
+            <p i18n:translate="">Persons who are known to hold or have held this
                 Post</p>
 
             <div tal:repeat="member view/memberships">
@@ -67,10 +67,10 @@
                            />
                     </div>
                     <div class="col-md-8">
-                        <small class="discreet">
+                        <small class="discreet" i18n:translate="">
                         Start Date: <span
                                         tal:replace="member/start_date"
-                                        />
+                                        i18n:translate="" />
                        &mdash; End Date: <span
                                                  tal:replace="member/end_date"
                                                  />
@@ -82,7 +82,7 @@
                             tal:content="member/person/to_object/description"
                             />
                         <br /> 
-                        <small class="discreet">
+                        <small class="discreet" i18n:translate="">
                            <a tal:attributes="href member/absolute_url">
                            Membership details ...
                            </a>
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <h3>Other Details</h3>
+            <h3 i18n:translate="">Other Details</h3>
 
             <ul tal:repeat="item context/listFolderContents">
                 <li>
