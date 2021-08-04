@@ -19,20 +19,21 @@
                 </div>
                 <div class="col-md-3">
                     <dl class="dl-horizontal">
-                        <dt>Gender</dt>
+                        <dt i18n:translate="">Gender</dt>
                         <dd tal:content="structure view/w/gender/render"></dd>
-                        <dt>Birthdate</dt>
+                        <dt i18n:translate="">Birthdate</dt>
                         <dd tal:content="structure view/w/birth_date/render"></dd>
-                        <dd class="discreet" tal:condition="not: context/birth_date">Unknown</dd>
-                        <dt tal:condition="context/death_date">Birthdate</dt>
+                        <dd class="discreet" tal:condition="not: context/birth_date" 
+                            i18n:translate="">Unknown</dd>
+                        <dt tal:condition="context/death_date" i18n:translate="">Birthdate</dt>
                         <dd tal:condition="context/death_date" 
                             tal:content="structure view/w/birth_date/render"></dd>
-                        <dt tal:condition="context/nationalities">Nationalities</dt>
+                        <dt tal:condition="context/nationalities" i18n:translate="">Nationalities</dt>
                         <dd tal:on-error="nothing" tal:condition="context/nationalities" tal:repeat="nationality context/nationalities">
                             <span tal:content="python:
                                     view.nationalities(nationality)"></span>
                         </dd>
-                        <dt tal:condition="context/taxResidencies">Tax Residencies</dt>
+                        <dt tal:condition="context/taxResidencies" i18n:translate="">Tax Residencies</dt>
                         <dd tal:on-error="nothing" tal:condition="context/taxResidencies" tal:repeat="nationality context/taxResidencies">
                             <span tal:content="python:
                                                     view.nationalities(nationality)"></span>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="col-md-3" id="bods-person-details" tal:condition="context/hasPepStatus" tal:on-error="nothing">
                     <dl>
-                        <dt class="alert alert-danger">Politically Exposed Person</dt>
+                        <dt class="alert alert-danger" i18n:translate="">Politically Exposed Person</dt>
                         <dd tal:content="context/pepStatusDetails"></dd>
                       
                     </dl>
@@ -56,22 +57,22 @@
 
             <div id="memberhips">
 
-                <h4>Membership and Posts</h4>
+                <h4 i18n:translate="">Membership and Posts</h4>
 
-                <p tal:condition="not: view/memberships">
+                <p tal:condition="not: view/memberships" i18n:translate="">
                     No known memberships
                 </p>
 
                 <table class="table-striped" tal:condition="view/memberships">
                     <thead>
                         <tr>
-                            <th>Post</th>
-                            <th>Label</th>
-                            <th>Role</th>
-                            <th>Organization</th>
-                            <th>On Behalf Of</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
+                            <th i18n:translate="">Post</th>
+                            <th i18n:translate="">Label</th>
+                            <th i18n:translate="">Role</th>
+                            <th i18n:translate="">Organization</th>
+                            <th i18n:translate="">On Behalf Of</th>
+                            <th i18n:translate="">Start Date</th>
+                            <th i18n:translate="">End Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -117,11 +118,11 @@
 
                 <div class="col-md-5">
 
-                    <h4>Family Relationships</h4>
+                    <h4 i18n:translate="">Family Relationships</h4>
 
                     <! -- Spouse -->
 
-                        <ul tal:repeat="relationship view/relationships_subject">
+                        <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
                             <li tal:condition="python:
                                        relationship.relationship_type ==
                                        'spouse'">
@@ -142,7 +143,7 @@
                             </li>
                         </ul>
 
-                        <ul tal:repeat="relationship view/relationships_object">
+                        <ul i18n:translate="" tal:repeat="relationship view/relationships_object">
                             <li tal:condition="python:
                                        relationship.relationship_type ==
                                        'spouse'">
@@ -164,9 +165,9 @@
                             </li>
                         </ul>
 
-                        <ul tal:repeat="relationship view/relationships_subject">
+                        <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
                             <!-- Parent -->
-                            <li tal:condition="python:
+                            <li i18n:translate="" tal:condition="python:
                                        relationship.relationship_type ==
                                        'parent'">
 
@@ -191,7 +192,7 @@
                         <ul tal:repeat="relationship view/relationships_object">
 
                             <!-- Child  -->
-                            <li tal:condition="python:
+                            <li i18n:translate="" tal:condition="python:
                                        relationship.relationship_type ==
                                        'parent'">
 
@@ -213,7 +214,7 @@
 
                         <!-- Cousins -->
 
-                        <ul tal:repeat="relationship view/relationships_subject">
+                        <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
                             <li tal:condition="python:
                                        relationship.relationship_type ==
                                        'cousin'">
@@ -264,11 +265,11 @@
 
                 <div class="col-md-5">
 
-                    <h4>Business and other Relationships</h4>
+                    <h4 i18n:translate="">Business and other Relationships</h4>
 
                     <!-- Business associate -->
 
-                    <ul tal:repeat="relationship view/relationships_subject">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -291,7 +292,7 @@
                         </li>
                     </ul>
 
-                    <ul tal:repeat="relationship view/relationships_object">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_object">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -316,7 +317,7 @@
 
                     <!-- Superior and Subordinate -->
 
-                    <ul tal:repeat="relationship view/relationships_subject">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -340,7 +341,7 @@
                     </ul>
 
 
-                    <ul tal:repeat="relationship view/relationships_object">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_object">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -366,7 +367,7 @@
 
                     <!-- Employer and Employee -->
 
-                    <ul tal:repeat="relationship view/relationships_subject">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -390,7 +391,7 @@
                     </ul>
 
 
-                    <ul tal:repeat="relationship view/relationships_object">
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_object">
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
@@ -418,25 +419,25 @@
             <hr />
 
 
-            <h4>Biography</h4>
+            <h4 i18n:translate="">Biography</h4>
             <div tal:replace="structure view/w/biography/render" />
 
             <hr />
 
-            <h4>Notes</h4>
+            <h4 i18n:translate="">Notes</h4>
             <div tal:replace="structure view/w/notes/render" />
 
             <hr />
 
             <div id="pepStatusDetails" tal:condition="context/pepStatusDetails">
-                <h4>PEP Status Details</h4>
+                <h4 i18n:translate="">PEP Status Details</h4>
                 <div tal:content="context/pepStatusDetails">
                 </div>
             </div>
 
             <hr />
 
-            <h4>Subitems</h4>
+            <h4 i18n:translate="">Subitems</h4>
 
             <ul tal:repeat="item context/listFolderContents">
                 <li>

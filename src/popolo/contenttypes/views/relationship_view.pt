@@ -10,7 +10,7 @@
 
             <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-                <h2 class="documentFirstHeading">
+                <h2 class="documentFirstHeading" i18n:translate="">
                     Relationship
                 </h2>
             
@@ -21,14 +21,14 @@
             <p class="documentDescription" tal:content="context/description"></p>
             
             <dl>
-                <dt>Classification</dt>
+                <dt i18n:translate="">Classification</dt>
                 <dd tal:content="structure view/w/relationship_type/render"></dd>
             </dl>
 
             <div tal:replace="structure provider:plone.abovecontentbody" />
 
                 <dl tal:condition="context/relationship_subject">
-                <dt>
+                <dt i18n:translate="">
                 Person: 
                 <a href="" 
                    tal:on-error="nothing"
@@ -59,7 +59,7 @@
             </dl>
 
             <dl tal:condition="context/relationship_object">
-                <dt>
+                <dt i18n:translate="">
                 Subject:
                 <a href="" tal:attributes="href
                    context/relationship_object/to_object/absolute_url"
@@ -83,22 +83,22 @@
             </dl>
 
             <dl class="dl-horizontal">
-                <dt>
+                <dt i18n:translate="">
                 Start Date
                 </dt>
                 <dd tal:content="context/start_date"
                     />
-                <dt>
+                <dt i18n:translate="">
                 End Date
                 </dt>
                 <dd tal:content="structure context/end_date"
                     />
             </dl>
 
-            <h3>Notes</h3>
+            <h3 i18n:translate="">Notes</h3>
             <div tal:replace="structure view/w/notes/render" />
 
-            <h3>Other Details</h3>
+            <h3 i18n:translate="">Other Details</h3>
 
             <ul tal:repeat="item context/listFolderContents">
                 <li>

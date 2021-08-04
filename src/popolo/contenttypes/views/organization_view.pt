@@ -21,21 +21,22 @@
         <div class="row">
              <div class="col-md-3">
                     <dl>
-                        <dt>Classification</dt>
+                        <dt i18n:translate="">Classification</dt>
                         <dd tal:content="structure
                         view/w/classification/render"></dd>
-                        <dt>Founding date</dt>
+                        <dt i18n:translate="">Founding date</dt>
                         <dd tal:content="structure
                         view/w/founding_date/render"></dd>
-                        <dt>Dissolution date</dt>
+                        <dt i18n:translate="">Dissolution date</dt>
                         <dd tal:content="structure
                         view/w/dissolution_date/render"></dd>
-                        <dt>Incorporated in Jurisdiction</dt>
+                        <dt i18n:translate="">Incorporated in Jurisdiction</dt>
                         <dd><span
                             tal:on-error="nothing"
                             tal:content="python: view.incorporated(context.incorporatedInJurisdiction)">
                             </span>
                             <span class="warning"
+                                i18n:translate=""
                                 tal:on-error="nothing"
                                 tal:condition="python:view.isOffshore(context.incorporatedInJurisdiction)">
                                 (Offshore Tax Haven)
@@ -45,8 +46,8 @@
               </div>
               <div class="col-md-3">
                     <dl tal:condition="context/parent_organization">
-                        <dt>Parent Organization</dt>
-                        <dd>
+                        <dt i18n:translate="">Parent Organization</dt>
+                        <dd i18n:translate="">
                             <a href=""
                                tal:attributes="href
                                context/parent_organization/to_object/absolute_url"
@@ -56,7 +57,7 @@
                         </dd>
 				     </dl>
 					 <dl tal:condition="python:len(view.child_orgs())">
-                        <dt>Child Organization</dt>
+                        <dt i18n:translate="">Child Organization</dt>
 						<dd tal:define="children python:view.child_orgs()"
                             tal:repeat="item children">
 						    <a href=""
@@ -75,7 +76,7 @@
 
         <hr />
 
-        <h4>Posts</h4>
+        <h4 i18n:translate="">Posts</h4>
         <dl tal:condition="view/posts"
             tal:repeat="post view/posts">
             <dt><a tal:content="post/title"
@@ -86,25 +87,27 @@
                    member/person/to_object/absolute_url"></a> &mdash;
                Start Date: <span tal:replace="member/start_date" />
                <span tal:condition="not:member/start_date"
-                     class="discreet">Unknown</span>,&nbsp;
+                    i18n:translate=""
+                    class="discreet">Unknown</span>,&nbsp;
                End Date:
                <span tal:condition="not:member/end_date"
+                    i18n:translate=""
                      class="discreet">Still holding position/Unknown</span>
                     <span tal:replace="member/end_date" />
            </dd>
         </dl>
 
-        <h4>Memberships</h4>
+        <h4 i18n:translate="">Memberships</h4>
 
         <table class="table table-striped" tal:condition="view/members">
             <thead>
             <tr>
-                <th>Label</th>
-                <th>Role</th>
-                <th>Person</th>
-                <th>On Behalf Of</th>
-                <th>Start Date</th>
-                <th>End Date</th>
+                <th i18n:translate="">Label</th>
+                <th i18n:translate="">Role</th>
+                <th i18n:translate="">Person</th>
+                <th i18n:translate="">On Behalf Of</th>
+                <th i18n:translate="">Start Date</th>
+                <th i18n:translate="">End Date</th>
             </tr>
             </thead>
             <tbody>
@@ -147,14 +150,14 @@
             </tfoot>
         </table>
 
-        <h4>Known employees</h4>
+        <h4 i18n:translate="">Known employees</h4>
 
 
         <!-- Employer and Employee -->
 
         <ul tal:repeat="relationship view/relationships_subject">
 
-            <li tal:condition="python:
+            <li i18n:translate="" tal:condition="python:
                                relationship.relationship_type ==
                                'employer'">
                 <a tal:attributes="href
@@ -183,7 +186,7 @@
 
         <!-- Beneficial Ownership -->
         <div tal:condition="python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
-           <h4>Ownership Statements</h4>
+           <h4 i18n:translate="">Ownership Statements</h4>
            <div class="row">
                   <div class="card"
                     tal:repeat="card python: context.listFolderContents(contentFilter={'portal_type': ['Ownership Control Statement']})">
@@ -194,15 +197,15 @@
                            ${card/interestedParty/to_object/absolute_url}/@@images/image/thumb"
                            />
                        <div class="card-body">
-                           <h5 class="card-title"
+                           <h5 class="card-title" i18n:translate=""
                                tal:on-error="nothing"                  
                                tal:content="card/interestedParty/to_object/title">Low Taek Jho</h5>
-                           <p class="card-text">Interest Type: <span tal:replace="structure card/interest_type" /></p>
-                           <p class="card-text">Interest Level: <span tal:replace="structure card/interest_level" /></p>
+                           <p class="card-text" i18n:translate="">Interest Type: <span tal:replace="structure card/interest_type" /></p>
+                           <p class="card-text" i18n:translate="">Interest Level: <span tal:replace="structure card/interest_level" /></p>
                            <p class="card-text" tal:condition="card/beneficialOwnershipOrControl">
-                           <span class="alert alert-danger">Beneficial Owner</span></p>
+                           <span class="alert alert-danger" i18n:translate="">Beneficial Owner</span></p>
 
-                           <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary">Details</a>
+                           <a tal:attributes="href card/absolute_url" href="#" class="btn btn-primary" i18n:translate="">Details</a>
                        </div>
                    </div>
             </div>
@@ -210,12 +213,12 @@
         </div>
         <hr />
 
-        <h4>Notes</h4>
+        <h4 i18n:translate="">Notes</h4>
         <div tal:replace="structure view/w/notes/render" />
 
         <hr />
 
-        <h4>Subitems</h4>
+        <h4 i18n:translate="">Subitems</h4>
 
         <ul tal:repeat="item context/listFolderContents">
             <li>

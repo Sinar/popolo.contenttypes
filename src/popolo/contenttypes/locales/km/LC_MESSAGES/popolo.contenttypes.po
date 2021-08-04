@@ -4,23 +4,79 @@
 # Translators:
 # arky <hitmanarky@gmail.com>, 2021
 # Nhen Pharath <npharath@ewmi.org>, 2021
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-01 10:08+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2021-08-01 03:35+0000\n"
 "Last-Translator: Nhen Pharath <npharath@ewmi.org>, 2021\n"
 "Language-Team: Khmer (https://www.transifex.com/open-development-mekong/teams/27158/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Domain: popolo.contenttypes\n"
-"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: km\n"
 "Language-Name: khmer\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Preferred-Encodings: utf-8 latin1\n"
+"Domain: popolo.contenttypes\n"
+"Language: km\n"
+
+#: ../views/organization_view.pt:38
+msgid "(Offshore Tax Haven)"
+msgstr ""
+
+#: ../views/person_view.pt:187
+msgid "<!-- Parent --> <li>x</li>"
+msgstr ""
+
+#: ../views/person_view.pt:187
+msgid "<a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\">"
+msgstr ""
+
+#: ../views/person_view.pt:210
+msgid "<a href=\"${DYNAMIC_CONTENT}\"> Child </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\">"
+msgstr ""
+
+#: ../views/organization_view.pt:180
+msgid "<a href=\"${DYNAMIC_CONTENT}\"> Employer </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p>"
+msgstr ""
+
+#: ../views/post_view.pt:86
+msgid "<a href=\"${DYNAMIC_CONTENT}\"> Membership details ... </a>"
+msgstr ""
+
+#: ../views/organization_view.pt:51
+msgid "<a href=\"${DYNAMIC_CONTENT}\">${DYNAMIC_CONTENT}</a>"
+msgstr ""
+
+#: ../views/person_view.pt:163
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:291
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Associate </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:412
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Employee </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:387
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Employer </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:141
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Spouse </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:337
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Subordinate </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p> </li>"
+msgstr ""
+
+#: ../views/person_view.pt:362
+msgid "<li> <a href=\"${DYNAMIC_CONTENT}\"> Superior </a> of <a href=\"${DYNAMIC_CONTENT}\"> ${DYNAMIC_CONTENT} </a> <img class=\"img-thumbnail\" src=\"${DYNAMIC_CONTENT}\"> <p class=\"discreet\">${DYNAMIC_CONTENT}</p> </li>"
+msgstr ""
 
 #: ../profiles/default/types/Person.xml
 msgid "A Person"
@@ -51,9 +107,7 @@ msgid "A human-readable label for the contact detail"
 msgstr "ស្លាកដែលអាចអានបានសម្រាប់ព័ត៌មានទំនាក់ទំនង"
 
 #: ../content/membership.py:34
-msgid ""
-"A label describing the membership, eg. Member of Parliament of Kericho "
-"County"
+msgid "A label describing the membership, eg. Member of Parliament of Kericho County"
 msgstr "ស្លាកបរិយាយអំពីសមាជិកភាព ឧទាហរណ៍ សមាជិកសភានៃប្រទេស ឃេរីខូ Kericho"
 
 #: ../content/contact_detail.py:61
@@ -68,7 +122,8 @@ msgstr "ឈ្មោះពេញរបស់បុគ្គលម្នាក់
 msgid "A postal address"
 msgstr "អាស័យដ្ឋានសំបុត្រ"
 
-#: ../content/area.py:29 ../content/organization.py:28
+#: ../content/area.py:29
+#: ../content/organization.py:28
 msgid "A primary name, e.g. a legally recognized name"
 msgstr "ឈ្មោះចំបង ឧទាហរណ៍ ឈ្មោះទទួលស្គាល់តាមផ្លូវច្បាប់"
 
@@ -132,13 +187,22 @@ msgstr "ដៃគូ"
 msgid "Author or Website Name"
 msgstr "អ្នកនិពន្ធឬឈ្មោះវិបសាយ"
 
+#: ../views/organization_view.pt:206
+msgid "Beneficial Owner"
+msgstr ""
+
 #: ../content/person.py:78
+#: ../views/person_view.pt:422
 msgid "Biography"
 msgstr "ប្រវត្តិរូប"
 
 #: ../content/other_name.py:36
 msgid "Birth name"
 msgstr "ឈ្មោះកំណើត"
+
+#: ../views/person_view.pt:24
+msgid "Birthdate"
+msgstr ""
 
 #: ../vocabularies/organizations_vocab.py:53
 msgid "Board of Directors"
@@ -152,13 +216,26 @@ msgstr "ការបរិយាយសង្ខេបអំពីទំនាក
 msgid "Business Partner"
 msgstr "ដៃគូអាជីវកម្ម"
 
+#: ../views/person_view.pt:268
+msgid "Business and other Relationships"
+msgstr ""
+
 #: ../vocabularies/organizations_vocab.py:33
 msgid "Cabinet"
 msgstr "គណៈរដ្ឋមន្រ្តី"
 
+#: ../views/organization_view.pt:60
+msgid "Child Organization"
+msgstr ""
+
 #: ../vocabularies/organizations_vocab.py:67
 msgid "Civil society"
 msgstr "សង្គមស៊ីវិល"
+
+#: ../views/organization_view.pt:24
+#: ../views/relationship_view.pt:24
+msgid "Classification"
+msgstr ""
 
 #: ../vocabularies/organizations_vocab.py:51
 msgid "Committee"
@@ -204,21 +281,32 @@ msgstr ""
 msgid "Date which this post was eliminated"
 msgstr ""
 
-#: ../content/membership.py:118 ../content/relationship.py:91
+#: ../content/membership.py:118
+#: ../content/relationship.py:91
 msgid "Date which this relationship began"
 msgstr ""
 
-#: ../content/membership.py:123 ../content/relationship.py:96
+#: ../content/membership.py:123
+#: ../content/relationship.py:96
 msgid "Date which this relationship ended"
 msgstr ""
 
-#: ../content/organization.py:65 ../content/relationship.py:42
+#: ../content/organization.py:65
+#: ../content/relationship.py:42
 #: ../content/source.py:37
 msgid "Description"
 msgstr ""
 
 #: ../content/person.py:79
 msgid "Detailed biography of this person"
+msgstr ""
+
+#: ../views/organization_view.pt:208
+msgid "Details"
+msgstr ""
+
+#: ../views/organization_view.pt:30
+msgid "Dissolution date"
 msgstr ""
 
 #: ../profiles/default/types/Area.xml
@@ -231,9 +319,14 @@ msgstr ""
 msgid "Employer"
 msgstr ""
 
-#: ../content/membership.py:122 ../content/other_name.py:46
+#: ../content/membership.py:122
+#: ../content/other_name.py:46
 #: ../content/post.py:63
 msgid "End Date"
+msgstr ""
+
+#: ../views/person_view.pt:121
+msgid "Family Relationships"
 msgstr ""
 
 #: ../content/person.py:54
@@ -244,7 +337,12 @@ msgstr ""
 msgid "Financial Institution"
 msgstr ""
 
+#: ../views/organization_view.pt:27
+msgid "Founding date"
+msgstr ""
+
 #: ../content/person.py:51
+#: ../views/person_view.pt:22
 msgid "Gender"
 msgstr ""
 
@@ -268,7 +366,8 @@ msgstr ""
 msgid "Headshot"
 msgstr ""
 
-#: ../content/area.py:58 ../content/identifier.py:34
+#: ../content/area.py:58
+#: ../content/identifier.py:34
 #: ../profiles/default/types/Identifier.xml
 msgid "Identifier"
 msgstr ""
@@ -281,11 +380,28 @@ msgstr ""
 msgid "Image file of a headshot person"
 msgstr ""
 
+#: ../views/organization_view.pt:33
+msgid "Incorporated in Jurisdiction"
+msgstr ""
+
 #: ../configure.zcml:27
 msgid "Installs the popolo.contenttypes add-on."
 msgstr ""
 
-#: ../content/contact_detail.py:42 ../content/membership.py:33
+#: ../views/organization_view.pt:204
+msgid "Interest Level: ${DYNAMIC_CONTENT}"
+msgstr ""
+
+#: ../views/organization_view.pt:203
+msgid "Interest Type: ${DYNAMIC_CONTENT}"
+msgstr ""
+
+#: ../views/organization_view.pt:153
+msgid "Known employees"
+msgstr ""
+
+#: ../content/contact_detail.py:42
+#: ../content/membership.py:33
 #: ../content/post.py:30
 msgid "Label"
 msgstr ""
@@ -311,26 +427,47 @@ msgid "Management"
 msgstr ""
 
 #: ../profiles/default/types/Membership.xml
+#: ../views/membership_view.pt:13
 msgid "Membership"
+msgstr ""
+
+#: ../views/person_view.pt:60
+msgid "Membership and Posts"
 msgstr ""
 
 #: ../profiles/default/types/Membership.xml
 msgid "Membership representing relationships between people and organizations"
 msgstr ""
 
+#: ../views/organization_view.pt:100
+#: ../views/post_view.pt:51
+msgid "Memberships"
+msgstr ""
+
 #: ../content/contact_detail.py:20
 msgid "Mobile Phone Number"
 msgstr ""
 
-#: ../content/other_name.py:29 ../content/person.py:40
+#: ../content/other_name.py:29
+#: ../content/person.py:40
 msgid "Name"
 msgstr ""
 
-#: ../content/contact_detail.py:60 ../content/other_name.py:35
+#: ../views/person_view.pt:31
+msgid "Nationalities"
+msgstr ""
+
+#: ../views/person_view.pt:62
+msgid "No known memberships"
+msgstr ""
+
+#: ../content/contact_detail.py:60
+#: ../content/other_name.py:35
 msgid "Note"
 msgstr ""
 
-#: ../content/organization.py:108 ../content/person.py:85
+#: ../content/organization.py:108
+#: ../content/person.py:85
 #: ../content/relationship.py:102
 msgid "Notes"
 msgstr ""
@@ -340,7 +477,13 @@ msgid "Official logo or emblem of organization"
 msgstr ""
 
 #: ../content/membership.py:109
+#: ../views/organization_view.pt:108
+#: ../views/person_view.pt:73
 msgid "On Behalf Of"
+msgstr ""
+
+#: ../views/membership_view.pt:96
+msgid "On Behalf Of: <a href=\"${DYNAMIC_CONTENT}\">${DYNAMIC_CONTENT}</a>"
 msgstr ""
 
 #: ../content/person.py:47
@@ -352,6 +495,7 @@ msgid "One line description of this source"
 msgstr ""
 
 #: ../profiles/default/types/Organization.xml
+#: ../views/person_view.pt:72
 msgid "Organization"
 msgstr ""
 
@@ -363,8 +507,19 @@ msgstr ""
 msgid "Organization Name"
 msgstr ""
 
+#: ../views/membership_view.pt:60
+#: ../views/post_view.pt:29
+msgid "Organization: <a href=\"${DYNAMIC_CONTENT}\">${DYNAMIC_CONTENT}</a>"
+msgstr ""
+
 #: ../content/person.py:55
 msgid "Other"
+msgstr ""
+
+#: ../views/membership_view.pt:132
+#: ../views/post_view.pt:95
+#: ../views/relationship_view.pt:101
+msgid "Other Details"
 msgstr ""
 
 #: ../profiles/default/types/Other_Name.xml
@@ -375,6 +530,14 @@ msgstr ""
 msgid "Other Names for a Person"
 msgstr ""
 
+#: ../views/organization_view.pt:189
+msgid "Ownership Statements"
+msgstr ""
+
+#: ../views/person_view.pt:433
+msgid "PEP Status Details"
+msgstr ""
+
 #: ../vocabularies/relationshiptypes.py:31
 msgid "Parent"
 msgstr ""
@@ -383,12 +546,26 @@ msgstr ""
 msgid "Parent Area"
 msgstr ""
 
+#: ../views/organization_view.pt:49
+msgid "Parent Organization"
+msgstr ""
+
 #: ../vocabularies/organizations_vocab.py:31
 msgid "Parliament"
 msgstr ""
 
 #: ../profiles/default/types/Person.xml
+#: ../views/organization_view.pt:107
 msgid "Person"
+msgstr ""
+
+#: ../views/membership_view.pt:29
+#: ../views/relationship_view.pt:33
+msgid "Person: <a href=\"${DYNAMIC_CONTENT}\">${DYNAMIC_CONTENT}</a>"
+msgstr ""
+
+#: ../views/post_view.pt:52
+msgid "Persons who are known to hold or have held this Post"
 msgstr ""
 
 #: ../vocabularies/organizations_vocab.py:55
@@ -403,8 +580,18 @@ msgstr ""
 msgid "Political Party Executive"
 msgstr ""
 
+#: ../views/person_view.pt:46
+msgid "Politically Exposed Person"
+msgstr ""
+
 #: ../profiles/default/types/Post.xml
+#: ../views/person_view.pt:69
+#: ../views/post_view.pt:13
 msgid "Post"
+msgstr ""
+
+#: ../views/organization_view.pt:79
+msgid "Posts"
 msgstr ""
 
 #: ../vocabularies/organizations_vocab.py:49
@@ -416,6 +603,7 @@ msgid "Public Company"
 msgstr ""
 
 #: ../profiles/default/types/Relationship.xml
+#: ../views/relationship_view.pt:13
 msgid "Relationship"
 msgstr ""
 
@@ -423,11 +611,14 @@ msgstr ""
 msgid "Relationship Name"
 msgstr ""
 
-#: ../content/relationship.py:51 ../profiles/default/types/Relationship.xml
+#: ../content/relationship.py:51
+#: ../profiles/default/types/Relationship.xml
 msgid "Relationship type"
 msgstr ""
 
-#: ../content/membership.py:40 ../content/post.py:37
+#: ../content/membership.py:40
+#: ../content/post.py:37
+#: ../views/organization_view.pt:106
 msgid "Role"
 msgstr ""
 
@@ -448,6 +639,7 @@ msgid "Sibling"
 msgstr ""
 
 #: ../profiles/default/types/Source.xml
+#: ../views/source_view.pt:13
 msgid "Source"
 msgstr ""
 
@@ -463,9 +655,14 @@ msgstr ""
 msgid "Spouse"
 msgstr ""
 
-#: ../content/membership.py:117 ../content/other_name.py:41
+#: ../content/membership.py:117
+#: ../content/other_name.py:41
 #: ../content/post.py:58
 msgid "Start Date"
+msgstr ""
+
+#: ../views/post_view.pt:74
+msgid "Start Date: x &mdash; End Date: ${DYNAMIC_CONTENT}"
 msgstr ""
 
 #: ../vocabularies/organizations_vocab.py:37
@@ -488,12 +685,29 @@ msgstr ""
 msgid "State Government"
 msgstr ""
 
+#: ../views/organization_view.pt:93
+msgid "Still holding position/Unknown"
+msgstr ""
+
+#: ../views/organization_view.pt:221
+#: ../views/person_view.pt:440
+msgid "Subitems"
+msgstr ""
+
+#: ../views/relationship_view.pt:64
+msgid "Subject: <a href=\"${DYNAMIC_CONTENT}\">${DYNAMIC_CONTENT}</a>"
+msgstr ""
+
 #: ../vocabularies/relationshiptypes.py:45
 msgid "Subordinate"
 msgstr ""
 
 #: ../content/person.py:46
 msgid "Summary"
+msgstr ""
+
+#: ../views/person_view.pt:36
+msgid "Tax Residencies"
 msgstr ""
 
 #: ../content/area.py:51
@@ -504,17 +718,12 @@ msgstr ""
 msgid "The function that the holder of the post fulfills"
 msgstr ""
 
-#: ../content/relationship.py:35
-msgid "The name of this relationship."
-msgstr ""
-
 #: ../content/relationship.py:84
 msgid "The object of the relation."
 msgstr ""
 
 #: ../content/membership.py:110
-msgid ""
-"The organization on whose behalf the person is a member of the organization"
+msgid "The organization on whose behalf the person is a member of the organization"
 msgstr ""
 
 #: ../content/relationship.py:67
@@ -551,6 +760,11 @@ msgstr ""
 
 #: ../content/identifier.py:35
 msgid "Unique value as code or number"
+msgstr ""
+
+#: ../views/organization_view.pt:89
+#: ../views/person_view.pt:26
+msgid "Unknown"
 msgstr ""
 
 #: ../content/contact_detail.py:54
