@@ -55,6 +55,8 @@ setup(
         'plone.restapi',
         'plone.app.dexterity',
         'collective.dexteritytextindexer',
+        'collective.monkeypatcher',
+        'six',
     ],
     extras_require={
         'test': [

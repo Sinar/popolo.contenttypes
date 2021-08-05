@@ -3,6 +3,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
     i18n_domain="popolo.contenttypes">
 
   <i18n:registerTranslations directory="locales" />
@@ -50,6 +51,30 @@
 
   <include package=".views" />
   <include package=".vocabularies" />
+
+  <!-- -*- Local patches -*- -->
+  
+  <include package="collective.monkeypatcher" />
+
+  <!-- 
+  Patch for value errors in z3cform ajaxSelect widgets #14
+  https://github.com/Sinar/popolo.contenttypes/issues/14  
+  
+  -->
+
+  <monkey:patch
+      description="Fix z3c.form value error expection in ajaxSelect Widget"
+      class="plone.app.z3cform.converters.AjaxSelectWidgetConverter"
+      original="toWidgetValue"
+      replacement=".converters.toWidgetValue"
+      />
+
+  <monkey:patch
+      description="Fix z3c.form value error expection in ajaxSelect Widget"
+      class="plone.app.z3cform.converters.AjaxSelectWidgetConverter"
+      original="toFieldValue"
+      replacement=".converters.toFieldValue"
+      />
 
 
 </configure>
