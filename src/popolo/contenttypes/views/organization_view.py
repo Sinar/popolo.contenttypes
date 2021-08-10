@@ -188,9 +188,11 @@ class OrganizationView(DefaultView, BrowserView):
 
         vocabulary = factory(self)
         term = vocabulary.getTerm(value)
+        
+        # Declare common offshore havens  
+        offshore = ['VG', 'KY', 'PA', 'BS']
 
-        for offshore in ['VG', 'KY', 'PA', 'BS']:
-            if term.value in offshore:
-                return True
-            else:
-                return False
+        if any(term.value in country for country in offshore):
+            return True
+        else:
+            return False
