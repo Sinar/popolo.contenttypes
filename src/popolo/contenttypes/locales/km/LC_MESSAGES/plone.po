@@ -1,0 +1,95 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, Translators.
+# YEAR:
+# arky <hitmanarky@gmail.com>, 2021
+# Nhen Pharath <npharath@ewmi.org>, 2021
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-11 17:04+0000\n"
+"PO-Revision-Date: 2021-08-01 03:35+0000\n"
+"Last-Translator: Nhen Pharath <npharath@ewmi.org>, 2021\n"
+"Language-Team: Khmer (https://www.transifex.com/open-development-mekong/teams/27158/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: km\n"
+"Language-Name: Khmer\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"Language: km\n"
+
+#: profiles/default/types/Person.xml
+msgid "A Person"
+msgstr "មនុស្ស​ម្នាក់"
+
+#: profiles/default/types/Organization.xml
+msgid "An Organization"
+msgstr "អង្គភាព"
+
+#: profiles/default/types/Area.xml
+msgid "An area is a geographic area whose geometry may change over time."
+msgstr "ប្រភេទតំបន់មួយ ឧទាហរណ៍ ទីក្រុង"
+
+#: profiles/default/types/Identifier.xml
+msgid "An identifier code for a Person"
+msgstr "ចំនួនលេខតែមួយគត់ដែលជាកូដឬលេខ"
+
+#: profiles/default/types/Area.xml
+msgid "Area"
+msgstr "តំបន់"
+
+#: profiles/default/types/Contact_Detail.xml
+msgid "Contact Detail"
+msgstr "ព័ត៌មានលម្អិតទំនាក់ទំនង "
+
+#: profiles/default/types/Contact_Detail.xml
+msgid "Contact details"
+msgstr "ព័ត៌មានលម្អិតទំនាក់ទំនង "
+
+#: profiles/default/types/Area.xml
+#: profiles/default/types/Contact_Detail.xml
+#: profiles/default/types/Identifier.xml
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#: profiles/default/types/Identifier.xml
+msgid "Identifier"
+msgstr ""
+
+#: profiles/default/types/Membership.xml
+msgid "Membership"
+msgstr "សមាជិកភាព"
+
+#: profiles/default/types/Membership.xml
+msgid "Membership representing relationships between people and organizations"
+msgstr "សមាជិកភាព"
+
+#: profiles/default/types/Organization.xml
+msgid "Organization"
+msgstr "អង្គភាព"
+
+#: profiles/default/types/Other_Name.xml
+msgid "Other Name"
+msgstr "ផ្សេងៗ"
+
+#: profiles/default/types/Other_Name.xml
+msgid "Other Names for a Person"
+msgstr "ផ្សេងៗ"
+
+#: profiles/default/types/Person.xml
+msgid "Person"
+msgstr "មនុស្ស​ម្នាក់"
+
+#: profiles/default/types/Area.xml
+#: profiles/default/types/Contact_Detail.xml
+#: profiles/default/types/Identifier.xml
+msgid "View"
+msgstr "ការមើល"
+
+
+msgid "Log out"
+msgstr "ការមើល"
