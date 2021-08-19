@@ -1,0 +1,86 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-08-11 17:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+#: profiles/default/types/Person.xml
+msgid "A Person"
+msgstr ""
+
+#: profiles/default/types/Organization.xml
+msgid "An Organization"
+msgstr ""
+
+#: profiles/default/types/Area.xml
+msgid "An area is a geographic area whose geometry may change over time."
+msgstr ""
+
+#: profiles/default/types/Identifier.xml
+msgid "An identifier code for a Person"
+msgstr ""
+
+#: profiles/default/types/Area.xml
+msgid "Area"
+msgstr ""
+
+#: profiles/default/types/Contact_Detail.xml
+msgid "Contact Detail"
+msgstr ""
+
+#: profiles/default/types/Contact_Detail.xml
+msgid "Contact details"
+msgstr ""
+
+#: profiles/default/types/Area.xml
+#: profiles/default/types/Contact_Detail.xml
+#: profiles/default/types/Identifier.xml
+msgid "Edit"
+msgstr ""
+
+#: profiles/default/types/Identifier.xml
+msgid "Identifier"
+msgstr ""
+
+#: profiles/default/types/Membership.xml
+msgid "Membership"
+msgstr ""
+
+#: profiles/default/types/Membership.xml
+msgid "Membership representing relationships between people and organizations"
+msgstr ""
+
+#: profiles/default/types/Organization.xml
+msgid "Organization"
+msgstr ""
+
+#: profiles/default/types/Other_Name.xml
+msgid "Other Name"
+msgstr ""
+
+#: profiles/default/types/Other_Name.xml
+msgid "Other Names for a Person"
+msgstr ""
+
+#: profiles/default/types/Person.xml
+msgid "Person"
+msgstr ""
+
+#: profiles/default/types/Area.xml
+#: profiles/default/types/Contact_Detail.xml
+#: profiles/default/types/Identifier.xml
+msgid "View"
+msgstr ""
