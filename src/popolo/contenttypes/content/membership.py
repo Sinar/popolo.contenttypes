@@ -43,13 +43,6 @@ class IMembership(model.Schema):
                       "Member of Parliament"),
         required=True,)
 
-    # FIXME Persons and Organizations should be Required but unable to
-    # select on creation due to upstream bug:
-    # https://github.com/plone/plone.app.vocabularies/issues/59
-
-    # Temporary workaround, save first, then edit to select person and
-    # organization for membership
-
     # Person
     directives.widget('person',
                       RelatedItemsFieldWidget,
@@ -63,7 +56,7 @@ class IMembership(model.Schema):
     person = RelationChoice(
             title=u'Person',
             source=CatalogSource(portal_type='Person'),
-            required=False,
+            required=True,
             )
 
     # Organization
@@ -78,7 +71,7 @@ class IMembership(model.Schema):
     organization = RelationChoice(
             title=u'Organization',
             source=CatalogSource(portal_type='Organization'),
-            required=False,
+            required=True,
             )
 
     # Post
