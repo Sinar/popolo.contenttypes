@@ -66,7 +66,7 @@ class IRelationship(model.Schema):
             title=u'Subject',
             description=_(u'The subject of the relation.'),
             source=CatalogSource(portal_type=['Person', 'Organization']),
-            required=False,
+            required=True,
             )
 
     # Object
@@ -83,7 +83,7 @@ class IRelationship(model.Schema):
             title=u'Object',
             description=_(u'The object of the relation.'),
             source=CatalogSource(portal_type=['Person', 'Organization']),
-            required=False,
+            required=True,
             )
 
     start_date = schema.Date(
