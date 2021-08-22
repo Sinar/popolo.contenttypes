@@ -267,7 +267,7 @@
 
                     <h4 i18n:translate="">Business and other Relationships</h4>
 
-                    <!-- Business associate -->
+                    <!-- Associate -->
 
                     <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
 
@@ -314,6 +314,55 @@
 
                         </li>
                     </ul>
+
+                    <!-- Business partner -->
+
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
+
+                        <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'business_partner'">
+
+                            <a tal:attributes="href
+                                            relationship/absolute_url">
+                                Business Partner
+                            </a>
+                            of
+
+                            <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                                <span tal:replace="relationship/relationship_object/to_object/title" />
+                            </a>
+
+                            <img tal:condition="relationship/relationship_object/to_object/image" tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon" class="img-thumbnail">
+                            <p class="discreet" tal:content="relationship/description"></p>
+                        </li>
+                    </ul>
+
+                    <ul i18n:translate="" tal:repeat="relationship view/relationships_object">
+
+                        <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'associate'">
+                            <a tal:attributes="href
+                                            relationship/absolute_url">
+                                Business Partner
+                            </a>
+                            of
+
+                            <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                                <span tal:replace="relationship/relationship_subject/to_object/title" />
+                            </a>
+
+                            <img tal:condition="relationship/relationship_subject/to_object/image" tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon" class="img-thumbnail">
+                            <p class="discreet" tal:content="relationship/description"></p>
+
+                        </li>
+                    </ul>
+
 
                     <!-- Superior and Subordinate -->
 

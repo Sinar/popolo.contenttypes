@@ -25,7 +25,6 @@ class PersonView(DefaultView):
         # Implement your own actions:
         return super(PersonView, self).__call__()
 
-
     def memberships(self):
         """
         Return back references from source object on specified attribute_name
