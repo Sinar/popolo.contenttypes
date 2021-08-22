@@ -344,7 +344,7 @@
 
                         <li tal:condition="python:
                                        relationship.relationship_type ==
-                                       'associate'">
+                                       'business_partner'">
                             <a tal:attributes="href
                                             relationship/absolute_url">
                                 Business Partner
