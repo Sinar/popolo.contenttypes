@@ -165,8 +165,10 @@
                             </li>
                         </ul>
 
+
+                 <!-- Parent -->
+
                         <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
-                            <!-- Parent -->
                             <li i18n:translate="" tal:condition="python:
                                        relationship.relationship_type ==
                                        'parent'">
@@ -201,6 +203,54 @@
                                     Child
                                 </a>
                                 of
+
+                                <a tal:attributes="href
+                                            relationship/relationship_subject/to_object/absolute_url">
+                                    <span tal:replace="relationship/relationship_subject/to_object/title" />
+                                </a>
+
+                                <img tal:condition="relationship/relationship_subject/to_object/image" tal:attributes="src string:
+                            ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon" class="img-thumbnail">
+                            </li>
+                        </ul>
+
+                        <!-- Siblings -->
+
+                        <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
+                            <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'sibling'">
+
+                                <a tal:attributes="href
+                                            relationship/absolute_url">
+                                    <span tal:replace="python:
+                                           view.relationship_title('sibling')" />
+                                </a>
+                                of
+
+
+                                <a tal:attributes="href
+                                            relationship/relationship_object/to_object/absolute_url">
+                                    <span tal:replace="relationship/relationship_object/to_object/title" />
+                                </a>
+
+                                <img tal:condition="relationship/relationship_object/to_object/image" tal:attributes="src string:
+                            ${relationship/relationship_object/to_object/absolute_url}/@@images/image/icon" class="img-thumbnail">
+                            </li>
+                        </ul>
+
+                        <ul tal:repeat="relationship view/relationships_object">
+                            <li tal:condition="python:
+                                       relationship.relationship_type ==
+                                       'sibling'">
+
+                                <a tal:attributes="href
+                                            relationship/absolute_url">
+                                    <span tal:replace="python:
+                                           view.relationship_title('sibling')" />
+                                </a>
+                                of
+
 
                                 <a tal:attributes="href
                                             relationship/relationship_subject/to_object/absolute_url">
@@ -259,7 +309,6 @@
                             ${relationship/relationship_subject/to_object/absolute_url}/@@images/image/icon" class="img-thumbnail">
                             </li>
                         </ul>
-
 
                 </div>
 
