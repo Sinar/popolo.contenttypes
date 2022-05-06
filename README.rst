@@ -28,7 +28,7 @@ Examples
 
 This add-on can be seen in action at the following sites:
  - https://politikus.sinarproject.org
- - https://hivos.sinarproject.org
+ - https://unmasked.nation.africa/
 
 
 Documentation
