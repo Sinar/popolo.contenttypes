@@ -21,13 +21,14 @@
                     <dl class="dl-horizontal">
                         <dt i18n:translate="">Gender</dt>
                         <dd tal:content="structure view/w/gender/render"></dd>
-                        <dt i18n:translate="">Birthdate</dt>
+                        <dt i18n:translate="">Born</dt>
                         <dd tal:content="structure view/w/birth_date/render"></dd>
                         <dd class="discreet" tal:condition="not: context/birth_date" 
                             i18n:translate="">Unknown</dd>
-                        <dt tal:condition="context/death_date" i18n:translate="">Birthdate</dt>
+                        <dt tal:condition="context/death_date"
+                            i18n:translate="">Died</dt>
                         <dd tal:condition="context/death_date" 
-                            tal:content="structure view/w/birth_date/render"></dd>
+                            tal:content="structure view/w/death_date/render"></dd>
                         <dt tal:condition="context/nationalities" i18n:translate="">Nationalities</dt>
                         <dd tal:on-error="nothing" tal:condition="context/nationalities" tal:repeat="nationality context/nationalities">
                             <span tal:content="python:
@@ -120,7 +121,7 @@
 
                     <h4 i18n:translate="">Family Relationships</h4>
 
-                    <! -- Spouse -->
+                    <!-- Spouse -->
 
                         <ul i18n:translate="" tal:repeat="relationship view/relationships_subject">
                             <li tal:condition="python:
