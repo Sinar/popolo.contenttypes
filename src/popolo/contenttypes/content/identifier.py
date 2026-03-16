@@ -8,7 +8,7 @@ from plone.supermodel import model
 # from z3c.form.browser.radio import RadioFieldWidget
 from zope import schema
 from zope.interface import implementer
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 
 from popolo.contenttypes import _
@@ -29,7 +29,7 @@ class IIdentifier(model.Schema):
                 required=False,
                 )
 
-    dexteritytextindexer.searchable('identifier')
+    textindexer.searchable('identifier')
     identifier = schema.TextLine(
                 title=_(u'Identifier'),
                 description=_(u'Unique value as code or number'),

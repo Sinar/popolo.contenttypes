@@ -54,7 +54,6 @@ setup(
         'plone.api>=1.8.4',
         'plone.restapi',
         'plone.app.dexterity',
-        'collective.dexteritytextindexer',
     ],
     extras_require={
         'test': [

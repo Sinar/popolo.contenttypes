@@ -8,7 +8,7 @@ from plone.supermodel import model
 # from z3c.form.browser.radio import RadioFieldWidget
 from zope import schema
 from zope.interface import implementer
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 from z3c.relationfield.schema import RelationChoice
 from plone.app.vocabularies.catalog import CatalogSource
 from plone.app.z3cform.widget import RelatedItemsFieldWidget
@@ -25,14 +25,14 @@ class IPost(model.Schema):
 
     # model.load('post.xml')
 
-    dexteritytextindexer.searchable('label')
+    textindexer.searchable('label')
     label = schema.TextLine(
         title=_(u'Label'),
         description=_(u"A describing the Post"),
         required=True,
         )
 
-    dexteritytextindexer.searchable('role')
+    textindexer.searchable('role')
     role = schema.TextLine(
         title=_(u'Role'),
         description=_(u"The function that the holder of the " +

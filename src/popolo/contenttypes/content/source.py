@@ -8,7 +8,7 @@ from plone.supermodel import model
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
 from plone.app.z3cform.widget import LinkFieldWidget
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 from zope import schema
 from zope.interface import implementer
@@ -26,20 +26,20 @@ class ISource(model.Schema):
 
 # TODO A Selection field of fields in Parent Object
 
-    dexteritytextindexer.searchable('title')
+    textindexer.searchable('title')
     title = schema.TextLine(
         title=_(u'Title'),
         description=_(u'Title of publication, article ..'),
         )
 
-    dexteritytextindexer.searchable('description')
+    textindexer.searchable('description')
     description = schema.Text(
         title=_(u'Description'),
         description=_(u'One line description of this source'),
         required=False,
         )
 
-    dexteritytextindexer.searchable('author')
+    textindexer.searchable('author')
     author = schema.TextLine(
         title=_(u'Author or Website Name'),
         required=False,

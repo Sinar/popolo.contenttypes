@@ -11,7 +11,7 @@ from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.interface import implementer
 
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 from popolo.contenttypes import _
 
@@ -37,7 +37,7 @@ class IContactDetail(model.Schema):
 
     # model.load('contact_detail.xml')
 
-    dexteritytextindexer.searchable('label')
+    textindexer.searchable('label')
     label = schema.TextLine(
         title=_(u'Label'),
         description=_(u"A human-readable label for the contact detail"),
@@ -49,13 +49,13 @@ class IContactDetail(model.Schema):
         vocabulary=contact_types,
         )
 
-    dexteritytextindexer.searchable('value')
+    textindexer.searchable('value')
     value = schema.TextLine(
         title=_(u'Value'),
         description=_(u"A value, e.g. a phone number or email address"),
         )
 
-    dexteritytextindexer.searchable('note')
+    textindexer.searchable('note')
     note = schema.Text(
         title=_(u'Note'),
         description=_(u"A note, e.g. for grouping contact details by " +

@@ -13,7 +13,7 @@ from zope.interface import implementer
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 from popolo.contenttypes import _
 
@@ -35,13 +35,13 @@ class IPerson(model.Schema):
     #     required=True
     # )
 
-    dexteritytextindexer.searchable('name')
+    textindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Name'),
         description=_(u'A person\'s preferred full name'),
         )
 
-    dexteritytextindexer.searchable('summary')
+    textindexer.searchable('summary')
     summary = schema.Text(
         title=_(u'Summary'),
         description=_(u'One line description of this person'),
@@ -73,14 +73,14 @@ class IPerson(model.Schema):
         required=False,
         )
 
-    dexteritytextindexer.searchable('biography')
+    textindexer.searchable('biography')
     biography = RichText(
          title=_(u'Biography'),
          description=_(u'Detailed biography of this person'),
          required=False,
      )
 
-    dexteritytextindexer.searchable('notes')
+    textindexer.searchable('notes')
     notes = RichText(
          title=_(u'Notes'),
          required=False

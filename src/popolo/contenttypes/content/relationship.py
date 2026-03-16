@@ -8,7 +8,7 @@ from plone.supermodel import model
 # from z3c.form.browser.radio import RadioFieldWidget
 from plone.app.z3cform.widget import SelectFieldWidget
 from zope import schema
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 from z3c.relationfield.schema import RelationChoice
 
 from plone.app.vocabularies.catalog import CatalogSource
@@ -29,7 +29,7 @@ class IRelationship(model.Schema):
 
     # model.load('relationship.xml')
 
-    dexteritytextindexer.searchable('name')
+    textindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Relationship Name'),
         description=_(u'''The name of this relationship, eg. Son of Person,
@@ -37,7 +37,7 @@ class IRelationship(model.Schema):
         required=True,
         )
 
-    dexteritytextindexer.searchable('description')
+    textindexer.searchable('description')
     description = schema.Text(
         title=_(u'Description'),
         description=_(u'Brief description of this relationship'),
@@ -97,7 +97,7 @@ class IRelationship(model.Schema):
         required=False,)
 
     # Public notes
-    dexteritytextindexer.searchable('notes')
+    textindexer.searchable('notes')
     notes = RichText(
          title=_(u'Notes'),
          required=False

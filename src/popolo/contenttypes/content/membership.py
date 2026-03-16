@@ -7,7 +7,7 @@ from plone.supermodel import model
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
 from zope import schema
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 from z3c.relationfield.schema import RelationChoice
 
 from plone.app.vocabularies.catalog import CatalogSource
@@ -28,14 +28,14 @@ class IMembership(model.Schema):
 
     # model.load('membership.xml')
 
-    dexteritytextindexer.searchable('label')
+    textindexer.searchable('label')
     label = schema.TextLine(
         title=_(u'Label'),
         description=_(u"A label describing the membership, " +
                       "eg. Member of Parliament of Kericho County"),
         required=True,)
 
-    dexteritytextindexer.searchable('role')
+    textindexer.searchable('role')
     role = schema.TextLine(
         title=_(u'Role'),
         description=_(u"A role that the member fulfills in, " +

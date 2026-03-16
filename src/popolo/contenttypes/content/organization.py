@@ -6,7 +6,7 @@ from plone.namedfile import field
 from z3c.relationfield.schema import RelationChoice
 from zope import schema
 from zope.interface import implementer
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 from plone.app.vocabularies.catalog import CatalogSource
 
@@ -22,7 +22,7 @@ class IOrganization(model.Schema):
         https://www.popoloproject.com/specs/organization.html
     """
 
-    dexteritytextindexer.searchable('name')
+    textindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Organization Name'),
         description=_(u"A primary name, e.g. a legally recognized " +
@@ -60,7 +60,7 @@ class IOrganization(model.Schema):
             required=False,
             )
 
-    dexteritytextindexer.searchable('description')
+    textindexer.searchable('description')
     description = schema.Text(
         title=_(u'Description'),
         required=False,)
@@ -103,7 +103,7 @@ class IOrganization(model.Schema):
 
     # sources to use content type
 
-    dexteritytextindexer.searchable('notes')
+    textindexer.searchable('notes')
     notes = RichText(
          title=_(u'Notes'),
          required=False

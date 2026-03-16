@@ -6,7 +6,7 @@ from plone.supermodel import model
 from zope import schema
 from zope.interface import implementer
 
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 
 from plone.app.vocabularies.catalog import CatalogSource
 
@@ -23,7 +23,7 @@ class IArea(model.Schema):
         https://www.popoloproject.com/specs/area.html
     """
     # The Area class should have properties for: name, identifier, classification, parent area, geometry.
-    dexteritytextindexer.searchable('name')
+    textindexer.searchable('name')
     name = schema.TextLine(
         title=_(u'Area Name'),
         description=_(u'A primary name, e.g. a legally recognized ' +
@@ -53,7 +53,7 @@ class IArea(model.Schema):
             required=False,
             )
 
-    dexteritytextindexer.searchable('identifier')
+    textindexer.searchable('identifier')
     description = schema.Text(
         title=_(u'Identifier'),
         description=_(u'An issued identifier, e.g. an Open Civic Data Division Identifier'),
