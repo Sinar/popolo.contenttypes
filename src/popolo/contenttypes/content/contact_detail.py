@@ -17,12 +17,12 @@ from popolo.contenttypes import _
 
 contact_types = SimpleVocabulary(
         [
+            SimpleTerm(value=u'address', title=_(u'A postal address')),
             SimpleTerm(value=u'cell', title=_(u'Mobile Phone Number')),
             SimpleTerm(value=u'voice', title=_(u'Voice Phone Number')),
             SimpleTerm(value=u'text',
                        title=_(u'A Phone number for text messages')),
             SimpleTerm(value=u'email', title=_(u'An email address')),
-            SimpleTerm(value=u'address', title=_(u'A postal address')),
             SimpleTerm(value=u'url', title=_(u'A URL to a contact form')),
             SimpleTerm(value=u'twitter', title=_(u'Twitter Handle')),
         ],
