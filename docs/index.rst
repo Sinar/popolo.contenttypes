@@ -1,5 +1,0 @@
-===================
-popolo.contenttypes
-===================
-
-User documentation

@@ -1,0 +1,66 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="politikus.popolo">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="relationship-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".relationship_view.RelationshipView"
+    template="relationship_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="source-view"
+    for="politikus.popolo.content.source.ISource"
+    class=".source_view.SourceView"
+    template="source_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="post-view"
+    for="politikus.popolo.content.post.IPost"
+    class=".post_view.PostView"
+    template="post_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="membership-view"
+    for="politikus.popolo.content.membership.IMembership"
+    class=".membership_view.MembershipView"
+    template="membership_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="relationship-view"
+    for="politikus.popolo.content.relationship.IRelationship"
+    class=".relationship_view.RelationshipView"
+    template="relationship_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="person-view"
+    for="politikus.popolo.content.person.IPerson"
+    class=".person_view.PersonView"
+    template="person_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="organization-view"
+    for="politikus.popolo.content.organization.IOrganization"
+    class=".organization_view.OrganizationView"
+    template="organization_view.pt"
+    permission="zope2.View"
+    />
+
+
+</configure>

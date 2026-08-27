@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="politikus.popolo">
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <utility
+        component=".relationshiptypes.RelationshiptypesFactory"
+        name="politikus.popolo.relationshiptypes"
+    />
+
+
+    <utility
+        component=".geoname_featurecodes_vocab.GeonameFeaturecodesVocabFactory"
+        name="politikus.popolo.geonamefeaturecodes"
+    />
+
+
+    <utility
+        component=".organizations_vocab.OrganizationCategoriesVocabFactory"
+        name="politikus.popolo.organizationcategories"
+    />
+
+
+</configure>

@@ -1,0 +1,71 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+  <configure zcml:condition="installed AccessControl.security">
+  <!-- -*- extra stuff goes here -*- -->
+
+    <permission
+        id="politikus.popolo.AddRelationship"
+        title="politikus.popolo: Add Relationship"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddArea"
+        title="politikus.popolo: Add Area"
+    />
+
+    <permission
+        id="politikus.popolo.AddSource"
+        title="politikus.popolo: Add Source"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddIdentifier"
+        title="politikus.popolo: Add Identifier"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddOtherName"
+        title="politikus.popolo: Add OtherName"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddContactDetail"
+        title="politikus.popolo: Add ContactDetail"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddPost"
+        title="politikus.popolo: Add Post"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddMembership"
+        title="politikus.popolo: Add Membership"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddOrganization"
+        title="politikus.popolo: Add Organization"
+    />
+
+
+    <permission
+        id="politikus.popolo.AddPerson"
+        title="politikus.popolo: Add Person"
+    />
+
+
+
+  </configure>
+
+</configure>

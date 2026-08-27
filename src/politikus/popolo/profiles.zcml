@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="politikus.popolo"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="politikus.popolo: Install"
+      description="Package to configure a new politikus.popolo site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="politikus.popolo: Uninstall"
+      description="Uninstall politikus.popolo setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <!-- Hide Uninstall Profile-->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="politikus.popolo"
+      />
+
+  <include package=".upgrades" />
+
+</configure>
