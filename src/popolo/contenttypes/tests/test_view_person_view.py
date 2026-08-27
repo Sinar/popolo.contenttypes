@@ -5,8 +5,11 @@ from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from zope.component import getMultiAdapter
-from zope.component.interfaces import ComponentLookupError
+from zope.interface.interfaces import ComponentLookupError
 
+from zope.interface import alsoProvides
+
+from popolo.contenttypes.content.person import IPerson
 import unittest
 
 
@@ -21,6 +24,7 @@ class ViewsIntegrationTest(unittest.TestCase):
         api.content.create(self.portal, 'Document', 'front-page')
 
     def test_person_view_is_registered(self):
+        alsoProvides(self.portal['other-folder'], IPerson)
         view = getMultiAdapter(
             (self.portal['other-folder'], self.portal.REQUEST),
             name='person-view'

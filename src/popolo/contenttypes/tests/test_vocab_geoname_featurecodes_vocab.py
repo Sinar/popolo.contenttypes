@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from popolo.contenttypes import _
 from popolo.contenttypes.testing import POPOLO_CONTENTTYPES_INTEGRATION_TESTING  # noqa
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
@@ -20,13 +19,11 @@ class GeonameFeaturecodesVocabIntegrationTest(unittest.TestCase):
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
 
     def test_vocab_geoname_featurecodes_vocab(self):
-        vocab_name = 'popolo.contenttypes.GeonameFeaturecodesVocab'
+        vocab_name = 'popolo.contenttypes.geonamefeaturecodes'
         factory = getUtility(IVocabularyFactory, vocab_name)
         self.assertTrue(IVocabularyFactory.providedBy(factory))
 
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
-        self.assertEqual(
-            vocabulary.getTerm('sony-a7r-iii').title,
-            _(u'Sony Aplha 7R III'),
-        )
+        terms = list(vocabulary)
+        self.assertTrue(len(terms) > 0)

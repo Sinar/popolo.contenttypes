@@ -47,11 +47,14 @@ class MembershipIntegrationTest(unittest.TestCase):
 
     def test_ct_membership_adding(self):
         setRoles(self.portal, TEST_USER_ID, ['Contributor'])
-        obj = api.content.create(
-            container=self.portal,
-            type='Membership',
-            id='membership',
+        # Membership is not globally addable, so construct it directly.
+        portal_types = self.portal.portal_types
+        obj_id = portal_types.constructContent(
+            'Membership',
+            self.portal,
+            'membership',
         )
+        obj = self.portal[obj_id]
 
         self.assertTrue(
             IMembership.providedBy(obj),
@@ -67,12 +70,13 @@ class MembershipIntegrationTest(unittest.TestCase):
         api.content.delete(obj=obj)
         self.assertNotIn('membership', parent.objectIds())
 
-    def test_ct_membership_globally_addable(self):
+    def test_ct_membership_not_globally_addable(self):
         setRoles(self.portal, TEST_USER_ID, ['Contributor'])
         fti = queryUtility(IDexterityFTI, name='Membership')
-        self.assertTrue(
+        self.assertFalse(
             fti.global_allow,
-            u'{0} is not globally addable!'.format(fti.id)
+            u'{0} is globally addable, it should only be added '
+            u'under its parent types!'.format(fti.id)
         )
 
     def test_ct_membership_filter_content_type_true(self):

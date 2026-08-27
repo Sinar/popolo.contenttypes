@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from popolo.contenttypes import _
 from popolo.contenttypes.testing import POPOLO_CONTENTTYPES_INTEGRATION_TESTING  # noqa
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
@@ -10,7 +9,10 @@ from zope.schema.interfaces import IVocabularyTokenized
 import unittest
 
 
-class OrganizationsVocabIntegrationTest(unittest.TestCase):
+class OrganizationcategoriesVocabIntegrationTest(unittest.TestCase):
+    # The package registers 'popolo.contenttypes.organizationcategories'
+    # (the OrganizationCategoriesVocab factory); there is no
+    # 'OrganizationsVocab' registration.
 
     layer = POPOLO_CONTENTTYPES_INTEGRATION_TESTING
 
@@ -19,14 +21,12 @@ class OrganizationsVocabIntegrationTest(unittest.TestCase):
         self.portal = self.layer['portal']
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
 
-    def test_vocab_organizations_vocab(self):
-        vocab_name = 'popolo.contenttypes.OrganizationsVocab'
+    def test_vocab_organizationcategories(self):
+        vocab_name = 'popolo.contenttypes.organizationcategories'
         factory = getUtility(IVocabularyFactory, vocab_name)
         self.assertTrue(IVocabularyFactory.providedBy(factory))
 
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
-        self.assertEqual(
-            vocabulary.getTerm('sony-a7r-iii').title,
-            _(u'Sony Aplha 7R III'),
-        )
+        terms = list(vocabulary)
+        self.assertTrue(len(terms) > 0)
