@@ -62,23 +62,19 @@ target = "plone"
 [tool.uv]
 managed = false
 
-[tool.hatch.version]
-path = "src/politikus/popolo/__init__.py"
-
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
 
-[tool.hatch.build]
-strict-naming = true
+[tool.setuptools]
+include-package-data = true
 
-[tool.hatch.build.targets.sdist]
-exclude = [
-  "/.github",
-]
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/politikus"]
+[tool.setuptools.dynamic]
+version = {attr = "politikus.popolo.__version__"}
 
 [tool.towncrier]
 directory = "news/"
