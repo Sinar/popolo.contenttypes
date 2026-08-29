@@ -73,3 +73,12 @@ class AreaIntegrationTest(unittest.TestCase):
             fti.global_allow,
             u'{0} is not globally addable!'.format(fti.id)
         )
+
+    def test_ct_area_title_alias(self):
+        """title mirrors name and cannot be set directly."""
+        fti = queryUtility(IDexterityFTI, name='Area')
+        obj = createObject(fti.factory)
+        obj.name = u'Krong Preah Sihanouk'
+        self.assertEqual(obj.title, u'Krong Preah Sihanouk')
+        obj.title = u'Ignored'
+        self.assertEqual(obj.title, u'Krong Preah Sihanouk')

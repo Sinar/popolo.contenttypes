@@ -29,4 +29,18 @@ class OrganizationcategoriesVocabIntegrationTest(unittest.TestCase):
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
         terms = list(vocabulary)
-        self.assertTrue(len(terms) > 0)
+        self.assertEqual(len(terms), 24)
+        values = [t.value for t in terms]
+        for expected in (
+            'orgCatParliament',
+            'orgCatSenate',
+            'orgCatAgency',
+            'orgCatPP',
+            'orgCatTradeAssociation',
+            'orgCatFinancialInstitution',
+        ):
+            self.assertIn(expected, values)
+        self.assertEqual(
+            vocabulary.getTerm('orgCatParliament').title,
+            u'Parliament',
+        )

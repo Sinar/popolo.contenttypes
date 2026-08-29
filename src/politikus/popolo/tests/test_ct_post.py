@@ -99,3 +99,16 @@ class PostIntegrationTest(unittest.TestCase):
                 type='Document',
                 title='My Content',
             )
+
+    def test_ct_post_title_description_aliases(self):
+        """title mirrors label and description mirrors role."""
+        fti = queryUtility(IDexterityFTI, name='Post')
+        obj = createObject(fti.factory)
+        obj.label = u'President'
+        obj.role = u'Head of state'
+        self.assertEqual(obj.title, u'President')
+        self.assertEqual(obj.description, u'Head of state')
+        obj.title = u'Ignored'
+        obj.description = u'Also ignored'
+        self.assertEqual(obj.title, u'President')
+        self.assertEqual(obj.description, u'Head of state')

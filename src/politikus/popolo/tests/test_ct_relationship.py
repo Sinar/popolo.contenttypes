@@ -99,3 +99,12 @@ class RelationshipIntegrationTest(unittest.TestCase):
                 type='Document',
                 title='My Content',
             )
+
+    def test_ct_relationship_title_alias(self):
+        """title mirrors name and cannot be set directly."""
+        fti = queryUtility(IDexterityFTI, name='Relationship')
+        obj = createObject(fti.factory)
+        obj.name = u'Son of'
+        self.assertEqual(obj.title, u'Son of')
+        obj.title = u'Ignored'
+        self.assertEqual(obj.title, u'Son of')

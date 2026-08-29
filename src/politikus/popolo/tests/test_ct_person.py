@@ -84,7 +84,7 @@ class PersonIntegrationTest(unittest.TestCase):
             self.portal,
             'person_id',
             title='Person container',
-         )
+          )
         self.parent = self.portal[parent_id]
         with self.assertRaises(InvalidParameterError):
             api.content.create(
@@ -92,3 +92,16 @@ class PersonIntegrationTest(unittest.TestCase):
                 type='Document',
                 title='My Content',
             )
+
+    def test_ct_person_title_description_aliases(self):
+        """title mirrors name and description mirrors summary."""
+        fti = queryUtility(IDexterityFTI, name='Person')
+        obj = createObject(fti.factory)
+        obj.name = u'Jane Doe'
+        obj.summary = u'One line summary'
+        self.assertEqual(obj.title, u'Jane Doe')
+        self.assertEqual(obj.description, u'One line summary')
+        obj.title = u'Ignored'
+        obj.description = u'Also ignored'
+        self.assertEqual(obj.title, u'Jane Doe')
+        self.assertEqual(obj.description, u'One line summary')

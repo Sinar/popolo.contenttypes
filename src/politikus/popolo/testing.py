@@ -18,7 +18,9 @@ class PolitikusPopoloLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
+        import collective.vocabularies.iso
         import plone.restapi
+        self.loadZCML(package=collective.vocabularies.iso)
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=politikus.popolo)
 

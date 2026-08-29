@@ -26,4 +26,18 @@ class RelationshiptypesIntegrationTest(unittest.TestCase):
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
         terms = list(vocabulary)
-        self.assertTrue(len(terms) > 0)
+        self.assertEqual(
+            sorted(t.value for t in terms),
+            sorted([
+                'spouse',
+                'parent',
+                'sibling',
+                'cousin',
+                'business_partner',
+                'associate',
+                'romantic',
+                'employer',
+                'subordinate',
+            ]),
+        )
+        self.assertEqual(vocabulary.getTerm('spouse').title, u'Spouse')

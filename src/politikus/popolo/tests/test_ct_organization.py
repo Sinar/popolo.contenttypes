@@ -92,3 +92,12 @@ class OrganizationIntegrationTest(unittest.TestCase):
                 type='Document',
                 title='My Content',
             )
+
+    def test_ct_organization_title_alias(self):
+        """title mirrors name and cannot be set directly."""
+        fti = queryUtility(IDexterityFTI, name='Organization')
+        obj = createObject(fti.factory)
+        obj.name = u'Acme Corporation'
+        self.assertEqual(obj.title, u'Acme Corporation')
+        obj.title = u'Ignored'
+        self.assertEqual(obj.title, u'Acme Corporation')

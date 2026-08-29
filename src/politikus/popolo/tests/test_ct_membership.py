@@ -96,3 +96,16 @@ class MembershipIntegrationTest(unittest.TestCase):
                 type='Document',
                 title='My Content',
             )
+
+    def test_ct_membership_title_description_aliases(self):
+        """title mirrors label and description mirrors role."""
+        fti = queryUtility(IDexterityFTI, name='Membership')
+        obj = createObject(fti.factory)
+        obj.label = u'Member of Parliament'
+        obj.role = u'MP'
+        self.assertEqual(obj.title, u'Member of Parliament')
+        self.assertEqual(obj.description, u'MP')
+        obj.title = u'Ignored'
+        obj.description = u'Also ignored'
+        self.assertEqual(obj.title, u'Member of Parliament')
+        self.assertEqual(obj.description, u'MP')

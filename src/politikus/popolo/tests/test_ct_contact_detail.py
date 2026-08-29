@@ -80,3 +80,12 @@ class ContactDetailIntegrationTest(unittest.TestCase):
             fti.global_allow,
             u'{0} is globally addable!'.format(fti.id)
         )
+
+    def test_ct_contact_detail_title_alias(self):
+        """title mirrors label and cannot be set directly."""
+        fti = queryUtility(IDexterityFTI, name='Contact Detail')
+        obj = createObject(fti.factory)
+        obj.label = u'Phone'
+        self.assertEqual(obj.title, u'Phone')
+        obj.title = u'Ignored'
+        self.assertEqual(obj.title, u'Phone')

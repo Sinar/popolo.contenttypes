@@ -26,4 +26,11 @@ class GeonameFeaturecodesVocabIntegrationTest(unittest.TestCase):
         vocabulary = factory(self.portal)
         self.assertTrue(IVocabularyTokenized.providedBy(vocabulary))
         terms = list(vocabulary)
-        self.assertTrue(len(terms) > 0)
+        self.assertGreater(len(terms), 600)
+        values = [t.value for t in terms]
+        for expected in ('A.ADM1', 'A.PCL', 'P.PPLA2'):
+            self.assertIn(expected, values)
+        self.assertEqual(
+            vocabulary.getTerm('A.ADM1').title,
+            u'first-order administrative division',
+        )

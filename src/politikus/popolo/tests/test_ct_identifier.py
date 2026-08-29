@@ -80,3 +80,12 @@ class IdentifierIntegrationTest(unittest.TestCase):
             fti.global_allow,
             u'{0} is globally addable!'.format(fti.id)
         )
+
+    def test_ct_identifier_title_alias(self):
+        """title mirrors scheme and cannot be set directly."""
+        fti = queryUtility(IDexterityFTI, name='Identifier')
+        obj = createObject(fti.factory)
+        obj.scheme = u'national_id'
+        self.assertEqual(obj.title, u'national_id')
+        obj.title = u'Ignored'
+        self.assertEqual(obj.title, u'national_id')
