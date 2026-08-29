@@ -9,11 +9,11 @@ def get_relations(obj, attribute=None, backrefs=False):
     """Get any kind of references and backreferences"""
     int_id = get_intid(obj)
     if not int_id:
-        return retval
+        return []
 
     relation_catalog = getUtility(ICatalog)
     if not relation_catalog:
-        return retval
+        return []
 
     query = {}
     if attribute:
