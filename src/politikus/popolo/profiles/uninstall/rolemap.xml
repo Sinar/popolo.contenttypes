@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+
+    <permission name="politikus.popolo: Add Relationship" acquire="True"/>
+    <permission name="politikus.popolo: Add Source" acquire="True"/>
+    <permission name="politikus.popolo: Add Area" acquire="True"/>
+    <permission name="politikus.popolo: Add Identifier" acquire="True"/>
+    <permission name="politikus.popolo: Add OtherName" acquire="True"/>
+    <permission name="politikus.popolo: Add ContactDetail" acquire="True"/>
+    <permission name="politikus.popolo: Add Post" acquire="True"/>
+    <permission name="politikus.popolo: Add Membership" acquire="True"/>
+    <permission name="politikus.popolo: Add Organization" acquire="True"/>
+    <permission name="politikus.popolo: Add Person" acquire="True"/>
+
+  </permissions>
+</rolemap>

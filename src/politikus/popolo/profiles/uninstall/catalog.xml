@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+  <index name="start_date" meta_type="DateIndex" remove="true"/>
+  <index name="end_date" meta_type="DateIndex" remove="true"/>
+  <index name="founding_date" meta_type="DateIndex" remove="true"/>
+  <index name="dissolution_date" meta_type="DateIndex" remove="true"/>
+  <index name="classification" meta_type="FieldIndex" remove="true"/>
+  <index name="gender" meta_type="FieldIndex" remove="true"/>
+  <column value="start_date" remove="true"/>
+  <column value="end_date" remove="true"/>
+  <column value="founding_date" remove="true"/>
+  <column value="dissolution_date" remove="true"/>
+  <column value="classification" remove="true"/>
+  <column value="gender" remove="true"/>
+</object>
